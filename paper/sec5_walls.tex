@@ -1,0 +1,34 @@
+\subsection{Where the classical routes stop}
+\label{sec:walls}
+
+Evaluating the inequalities of Section~\ref{sec:framework} for the budgets of Table~\ref{tab:params} gives the first failing $N$ of each route (Table~\ref{tab:walls}). Full-state storage fails by a count, early on the grid and later in a compressed basis. The tensor-network wall is Eq.~\eqref{eq:Nstar} evaluated on the entropy of Section~\ref{sec:larger}: under the three scenarios for the one-particle entropy it lies on the grid between $N=\num{wall_pess_grid}$ (entropy keeps growing) and $N=\num{wall_opt_grid}$ (saturated at its $N=\num{Nmax_measured}$ value) \stC{}, with the compute budget binding first (Fig.~\ref{fig:walls}). Since most of that entanglement is static (Section~\ref{sec:static}), the wall prices the representation of the evolved state, not the task.
+
+\input{tab_walls}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_walls.pdf}
+\caption{\textbf{The tensor-network wall.} (a) The central-cut entropy under the three scenarios of Section~\ref{sec:larger} against the largest entropy that the memory and compute budgets of Table~\ref{tab:params} allow (grid and mode basis;
+dashed: grid budget when the numerical Schmidt rank $\chi(10^{-3})$ is charged instead of $2^{S}$, Section~\ref{sec:seed}). The wall is the first crossing. (b) The wall for a constant growth $s$ per added particle anchored at the last simulated $N$ (Eq.~\eqref{eq:Nflop}); the grey band is the asymptotic slope
+of the sharing law. Computed from the measured entropies and the budgets of Table~\ref{tab:params}.}
+\label{fig:walls}
+\end{figure}
+
+A matrix-product state was also run (density-matrix-renormalization-group start, two-site time-dependent variational evolution) as an independent check of the counting model. It reproduces the exact entropies to a few hundredths of a bit or better (Table~\ref{tab:mps}, Fig.~\ref{fig:tn}a) but is slower than the exact code at the sizes tried, so it reaches only $N\le5$ and extends no data. Two corrections to the model go in opposite directions, and neither is converged. The numerical Schmidt rank $\chi(10^{-3})$ exceeds $2^{S}$ by a factor that grows with $N$ and $k$ (Fig.~\ref{fig:tn}b); charging it at the ratio measured at $N=6$ adds $\num{chi_shift}$ bits and moves the grid wall to the values in parentheses in Table~\ref{tab:walls}. Charging the central bond on every bond, and the natural order instead of a better tree, overstates the cost (Lemma~\ref{lem:chord}). The wall moves by only $\log_2f/(3s)$ particles for a factor $f$ in the budget (Eq.~\eqref{eq:Nflop}), so the lower edge of the window is the soft quantity of the bounds, and Fig.~\ref{fig:regime} shades it rather than cutting it. The measured cost per step is nearly flat in $\chi$ at these sizes (Fig.~\ref{fig:tn}c), so the model's prefactor is a lower bound and has not been tested where the bond cap matters.
+
+\input{tab_mps}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_tn.pdf}
+\caption{\textbf{What the matrix-product state measured.} (a) Central-bond entropy against time, matrix-product state (dashed) and exact (solid). (b) The numerical Schmidt rank $\chi(10^{-3})$ of the central bond in units of $2^{S_{\rm cen}}$, the value charged by the cost model, for the stored exact runs at $T=\num{Tprot}$. (c) Seconds per two-site step at $N=4$, $k=12$, measured, against the operation count of the counting model at the measured matrix-multiplication rate of the same machine.}
+\label{fig:tn}
+\end{figure}
+
+By Eq.~\eqref{eq:scrit} the window at the simulated mass is non-empty if the growth per particle beyond $N=\num{Nmax_measured}$ exceeds $s_{\rm crit}$ (Table~\ref{tab:scrit}): existence is robust on the grid and marginal in the mode basis, and it refers to the entropy-based wall, which prices static entanglement, so it does not carry over to the dynamics.
+
+\input{tab_scrit}
+
+Imaginary-time Monte Carlo (Section~\ref{sec:mc}) is not excluded. Table~\ref{tab:mc} tests the picture it relies on: where the doublet test passes ($N=2,3$ and $N=4$, $k=20$) a prediction from the splitting alone is adequate; elsewhere the signal has several frequencies, and a prediction would need a handful of levels and weights, not one splitting.
+
+\input{tab_mc}

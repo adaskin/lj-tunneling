@@ -1,0 +1,40 @@
+\begin{table}[!tp]
+\centering
+\small
+\caption{Everything measured on the simulated runs, by cluster size ($k=12$ modes per particle, correlated start at the resonant tilt, one protocol for every $N$: maximum over $[0,T]$ with $T=\num{Tprot}$, snapshot spacing $\num{dtsnap}$; entropies in bits). \emph{Signal} (Fig.~\ref{fig:signal}): lowest value of $\langle\Op\rangle/\langle\Op\rangle(0)$ in the window; largest value after it first falls below $\tfrac12$ (a clean oscillation returns to about one); weight of the start on the gated pair of levels (Table~\ref{tab:start}); time of the central-bond maximum. \emph{Cut entropies} (Eq.~\eqref{eq:threeS}): mean one-particle entropy $\bar S_1$; best balanced, natural-order and worst balanced cut; $\Snat$ is the central bond; numerical Schmidt rank $\chi$ of the central bond at discarded weight $10^{-3}$. \emph{Growth}: increments with each added particle. \emph{Layout}: how much more the worst order pays than the best; how much more the order chosen on the graph pays than the exact optimum; rank correlation between graph and exact costs over all orders. \emph{Graph} (Section~\ref{sec:graph}): mean edge weight $w_{ij}$ against the sharing-law weight $2\bar S_1/(N-1)$ of Eq.~\eqref{eq:sharing}, and the sharing-law central cut against the measured one. \emph{Laws fitted to $N\le4$}: excess of the pair-counting and of the linear law over the measured central bond. \emph{Start}: central bond for the product start (a quench; no run exists for $N\ge5$), to be compared with $\Snat$. A dash marks a quantity that does not exist for that $N$ (an increment, a rank correlation over one order, a fit at the fitted sizes) or a run that was not made.\num{d45_note}}
+\label{tab:measured}
+\begin{tabular}{lrrrrr}
+\toprule
+$N$ & 2 & 3 & 4 & 5 & 6 \\
+\midrule
+\multicolumn{6}{l}{\emph{Signal}} \\
+lowest value of $\langle\Op\rangle/\langle\Op\rangle(0)$ & 0.10 & 0.15 & 0.25 & 0.27 & 0.37 \\
+largest value after the first fall below $\tfrac12$ & 1.00 & 0.97 & 0.81 & 0.92 & 0.90 \\
+weight of the start on the gated pair & 0.98 & 0.94 & 0.46 & 0.35 & 0.31 \\
+time of the central-bond maximum & 163 & 89 & 114 & 197 & 193 \\
+\multicolumn{6}{l}{\emph{Cut entropies}} \\
+$\bar S_1$ & 0.90 & 1.32 & 1.75 & 1.88 & 1.93 \\
+best balanced cut $\Sperp$ & 0.90 & 1.29 & 2.33 & 2.62 & 2.88 \\
+central bond $\Snat$ & 0.90 & 1.30 & 2.33 & 2.72 & 3.26 \\
+worst balanced cut $\Smax$ & 0.90 & 1.37 & 2.54 & 2.93 & 3.70 \\
+Schmidt rank $\chi(10^{-3})$ & 7 & 10 & 38 & 74 & 325 \\
+$\chi(10^{-3})/2^{\Snat}$ & 3.7 & 4.1 & 7.5 & 11.3 & 34.0 \\
+\multicolumn{6}{l}{\emph{Growth}} \\
+increment of $\Snat$ & -- & 0.39 & 1.04 & 0.38 & 0.54 \\
+increment of $\bar S_1$ & -- & 0.41 & 0.43 & 0.14 & 0.05 \\
+\multicolumn{6}{l}{\emph{Layout}} \\
+worst order minus best & 0.00 & 0.07 & 0.21 & 0.22 & 0.44 \\
+graph-chosen order minus optimum & 0.00 & 0.00 & 0.02 & 0.00 & 0.00 \\
+rank correlation, graph against exact & -- & 1.00 & 0.45 & 0.46 & 0.80 \\
+\multicolumn{6}{l}{\emph{Graph}} \\
+mean edge weight, measured & 1.81 & 1.49 & 1.24 & 1.00 & 0.86 \\
+sharing-law weight & 1.81 & 1.32 & 1.16 & 0.94 & 0.77 \\
+sharing-law central cut & 0.90 & 1.32 & 2.33 & 2.82 & 3.47 \\
+\multicolumn{6}{l}{\emph{Laws fitted to $N\le4$: excess over the measured central bond}} \\
+pair-counting law & -- & -- & -- & 0.57 & 1.47 \\
+linear law & -- & -- & -- & 0.23 & 0.40 \\
+\multicolumn{6}{l}{\emph{Start}} \\
+central bond, product start (correlated start: $\Snat$ above) & 0.90 & 2.31 & 4.81 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

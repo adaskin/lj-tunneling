@@ -1,0 +1,16 @@
+[    164s] [dynamics N=4 k=12] protocol uniform: T=200 dt=2 starts=['interacting'] cuts=bonds
+[    170s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[    171s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.538 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4631
+[    171s]       start energy above E0: product 7.317, interacting 0.221 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.463) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.069)
+[    172s]       [interacting] spectrum [16.1,69.9], T=200, dt=2, 101 snapshots, ~11900 matvecs; 5 cuts (0 skipped: dimension)
+[    176s]       [interacting] t=  20.0  <O>=0.373  elapsed      4s  eta     33s
+[    180s]       [interacting] t=  40.0  <O>=0.704  elapsed      8s  eta     31s
+[    183s]       [interacting] t=  60.0  <O>=0.671  elapsed     11s  eta     27s
+[    187s]       [interacting] t=  80.0  <O>=0.417  elapsed     15s  eta     23s
+[    191s]       [interacting] t= 100.0  <O>=0.802  elapsed     20s  eta     20s
+[    195s]       [interacting] t= 120.0  <O>=0.459  elapsed     24s  eta     16s
+[    199s]       [interacting] t= 140.0  <O>=0.765  elapsed     28s  eta     12s
+[    204s]       [interacting] t= 160.0  <O>=0.516  elapsed     32s  eta      8s
+[    208s]       [interacting] t= 180.0  <O>=0.694  elapsed     36s  eta      4s
+[    212s]       [interacting] t= 200.0  <O>=0.695  elapsed     40s  eta      0s
+[    212s] [N=4 k=12] interacting: wrote ../../testruns/dtscan/N4_k12_int_c2.260_T200_dt2.npz  <O> in [0.246, 0.995]  (47s)

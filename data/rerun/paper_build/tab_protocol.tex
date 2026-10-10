@@ -1,0 +1,23 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Sampling sensitivity of the entropy maxima (bits; correlated start, $k=12$). \emph{Window} (upper block): one stored series of the protocol ($T=\num{Tprot}$, spacing $\num{dtsnap}$) cut to a shorter window afterwards: central bond $S_{\rm cen}$ and worst balanced cut $\Smax$ (equal at $N=2$, where there is one cut); the last column is the central bond of the earlier code, which used a window that depended on $N$ (given in brackets) and 45 snapshots. \emph{Spacing} (lower block): the same state and window with another snapshot spacing $\Delta t$; the maximum is taken over the snapshots.}
+\label{tab:protocol}
+\begin{tabular}{lccccc}
+\toprule
+ & \multicolumn{3}{c}{window: $S_{\rm cen}$ / $\Smax$} & & earlier code \\
+\cmidrule(lr){2-4}
+$N$ & $T\le60$ & $T\le120$ & $T\le200$ & & $S_{\rm cen}$ ($T$) \\
+\midrule
+2 & 0.869 / 0.869 & 0.879 / 0.879 & 0.905 / 0.905 & & 0.873 (70) \\
+3 & 1.297 / 1.367 & 1.298 / 1.367 & 1.298 / 1.367 & & 1.292 (60) \\
+4 & 2.264 / 2.360 & 2.335 / 2.542 & 2.335 / 2.542 & & 2.246 (60) \\
+\midrule
+spacing at $T=\num{Tprot}$ & $\Delta t=0.5$ & $\Delta t=1$ & $\Delta t=2$ & $\Delta t=4$ & \\
+\midrule
+$N=3$, max one-particle entropy & 1.382 & 1.367 & 1.367 & 1.367 & \\
+$N=3$, $S_{\rm cen}$ & 1.298 & 1.298 & 1.297 & 1.297 & \\
+$N=4$, $S_{\rm cen}$ & 2.335 & 2.335 & 2.335 & 2.326 & \\
+\bottomrule
+\end{tabular}
+\end{table}

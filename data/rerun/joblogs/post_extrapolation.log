@@ -1,0 +1,2 @@
+measured N [2, 3, 4, 5, 6]  S_cen [0.905, 1.298, 2.335, 2.715, 3.258]
+first failing N (tensor network, grid d=1200): {'sat_d1200_both': 15, 'opt_d1200_both': 16, 'pess_d1200_both': 13}

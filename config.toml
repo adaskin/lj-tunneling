@@ -1,0 +1,199 @@
+# ============================================================================
+# ljtunnel -- the single configuration file.
+# Every physical or numerical constant of the project lives here; no module
+# defines one.  Lengths, energies and times are in model units (hbar = m = 1 at
+# the simulated mass), entropies in bits.
+# ============================================================================
+
+[model]                      # the physical model (paper, Model section)
+A          = 8.0             # quartic trap depth, U = A (x^2-1)^2
+omega_y    = 2.0             # transverse confinement, 0.5 * omega_y * y^2
+epsilon    = 2.0             # Lennard-Jones energy scale
+sigma      = 0.18            # Lennard-Jones length
+V_cap      = 100.0           # cap on the LJ core
+C0         = 0.15            # tilt offset between successive particles (particle i: i*C0)
+m          = 1.0             # particle mass
+hbar       = 1.0
+theta_barrier = 0.5          # weight of the grid column x = 0 in Theta(x) = the right-valley indicator: 1/2 = symmetric (REVIEW.md E3);
+                             #   0 = that column counted as left, the convention of every run made before the rerun (previous-data/)
+
+[grid]                       # position grid per particle (the "pricing grid")
+nx           = 40
+ny           = 30
+Lx           = 2.5           # x in [-Lx, Lx)
+Ly           = 3.0           # y in [-Ly, Ly)
+sigma_smear  = 0.05          # LJ core smearing used in the mode-basis runs (R -> sqrt(R^2 + s^2))
+
+[basis]
+k = 12                       # default number of one-body modes per particle
+
+# ---------------------------------------------------------------------------
+# THE MEASUREMENT PROTOCOL.  One window and one snapshot spacing for every N, k and
+# start, so that maxima over time are sampled identically.  The full time series is
+# stored in every run file; a shorter window is cut afterwards (analysis), never
+# re-simulated.  A run with a different T or dt is stamped protocol = "custom" and
+# the analysis refuses to mix it with the uniform ones.
+# ---------------------------------------------------------------------------
+[protocol]
+T              = 200.0       # evolution window
+dt_snap        = 1.0         # snapshot spacing (201 snapshots including t = 0); see README, "sampling"
+starts         = ["interacting"]   # ["product", "interacting"]; "interacting" = correlated start
+W_penalty      = 30.0        # strength of the penalty that defines the correlated start
+cuts           = "all"       # "all" (every bipartition) | "bonds+pairs" | "bonds"
+                             #   singles and contiguous bonds are always measured
+max_cut_dim    = 3000        # skip a cut whose smaller side has dimension k^a above this
+big_cut_stride = 1           # cuts with smaller side >= 3 particles: every n-th snapshot
+                             #   (contiguous bonds are always measured every snapshot)
+norm_tol       = 1e-6        # warn if |psi(T)| differs from 1 by more
+max_state_gb   = 6.0         # refuse a run whose state vector exceeds this (complex128)
+
+[mps]                        # matrix-product-state runs (ljtunnel.mps; needs TeNPy: pip install physics-tenpy)
+chi_max     = 128            # bond-dimension cap of the real-time evolution
+eps         = 1.0e-8         # discarded weight allowed per truncation (chi(1e-6) can only be read below this)
+dt          = 0.25           # TDVP step; the snapshot spacing dt_snap must be a multiple of it (the validation runs of data/mps use 0.5: `run_mps_case`)
+channel_tol = 1.0e-4         # interaction channels: relative cut of the span of mode products (error ~1e-5 energy units)
+dmrg_chi    = 64             # DMRG for the correlated start
+dmrg_eps    = 1.0e-10
+
+[doublet]                    # doublet acceptance gates
+do_min   = 0.7
+do_max   = 1.3
+mix_min  = 0.8
+n_low    = 8                 # candidate levels searched
+ov_floor = 0.05              # a doublet that no start populates by this much is spurious
+
+[doublet.N2]                 # at N=2 only the two (1,1)/(2,0) isomer pairs lie low; 8 admits spurious pairs
+n_low = 4
+
+[doublet.N5]
+n_report = 30                # levels used for the start-weight diagnostic (not for the search)
+[doublet.N6]
+n_report = 16
+[doublet.N7]
+n_report = 8
+
+[scan]                       # resonance finding (defaults; per-N overrides below)
+cmin             = 1.0
+cmax             = 3.2
+cstep            = 0.1
+refine_halfwidth = 0.3
+refine_points    = 11
+
+[scan.N2]
+cmin = 0.2
+cmax = 1.5
+cstep = 0.05
+
+[scan.N3]
+cmin = 0.0
+cmax = 2.6
+cstep = 0.05
+
+[scan.N5]
+cmin = 2.4
+cmax = 3.8
+
+[scan.N6]                    # extrapolated (tilt grows ~0.7-0.8 per particle); prefer c_guess
+cmin = 3.0
+cmax = 4.2
+
+[tilts]                      # the resonance tilt of every production run (used by tilt = "auto"): the point of the refine grid of
+                             # `resonance.locate` (spacing 0.06; N=2: the 0.05 grid of the earlier code) whose <O>_gs is closest to 1/2,
+                             # stored <O>_gs 0.42-0.58.  FROZEN working points, chosen with the earlier Theta(x = 0) convention: the weight-1/2
+                             # convention moves <O>_gs by +0.006..+0.013 and changes no pick (data/studies/theta_convention, REVIEW.md E3), so
+                             # file names and tilts are unchanged by the rerun.  Never regenerate them with tilt = "scan" (three of them were
+                             # not made by the plain scan and the scan sits on decision boundaries).  A missing (N, k) falls back to the scan.
+                             # The scans behind N5 k16, k20 and N6 k12 are in the logs of the first runs (previous-data/logs/, git history).
+N2 = 0.70
+[tilts.N3]
+k12 = 1.46
+k16 = 1.36
+k20 = 1.31
+k24 = 1.32
+k28 = 1.26
+k32 = 1.21
+k36 = 1.21
+k40 = 1.16
+[tilts.N4]
+k12 = 2.26
+k16 = 2.14
+k20 = 2.02
+[tilts.N5]
+k12 = 2.92
+k16 = 2.72                   # N5 k16, k20 and N6 k12: picks of the scans in data/logs of the first runs (c_guess 3.6 for N=6); a rerun with
+k20 = 2.62                   #   tilt = "auto" would repeat 0.6 / 1.5 / 2.2 h of scan
+[tilts.N6]
+k12 = 3.66
+
+[control]                    # the off-resonance control of the paper (N = 5: the ground state is localized there)
+N5_off_c = 2.62
+
+[studies]                    # sampling-sensitivity studies (run_sampling_study / paper tables)
+dt_scan = [0.5, 1.0, 2.0, 4.0]       # snapshot spacings at the production window
+windows = [60.0, 120.0, 200.0]       # windows cut from the one stored series
+
+[fullgrid]                   # N = 2 on the full 40x30 grid per particle (reference run)
+sigma_smear = 0.0            # the reference uses the point-sampled capped LJ
+c_ref       = 0.45           # production tilt of the reference (the earlier full-grid study)
+n_levels    = 6
+c_lo        = 0.2            # window of the optional search for <O>_gs = 1/2
+c_hi        = 0.9
+c_tol       = 1.0e-4
+
+# ---------------------------------------------------------------------------
+# Counting models (pure arithmetic; no simulation)
+# ---------------------------------------------------------------------------
+[budgets]
+classical_mem   = 1.0e12     # bytes
+classical_flop  = 1.0e20     # flop
+qubits          = 1000       # logical qubits
+t_gates         = 1.0e12     # T-gates
+eps             = 1.0e-3     # target accuracy
+
+[ed_wall]
+vectors = 10                 # Krylov vectors stored
+iters   = 200                # matvecs performed
+
+[tn_wall]
+sweeps = 100
+nmax   = 400                 # scan cap for the largest feasible N
+d_grid = 1200                # local dimension of the full grid
+d_mode = 20                  # local dimension of a compressed mode basis
+
+[extrapolation]              # carrying the measured entropies to larger N (stated scenarios)
+N_scan_max   = 100
+N_hi_list    = [24, 40, 88]  # upper ends of the window used for s_crit
+pair_fit_max = 4             # the pair and linear laws are fitted to N <= this
+
+[quantum]
+b_fixed   = 24               # fixed-point precision (bits)
+k_gauss   = 3                # Gaussians in the softened LJ fit
+q_piece   = 3                # piecewise-Taylor pieces
+p_deg     = 3                # polynomial degree
+t_star_0  = 16.5212          # measured switching time at the simulated mass (full-grid reference)
+N_max     = 120
+
+[quantum.estimate_grids]
+trap_points   = 4001
+pair_points   = 20001
+pair_rmin     = 0.05
+pair_rmax     = 1.2
+
+[montecarlo]                 # sign-problem severity of absolute-value path sampling
+L        = 8.0               # box half-length of the one-dimensional reference
+p_min    = 6                 # M = 2^p_min .. 2^p_max
+p_max    = 16
+fit_Mmin = 256               # smallest M used for the UV exponent fit
+dense_M  = 128               # dense Strang-step cross-check
+dtau     = [0.04, 0.02, 0.01, 0.005, 0.0025, 0.001, 0.0005, 0.0002]
+
+[onebody]                    # one-particle checks with known answers
+A_weak       = 1.0
+A_deep       = 8.0
+box_L        = [3.0, 4.0, 5.0, 6.0, 8.0]
+box_dx       = 0.00781
+rt_L         = 8.0           # real-time splitting readout
+rt_M         = 1024
+rt_dt        = 0.005
+rt_T         = 100.0
+grid_dx      = [0.25, 0.125, 0.0625, 0.03125, 0.015625]

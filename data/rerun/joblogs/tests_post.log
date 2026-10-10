@@ -1,0 +1,182 @@
+[PASS] test_project_pair
+[PASS] test_matvec_and_lowest_vs_dense
+[PASS] test_chebyshev_vs_eigenbasis
+[PASS] test_chebyshev_at_production_step
+[PASS] test_entropy_bookkeeping
+[PASS] test_cut_plan_complete_and_symmetric
+[      1s] WARNING: contiguous bond(s) [4] of N=8, k=12 are NOT measured (smaller side above max_cut_dim = 3000); S_nat / S_cen need them -- raise [protocol] max_cut_dim
+[PASS] test_cut_plan_modes_and_limits
+[PASS] test_graph_cuts
+[PASS] test_store_roundtrip
+[      1s] [N=2 k=12] c*=0.700 dE=0.179637 <O>_gs=0.564 doublet=(0,1) start=11_1  overlap on doublet: product 0.9772, interacting 0.9759
+[      1s]       start energy above E0: product 0.129, interacting 0.136 (band of the lowest 4 levels: 0.390); weight on those levels: product 0.991, interacting 0.990; main levels of the interacting start: #0(E-E0=0.000, w=0.527) #1(E-E0=0.180, w=0.449) #2(E-E0=0.243, w=0.000) #3(E-E0=0.390, w=0.014)
+[      1s] [N=3 k=12] c*=1.460 dE=0.188569 <O>_gs=0.512 doublet=(0,3) start=21_1  overlap on doublet: product 0.6725, interacting 0.9390
+[      1s]       start energy above E0: product 2.519, interacting 0.180 (band of the lowest 8 levels: 0.425); weight on those levels: product 0.708, interacting 0.984; main levels of the interacting start: #0(E-E0=0.000, w=0.455) #3(E-E0=0.189, w=0.484) #6(E-E0=0.360, w=0.032) #7(E-E0=0.425, w=0.007)
+[      2s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      3s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.538 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4631
+[      3s]       start energy above E0: product 7.317, interacting 0.221 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.463) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.069)
+[      3s] [N=2 k=12] c*=0.700 dE=0.179637 <O>_gs=0.570 doublet=(0,1) start=11_1  overlap on doublet: product 0.9772, interacting 0.9761
+[      3s]       start energy above E0: product 0.129, interacting 0.136 (band of the lowest 4 levels: 0.390); weight on those levels: product 0.991, interacting 0.990; main levels of the interacting start: #0(E-E0=0.000, w=0.528) #1(E-E0=0.180, w=0.448) #2(E-E0=0.243, w=0.000) #3(E-E0=0.390, w=0.014)
+[      3s] [N=3 k=12] c*=1.460 dE=0.188569 <O>_gs=0.520 doublet=(0,3) start=21_1  overlap on doublet: product 0.6725, interacting 0.9384
+[      3s]       start energy above E0: product 2.519, interacting 0.188 (band of the lowest 8 levels: 0.425); weight on those levels: product 0.708, interacting 0.983; main levels of the interacting start: #0(E-E0=0.000, w=0.456) #3(E-E0=0.189, w=0.482) #6(E-E0=0.360, w=0.032) #7(E-E0=0.425, w=0.007)
+[      4s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      5s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[      5s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[PASS] test_start_overlaps_match_earlier_ledger
+[PASS] test_theta_convention
+[      5s] [dynamics N=3 k=4] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[      5s] [N=3 k=4] c=1.4: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      5s] [N=3 k=4] c*=1.400 dE=0.054212 <O>_gs=0.983 doublet=(0,1) start=21_1  overlap on doublet: product 0.6079, interacting 0.9908
+[      5s]       start energy above E0: product 2.179, interacting 0.017 (band of the lowest 8 levels: 1.206); weight on those levels: product 0.612, interacting 0.991; main levels of the interacting start: #0(E-E0=0.000, w=0.991) #2(E-E0=0.260, w=0.000) #4(E-E0=0.329, w=0.000) #5(E-E0=0.518, w=0.000)
+[      5s]       [interacting] spectrum [12.8,28.5], T=200, dt=1, 201 snapshots, ~10200 matvecs; 3 cuts (0 skipped: dimension)
+[      5s]       [interacting] t=  10.0  <O>=0.958  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  20.0  <O>=0.991  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  30.0  <O>=0.961  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  40.0  <O>=0.989  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  50.0  <O>=0.962  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  60.0  <O>=0.988  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  70.0  <O>=0.963  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  80.0  <O>=0.986  elapsed      0s  eta      0s
+[      5s]       [interacting] t=  90.0  <O>=0.967  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 100.0  <O>=0.981  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 110.0  <O>=0.970  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 120.0  <O>=0.978  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 130.0  <O>=0.972  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 140.0  <O>=0.976  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 150.0  <O>=0.977  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 160.0  <O>=0.972  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 170.0  <O>=0.980  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 180.0  <O>=0.968  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 190.0  <O>=0.982  elapsed      0s  eta      0s
+[      5s]       [interacting] t= 200.0  <O>=0.967  elapsed      0s  eta      0s
+[      5s] [N=3 k=4] interacting: wrote runs/N3_k4_int_c1.400_T200_dt1.npz  <O> in [0.957, 0.992]  (1s)
+[      5s] [dynamics N=3 k=4] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[      5s] [N=3 k=4] c=1.7: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      6s] [N=3 k=4] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the most populated pair (2,4): dE=0.247961, ov=0.5919.  Check <O>_gs ~ 0.5.
+[      6s] [N=3 k=4] c*=1.700 dE=0.247961 <O>_gs=0.009 doublet=(2,4) start=21_1  overlap on doublet: product 0.5919, interacting 0.0000
+[      6s]       start energy above E0: product 2.397, interacting 0.213 (band of the lowest 8 levels: 0.922); weight on those levels: product 0.603, interacting 0.980; main levels of the interacting start: #0(E-E0=0.000, w=0.000) #1(E-E0=0.186, w=0.978) #3(E-E0=0.440, w=0.001) #5(E-E0=0.688, w=0.001)
+[      6s]       [interacting] spectrum [12.3,27.7], T=200, dt=1, 201 snapshots, ~10200 matvecs; 3 cuts (0 skipped: dimension)
+[      6s]       [interacting] t=  10.0  <O>=0.947  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  20.0  <O>=0.907  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  30.0  <O>=0.938  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  40.0  <O>=0.983  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  50.0  <O>=0.960  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  60.0  <O>=0.910  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  70.0  <O>=0.935  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  80.0  <O>=0.978  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  90.0  <O>=0.957  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 100.0  <O>=0.921  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 110.0  <O>=0.932  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 120.0  <O>=0.975  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 130.0  <O>=0.961  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 140.0  <O>=0.915  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 150.0  <O>=0.936  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 160.0  <O>=0.976  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 170.0  <O>=0.960  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 180.0  <O>=0.916  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 190.0  <O>=0.926  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 200.0  <O>=0.979  elapsed      0s  eta      0s
+[      6s] [N=3 k=4] interacting: wrote controls/N3_k4_int_c1.700_T200_dt1.npz  <O> in [0.907, 0.988]  (1s)
+[PASS] test_records_convention_guard_and_control_directory
+[      6s] [dynamics N=3 k=4] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[      6s] [N=3 k=4] c=1.4: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      6s] [N=3 k=4] c*=1.400 dE=0.054212 <O>_gs=0.983 doublet=(0,1) start=21_1  overlap on doublet: product 0.6079, interacting 0.9908
+[      6s]       start energy above E0: product 2.179, interacting 0.017 (band of the lowest 8 levels: 1.206); weight on those levels: product 0.612, interacting 0.991; main levels of the interacting start: #0(E-E0=0.000, w=0.991) #2(E-E0=0.260, w=0.000) #4(E-E0=0.329, w=0.000) #5(E-E0=0.518, w=0.000)
+[      6s]       [interacting] spectrum [12.8,28.5], T=200, dt=1, 201 snapshots, ~10200 matvecs; 3 cuts (0 skipped: dimension)
+[      6s]       [interacting] t=  10.0  <O>=0.958  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  20.0  <O>=0.991  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  30.0  <O>=0.961  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  40.0  <O>=0.989  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  50.0  <O>=0.962  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  60.0  <O>=0.988  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  70.0  <O>=0.963  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  80.0  <O>=0.986  elapsed      0s  eta      0s
+[      6s]       [interacting] t=  90.0  <O>=0.967  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 100.0  <O>=0.981  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 110.0  <O>=0.970  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 120.0  <O>=0.978  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 130.0  <O>=0.972  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 140.0  <O>=0.976  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 150.0  <O>=0.977  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 160.0  <O>=0.972  elapsed      0s  eta      0s
+[      6s]       [interacting] t= 170.0  <O>=0.980  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 180.0  <O>=0.968  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 190.0  <O>=0.982  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 200.0  <O>=0.967  elapsed      0s  eta      0s
+[      7s] [N=3 k=4] interacting: wrote ref/N3_k4_int_c1.400_T200_dt1.npz  <O> in [0.957, 0.992]  (1s)
+[      7s] [dynamics N=3 k=4] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[      7s] [N=3 k=4] c=1.4: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      7s] [N=3 k=4] c*=1.400 dE=0.054212 <O>_gs=0.983 doublet=(0,1) start=21_1  overlap on doublet: product 0.6079, interacting 0.9908
+[      7s]       start energy above E0: product 2.179, interacting 0.017 (band of the lowest 8 levels: 1.206); weight on those levels: product 0.612, interacting 0.991; main levels of the interacting start: #0(E-E0=0.000, w=0.991) #2(E-E0=0.260, w=0.000) #4(E-E0=0.329, w=0.000) #5(E-E0=0.518, w=0.000)
+[      7s]       [interacting] spectrum [12.8,28.5], T=200, dt=1, 201 snapshots, ~10200 matvecs; 3 cuts (0 skipped: dimension)
+[      7s]       [interacting] t=  10.0  <O>=0.958  elapsed      0s  eta      1s
+[      7s] [dynamics N=3 k=4] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[      7s] [N=3 k=4] RESUMED: resonance and start states loaded from data/ckpt/N3_k4_c1.400_T200_dt1/start.npz (0 s of an earlier process are kept)
+[      7s]       [interacting] spectrum [12.8,28.5], T=200, dt=1, 201 snapshots, ~10200 matvecs; 3 cuts (0 skipped: dimension)
+[      7s]       [interacting] RESUMED from the checkpoint at snapshot 10 of 200 (t = 10); 0 s of an earlier process are kept
+[      7s]       [interacting] t=  20.0  <O>=0.991  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  30.0  <O>=0.961  elapsed      0s  eta      1s
+[      7s]       [interacting] t=  40.0  <O>=0.989  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  50.0  <O>=0.962  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  60.0  <O>=0.988  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  70.0  <O>=0.963  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  80.0  <O>=0.986  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  90.0  <O>=0.967  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 100.0  <O>=0.981  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 110.0  <O>=0.970  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 120.0  <O>=0.978  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 130.0  <O>=0.972  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 140.0  <O>=0.976  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 150.0  <O>=0.977  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 160.0  <O>=0.972  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 170.0  <O>=0.980  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 180.0  <O>=0.968  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 190.0  <O>=0.982  elapsed      0s  eta      0s
+[      7s]       [interacting] t= 200.0  <O>=0.967  elapsed      1s  eta      0s
+[      7s] [N=3 k=4] interacting: wrote out/N3_k4_int_c1.400_T200_dt1.npz  <O> in [0.957, 0.992]  (1s)
+[PASS] test_checkpoint_resume_matches_uninterrupted_run
+[PASS] test_analysis_window_and_summary
+[PASS] test_n2_has_one_cut
+[PASS] test_legacy_conversion_reproduces_earlier_graph_numbers
+[      7s] WARNING: contiguous bond(s) [4] of N=8, k=8 are NOT measured (smaller side above max_cut_dim = 3000); S_nat / S_cen need them -- raise [protocol] max_cut_dim
+/home/user/lj-tunneling/ljtunnel/analysis.py:58: RuntimeWarning: All-NaN slice encountered
+  sig = np.nanmax(S, axis=0)
+[PASS] test_skipped_contiguous_bond_is_reported_and_summarize_refuses
+[      7s]    [scan N=4 k=6] c= 1.00 dE=0.00641 <O>=1.000
+[      7s]    [scan N=4 k=6] c= 1.10 dE=0.00792 <O>=0.998
+[      8s]    [scan N=4 k=6] c= 1.20 dE=0.00905 <O>=0.996
+[      8s]    [scan N=4 k=6] c= 1.30 dE=0.00996 <O>=0.994
+[      8s]    [scan N=4 k=6] c= 1.40 dE=0.01071 <O>=0.992
+[      8s]    [scan N=4 k=6] c= 1.50 dE=0.01133 <O>=0.989
+[      8s]    [scan N=4 k=6] c= 1.60 dE=0.01184 <O>=0.987
+[      8s]    [scan N=4 k=6] c= 1.70 dE=0.01223 <O>=0.984
+[      8s]    [scan N=4 k=6] c= 1.80 dE=0.01248 <O>=0.981
+[      8s]    [scan N=4 k=6] c= 1.90 dE=0.01258 <O>=0.977
+[      8s]    [scan N=4 k=6] c= 2.00 dE=0.01135 <O>=0.969
+[      8s]    [scan N=4 k=6] c= 2.10 dE=0.01133 <O>=0.961
+[      9s]    [scan N=4 k=6] c= 2.20 dE=0.00373 <O>=0.949
+[      9s]    [scan N=4 k=6] c= 2.30 dE=0.00220 <O>=0.892
+[      9s]    [scan N=4 k=6] c= 2.40 dE=0.00310 <O>=0.820
+[      9s]    [scan N=4 k=6] c= 2.50 dE=0.00190 <O>=0.155
+[      9s]    [scan N=4 k=6] c= 2.60 dE=0.00006 <O>=0.017
+[      9s]    [scan N=4 k=6] c= 2.70 dE=0.00008 <O>=0.011
+[     10s]    [scan N=4 k=6] c= 2.80 dE=0.00009 <O>=0.008
+[     10s]    [scan N=4 k=6] c= 2.90 dE=0.00015 <O>=0.008
+[     10s]    [scan N=4 k=6] c= 3.00 dE=0.00018 <O>=0.007
+[     10s]    [scan N=4 k=6] c= 3.10 dE=0.00019 <O>=0.007
+[     10s]    [scan N=4 k=6] c= 3.20 dE=0.00019 <O>=0.006
+[     10s]    [scan N=4 k=6] no tilt with 0.2 < <O> < 0.8 on the grid; refining around the <O> = 1/2 crossing at c=2.450
+[     10s]    [refine N=4 k=6] c= 2.15 <O>=0.955 no doublet
+[     10s]    [refine N=4 k=6] c= 2.21 <O>=0.948 no doublet
+[     10s]    [refine N=4 k=6] c= 2.27 <O>=0.905 no doublet
+[     11s]    [refine N=4 k=6] c= 2.33 <O>=0.876 no doublet
+[     11s]    [refine N=4 k=6] c= 2.39 <O>=0.831 no doublet
+[     11s]    [refine N=4 k=6] c= 2.45 <O>=0.563 no doublet
+[     11s]    [refine N=4 k=6] c= 2.51 <O>=0.129 no doublet
+[     11s]    [refine N=4 k=6] c= 2.57 <O>=0.060 no doublet
+[     11s]    [refine N=4 k=6] c= 2.63 <O>=0.014 no doublet
+[     12s]    [refine N=4 k=6] c= 2.69 <O>=0.011 no doublet
+[     12s]    [refine N=4 k=6] c= 2.75 <O>=0.009 no doublet
+[PASS] test_resonance_scan_finds_a_transition_that_jumps_over_the_grid
+[FAIL] test_tn_tables_reproduce_stored_numbers: AssertionError: N4_k12
+TESTS FAILED (1)

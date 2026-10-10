@@ -1,0 +1,23 @@
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mpo.py:151: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width=mps_unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mpo.py:151: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width=mps_unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+mps_validation          4 rows -> data/derived/tn_tables/mps_validation.csv
+mps_series            204 rows -> data/derived/tn_tables/mps_series.csv
+window_convergence     92 rows -> data/derived/tn_tables/window_convergence.csv
+rank_vs_entropy       105 rows -> data/derived/tn_tables/rank_vs_entropy.csv
+wall_sensitivity       15 rows -> data/derived/tn_tables/wall_sensitivity.csv
+channel_ranks          40 rows -> data/derived/tn_tables/channel_ranks.csv
+step_cost               6 rows -> data/derived/tn_tables/step_cost.csv

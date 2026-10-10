@@ -1,0 +1,285 @@
+# job parameter_scan_N3   threads 1   host vm   start 2026-10-06T20:56:06+00:00
+# call: run_parameter_scan(N=3)
+[      1s]    [scan N=3 k=12] c= 0.00 dE=0.30105 <O>=1.336
+[      1s]    [scan N=3 k=12] c= 0.05 dE=0.29480 <O>=1.289
+[      1s]    [scan N=3 k=12] c= 0.10 dE=0.28865 <O>=1.246
+[      1s]    [scan N=3 k=12] c= 0.15 dE=0.28374 <O>=1.210
+[      1s]    [scan N=3 k=12] c= 0.20 dE=0.27965 <O>=1.178
+[      1s]    [scan N=3 k=12] c= 0.25 dE=0.28309 <O>=1.147
+[      2s]    [scan N=3 k=12] c= 0.30 dE=0.27847 <O>=1.124
+[      2s]    [scan N=3 k=12] c= 0.35 dE=0.27159 <O>=1.104
+[      2s]    [scan N=3 k=12] c= 0.40 dE=0.26895 <O>=1.087
+[      2s]    [scan N=3 k=12] c= 0.45 dE=0.26336 <O>=1.070
+[      2s]    [scan N=3 k=12] c= 0.50 dE=0.25837 <O>=1.055
+[      2s]    [scan N=3 k=12] c= 0.55 dE=0.25391 <O>=1.041
+[      2s]    [scan N=3 k=12] c= 0.60 dE=0.24991 <O>=1.027
+[      2s]    [scan N=3 k=12] c= 0.65 dE=0.24635 <O>=1.014
+[      2s]    [scan N=3 k=12] c= 0.70 dE=0.24317 <O>=1.000
+[      2s]    [scan N=3 k=12] c= 0.75 dE=0.24035 <O>=0.986
+[      3s]    [scan N=3 k=12] c= 0.80 dE=0.23787 <O>=0.971
+[      3s]    [scan N=3 k=12] c= 0.85 dE=0.23571 <O>=0.955
+[      3s]    [scan N=3 k=12] c= 0.90 dE=0.23385 <O>=0.937
+[      3s]    [scan N=3 k=12] c= 0.95 dE=0.23110 <O>=0.916
+[      3s]    [scan N=3 k=12] c= 1.00 dE=0.22980 <O>=0.894
+[      3s]    [scan N=3 k=12] c= 1.05 dE=0.22871 <O>=0.868
+[      3s]    [scan N=3 k=12] c= 1.10 dE=0.23280 <O>=0.839
+[      3s]    [scan N=3 k=12] c= 1.15 dE=0.23150 <O>=0.805
+[      3s]    [scan N=3 k=12] c= 1.20 dE=0.23013 <O>=0.766
+[      4s]    [refine N=3 k=12] c= 1.08 <O>=0.851 dE=1.05694
+[      4s]    [refine N=3 k=12] c= 1.09 <O>=0.845 dE=1.04353
+[      4s]    [refine N=3 k=12] c= 1.10 <O>=0.839 dE=1.03627
+[      4s]    [refine N=3 k=12] c= 1.11 <O>=0.832 dE=0.78582
+[      4s]    [refine N=3 k=12] c= 1.12 <O>=0.826 dE=0.77892
+[      4s]    [refine N=3 k=12] c= 1.13 <O>=0.819 dE=0.77223
+[      4s]    [refine N=3 k=12] c= 1.14 <O>=0.812 dE=0.76576
+[      4s]    [refine N=3 k=12] c= 1.15 <O>=0.805 dE=0.75951
+[      4s]    [refine N=3 k=12] c= 1.16 <O>=0.797 dE=0.75351
+[      4s]    [refine N=3 k=12] c= 1.17 <O>=0.790 dE=0.74775
+[      5s]    [refine N=3 k=12] c= 1.18 <O>=0.782 dE=0.74226
+[      5s]    [refine N=3 k=12] c= 1.19 <O>=0.774 dE=0.73703
+[      5s]    [refine N=3 k=12] c= 1.20 <O>=0.766 dE=0.73207
+[      5s]    [refine N=3 k=12] c= 1.21 <O>=0.757 dE=0.72743
+[      5s]    [refine N=3 k=12] c= 1.22 <O>=0.749 dE=0.72306
+[      5s]    [refine N=3 k=12] c= 1.23 <O>=0.740 dE=0.71900
+[      5s]    [refine N=3 k=12] c= 1.24 <O>=0.719 dE=0.70294
+[      5s]    [refine N=3 k=12] c= 1.25 <O>=0.709 no doublet
+[      5s]    [refine N=3 k=12] c= 1.26 <O>=0.700 no doublet
+[      6s]    [refine N=3 k=12] c= 1.27 <O>=0.690 no doublet
+[      6s]    [refine N=3 k=12] c= 1.28 <O>=0.680 no doublet
+[      6s]    [refine N=3 k=12] c= 1.29 <O>=0.670 no doublet
+[      6s]    [refine N=3 k=12] c= 1.30 <O>=0.660 no doublet
+[      6s]    [refine N=3 k=12] c= 1.31 <O>=0.649 no doublet
+[      6s]    [refine N=3 k=12] c= 1.32 <O>=0.639 no doublet
+[      6s] [N=3 k=12] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the most populated pair (0,2): dE=0.314241, ov=0.6189.  Check <O>_gs ~ 0.5.
+[      6s] [N=3 k=12] c*=1.240 dE=0.314241 <O>_gs=0.719 doublet=(0,2) start=21_1  overlap on doublet: product 0.6189, interacting 0.8232
+[      6s]       start energy above E0: product 2.348, interacting 0.476 (band of the lowest 8 levels: 0.931); weight on those levels: product 0.672, interacting 0.885; main levels of the interacting start: #0(E-E0=0.000, w=0.512) #2(E-E0=0.314, w=0.311) #4(E-E0=0.552, w=0.035) #6(E-E0=0.917, w=0.027)
+N=3 k=12 A=4: c*=1.24 <O>_gs=0.719 dE=0.3142 overlap 0.823 (product 0.619) doublet [0, 2] ok=False levels-E0 [0.0, 0.2282, 0.3142, 0.3786, 0.5518, 0.6295, 0.9165, 0.9311]
+[      7s]    [scan N=3 k=12] c= 0.00 dE=0.21882 <O>=1.242
+[      7s]    [scan N=3 k=12] c= 0.05 dE=0.20687 <O>=1.188
+[      7s]    [scan N=3 k=12] c= 0.10 dE=0.19706 <O>=1.147
+[      7s]    [scan N=3 k=12] c= 0.15 dE=0.18907 <O>=1.117
+[      7s]    [scan N=3 k=12] c= 0.20 dE=0.18253 <O>=1.094
+[      7s]    [scan N=3 k=12] c= 0.25 dE=0.17710 <O>=1.077
+[      7s]    [scan N=3 k=12] c= 0.30 dE=0.17254 <O>=1.063
+[      7s]    [scan N=3 k=12] c= 0.35 dE=0.16866 <O>=1.052
+[      7s]    [scan N=3 k=12] c= 0.40 dE=0.16530 <O>=1.043
+[      8s]    [scan N=3 k=12] c= 0.45 dE=0.16237 <O>=1.035
+[      8s]    [scan N=3 k=12] c= 0.50 dE=0.15977 <O>=1.028
+[      8s]    [scan N=3 k=12] c= 0.55 dE=0.15745 <O>=1.022
+[      8s]    [scan N=3 k=12] c= 0.60 dE=0.16844 <O>=1.016
+[      8s]    [scan N=3 k=12] c= 0.65 dE=0.16664 <O>=1.011
+[      8s]    [scan N=3 k=12] c= 0.70 dE=0.16498 <O>=1.005
+[      8s]    [scan N=3 k=12] c= 0.75 dE=0.18110 <O>=0.999
+[      8s]    [scan N=3 k=12] c= 0.80 dE=0.17974 <O>=0.994
+[      8s]    [scan N=3 k=12] c= 0.85 dE=0.17843 <O>=0.988
+[      8s]    [scan N=3 k=12] c= 0.90 dE=0.17710 <O>=0.977
+[      9s]    [scan N=3 k=12] c= 0.95 dE=0.17587 <O>=0.968
+[      9s]    [scan N=3 k=12] c= 1.00 dE=0.17465 <O>=0.957
+[      9s]    [scan N=3 k=12] c= 1.05 dE=0.17339 <O>=0.944
+[      9s]    [scan N=3 k=12] c= 1.10 dE=0.17205 <O>=0.927
+[      9s]    [scan N=3 k=12] c= 1.15 dE=0.17055 <O>=0.903
+[      9s]    [scan N=3 k=12] c= 1.20 dE=0.16879 <O>=0.872
+[      9s]    [scan N=3 k=12] c= 1.25 dE=0.16659 <O>=0.828
+[      9s]    [scan N=3 k=12] c= 1.30 dE=0.16367 <O>=0.770
+[      9s]    [refine N=3 k=12] c= 1.18 <O>=0.886 no doublet
+[     10s]    [refine N=3 k=12] c= 1.19 <O>=0.879 no doublet
+[     10s]    [refine N=3 k=12] c= 1.20 <O>=0.872 no doublet
+[     10s]    [refine N=3 k=12] c= 1.21 <O>=0.864 no doublet
+[     10s]    [refine N=3 k=12] c= 1.22 <O>=0.856 no doublet
+[     10s]    [refine N=3 k=12] c= 1.23 <O>=0.847 no doublet
+[     10s]    [refine N=3 k=12] c= 1.24 <O>=0.838 no doublet
+[     10s]    [refine N=3 k=12] c= 1.25 <O>=0.828 no doublet
+[     10s]    [refine N=3 k=12] c= 1.26 <O>=0.818 no doublet
+[     10s]    [refine N=3 k=12] c= 1.27 <O>=0.807 no doublet
+[     10s]    [refine N=3 k=12] c= 1.28 <O>=0.795 no doublet
+[     11s]    [refine N=3 k=12] c= 1.29 <O>=0.783 no doublet
+[     11s]    [refine N=3 k=12] c= 1.30 <O>=0.770 no doublet
+[     11s]    [refine N=3 k=12] c= 1.31 <O>=0.756 no doublet
+[     11s]    [refine N=3 k=12] c= 1.32 <O>=0.741 no doublet
+[     11s]    [refine N=3 k=12] c= 1.33 <O>=0.726 no doublet
+[     11s]    [refine N=3 k=12] c= 1.34 <O>=0.710 no doublet
+[     11s]    [refine N=3 k=12] c= 1.35 <O>=0.693 dE=0.31687
+[     11s]    [refine N=3 k=12] c= 1.36 <O>=0.676 dE=0.31570
+[     11s]    [refine N=3 k=12] c= 1.37 <O>=0.658 dE=0.31506
+[     11s]    [refine N=3 k=12] c= 1.38 <O>=0.640 dE=0.31497
+[     12s]    [refine N=3 k=12] c= 1.39 <O>=0.621 dE=0.31544
+[     12s]    [refine N=3 k=12] c= 1.40 <O>=0.602 dE=0.31650
+[     12s]    [refine N=3 k=12] c= 1.41 <O>=0.583 dE=0.11322
+[     12s]    [refine N=3 k=12] c= 1.42 <O>=0.563 dE=0.10761
+[     12s] [N=3 k=12] c*=1.420 dE=0.107613 <O>_gs=0.563 doublet=(4,7) start=21_2  overlap on doublet: product 0.4467, interacting 0.5983
+[     12s]       start energy above E0: product 2.704, interacting 0.576 (band of the lowest 8 levels: 0.575); weight on those levels: product 0.685, interacting 0.931; main levels of the interacting start: #0(E-E0=0.000, w=0.067) #3(E-E0=0.264, w=0.257) #4(E-E0=0.467, w=0.367) #7(E-E0=0.575, w=0.232)
+N=3 k=12 A=6: c*=1.42 <O>_gs=0.563 dE=0.1076 overlap 0.598 (product 0.447) doublet [4, 7] ok=True levels-E0 [0.0, 0.1523, 0.242, 0.2638, 0.4671, 0.4727, 0.5522, 0.5747]
+[     12s]    [scan N=3 k=12] c= 0.00 dE=0.14273 <O>=1.138
+[     12s]    [scan N=3 k=12] c= 0.05 dE=0.13560 <O>=1.096
+[     13s]    [scan N=3 k=12] c= 0.10 dE=0.13043 <O>=1.070
+[     13s]    [scan N=3 k=12] c= 0.15 dE=0.12655 <O>=1.054
+[     13s]    [scan N=3 k=12] c= 0.20 dE=0.12352 <O>=1.042
+[     13s]    [scan N=3 k=12] c= 0.25 dE=0.12109 <O>=1.034
+[     13s]    [scan N=3 k=12] c= 0.30 dE=0.11907 <O>=1.028
+[     13s]    [scan N=3 k=12] c= 0.35 dE=0.11737 <O>=1.023
+[     13s]    [scan N=3 k=12] c= 0.40 dE=0.11591 <O>=1.019
+[     13s]    [scan N=3 k=12] c= 0.45 dE=0.11462 <O>=1.016
+[     14s]    [scan N=3 k=12] c= 0.50 dE=0.11348 <O>=1.013
+[     14s]    [scan N=3 k=12] c= 0.55 dE=0.12671 <O>=1.010
+[     14s]    [scan N=3 k=12] c= 0.60 dE=0.12582 <O>=1.008
+[     14s]    [scan N=3 k=12] c= 0.65 dE=0.12500 <O>=1.006
+[     14s]    [scan N=3 k=12] c= 0.70 dE=0.14342 <O>=1.004
+[     14s]    [scan N=3 k=12] c= 0.75 dE=0.14273 <O>=1.002
+[     14s]    [scan N=3 k=12] c= 0.80 dE=0.14206 <O>=0.999
+[     14s]    [scan N=3 k=12] c= 0.85 dE=0.14128 <O>=0.996
+[     14s]    [scan N=3 k=12] c= 0.90 dE=0.14062 <O>=0.993
+[     15s]    [scan N=3 k=12] c= 0.95 dE=0.13994 <O>=0.990
+[     15s]    [scan N=3 k=12] c= 1.00 dE=0.13924 <O>=0.986
+[     15s]    [scan N=3 k=12] c= 1.05 dE=0.13846 <O>=0.981
+[     15s]    [scan N=3 k=12] c= 1.10 dE=0.13758 <O>=0.974
+[     15s]    [scan N=3 k=12] c= 1.15 dE=0.13652 <O>=0.964
+[     15s]    [scan N=3 k=12] c= 1.20 dE=0.13513 <O>=0.950
+[     15s]    [scan N=3 k=12] c= 1.25 dE=0.13315 <O>=0.928
+[     15s]    [scan N=3 k=12] c= 1.30 dE=0.13007 <O>=0.891
+[     15s]    [scan N=3 k=12] c= 1.35 dE=0.12495 <O>=0.827
+[     16s]    [scan N=3 k=12] c= 1.40 dE=0.11659 <O>=0.717
+[     16s]    [refine N=3 k=12] c= 1.28 <O>=0.909 dE=0.22196
+[     16s]    [refine N=3 k=12] c= 1.29 <O>=0.901 dE=0.22273
+[     16s]    [refine N=3 k=12] c= 1.30 <O>=0.891 dE=0.22486
+[     16s]    [refine N=3 k=12] c= 1.31 <O>=0.881 dE=0.22831
+[     16s]    [refine N=3 k=12] c= 1.32 <O>=0.870 dE=0.23302
+[     16s]    [refine N=3 k=12] c= 1.33 <O>=0.857 dE=0.23890
+[     16s]    [refine N=3 k=12] c= 1.34 <O>=0.843 dE=0.24807
+[     16s]    [refine N=3 k=12] c= 1.35 <O>=0.827 dE=0.24063
+[     16s]    [refine N=3 k=12] c= 1.36 <O>=0.809 dE=0.23391
+[     17s]    [refine N=3 k=12] c= 1.37 <O>=0.790 dE=0.22802
+[     17s]    [refine N=3 k=12] c= 1.38 <O>=0.768 dE=0.22304
+[     17s]    [refine N=3 k=12] c= 1.39 <O>=0.743 dE=0.07581
+[     17s]    [refine N=3 k=12] c= 1.40 <O>=0.717 dE=0.06910
+[     17s]    [refine N=3 k=12] c= 1.41 <O>=0.688 dE=0.06454
+[     17s]    [refine N=3 k=12] c= 1.42 <O>=0.657 dE=0.06280
+[     17s]    [refine N=3 k=12] c= 1.43 <O>=0.624 dE=0.06429
+[     17s]    [refine N=3 k=12] c= 1.44 <O>=0.590 dE=0.06896
+[     17s]    [refine N=3 k=12] c= 1.45 <O>=0.555 dE=0.07635
+[     18s]    [refine N=3 k=12] c= 1.46 <O>=0.520 dE=0.18857
+[     18s]    [refine N=3 k=12] c= 1.47 <O>=0.485 dE=0.19106
+[     18s]    [refine N=3 k=12] c= 1.48 <O>=0.451 dE=0.19445
+[     18s]    [refine N=3 k=12] c= 1.49 <O>=0.418 dE=0.19870
+[     18s]    [refine N=3 k=12] c= 1.50 <O>=0.386 dE=0.20374
+[     18s]    [refine N=3 k=12] c= 1.51 <O>=0.357 dE=0.20947
+[     18s]    [refine N=3 k=12] c= 1.52 <O>=0.329 dE=0.21575
+[     18s] [N=3 k=12] c*=1.470 dE=0.191059 <O>_gs=0.485 doublet=(0,3) start=21_1  overlap on doublet: product 0.6695, interacting 0.9345
+[     18s]       start energy above E0: product 2.528, interacting 0.197 (band of the lowest 8 levels: 0.430); weight on those levels: product 0.708, interacting 0.983; main levels of the interacting start: #0(E-E0=0.000, w=0.420) #3(E-E0=0.191, w=0.515) #6(E-E0=0.352, w=0.037) #7(E-E0=0.430, w=0.007)
+N=3 k=12 A=8: c*=1.47 <O>_gs=0.485 dE=0.1911 overlap 0.935 (product 0.669) doublet [0, 3] ok=True levels-E0 [0.0, 0.1005, 0.1523, 0.1911, 0.33, 0.3327, 0.3522, 0.4296]
+[     19s]    [scan N=3 k=12] c= 0.00 dE=0.12735 <O>=1.060
+[     19s]    [scan N=3 k=12] c= 0.05 dE=0.12466 <O>=1.040
+[     19s]    [scan N=3 k=12] c= 0.10 dE=0.12282 <O>=1.029
+[     19s]    [scan N=3 k=12] c= 0.15 dE=0.12146 <O>=1.022
+[     19s]    [scan N=3 k=12] c= 0.20 dE=0.12038 <O>=1.018
+[     19s]    [scan N=3 k=12] c= 0.25 dE=0.11950 <O>=1.015
+[     19s]    [scan N=3 k=12] c= 0.30 dE=0.11876 <O>=1.012
+[     19s]    [scan N=3 k=12] c= 0.35 dE=0.11813 <O>=1.010
+[     20s]    [scan N=3 k=12] c= 0.40 dE=0.11757 <O>=1.009
+[     20s]    [scan N=3 k=12] c= 0.45 dE=0.11708 <O>=1.007
+[     20s]    [scan N=3 k=12] c= 0.50 dE=0.11663 <O>=1.006
+[     20s]    [scan N=3 k=12] c= 0.55 dE=0.11621 <O>=1.005
+[     20s]    [scan N=3 k=12] c= 0.60 dE=0.11583 <O>=1.004
+[     20s]    [scan N=3 k=12] c= 0.65 dE=0.11547 <O>=1.003
+[     20s]    [scan N=3 k=12] c= 0.70 dE=0.11512 <O>=1.003
+[     20s]    [scan N=3 k=12] c= 0.75 dE=0.11479 <O>=1.002
+[     20s]    [scan N=3 k=12] c= 0.80 dE=0.11446 <O>=1.001
+[     21s]    [scan N=3 k=12] c= 0.85 dE=0.11413 <O>=1.000
+[     21s]    [scan N=3 k=12] c= 0.90 dE=0.11380 <O>=0.999
+[     21s]    [scan N=3 k=12] c= 0.95 dE=0.11346 <O>=0.998
+[     21s]    [scan N=3 k=12] c= 1.00 dE=0.11311 <O>=0.996
+[     21s]    [scan N=3 k=12] c= 1.05 dE=0.11271 <O>=0.994
+[     21s]    [scan N=3 k=12] c= 1.10 dE=0.11227 <O>=0.992
+[     21s]    [scan N=3 k=12] c= 1.15 dE=0.11172 <O>=0.988
+[     21s]    [scan N=3 k=12] c= 1.20 dE=0.11101 <O>=0.983
+[     22s]    [scan N=3 k=12] c= 1.25 dE=0.11045 <O>=0.975
+[     22s]    [scan N=3 k=12] c= 1.30 dE=0.10871 <O>=0.961
+[     22s]    [scan N=3 k=12] c= 1.35 dE=0.10531 <O>=0.933
+[     22s]    [scan N=3 k=12] c= 1.40 dE=0.09912 <O>=0.862
+[     22s]    [scan N=3 k=12] c= 1.45 dE=0.08187 <O>=0.691
+[     22s]    [refine N=3 k=12] c= 1.33 <O>=0.947 dE=0.12433
+[     22s]    [refine N=3 k=12] c= 1.34 <O>=0.940 dE=0.12222
+[     23s]    [refine N=3 k=12] c= 1.35 <O>=0.933 dE=0.12179
+[     23s]    [refine N=3 k=12] c= 1.36 <O>=0.924 dE=0.12295
+[     23s]    [refine N=3 k=12] c= 1.37 <O>=0.910 dE=0.12906
+[     23s]    [refine N=3 k=12] c= 1.38 <O>=0.897 dE=0.13302
+[     23s]    [refine N=3 k=12] c= 1.39 <O>=0.882 dE=0.04353
+[     23s]    [refine N=3 k=12] c= 1.40 <O>=0.862 dE=0.03975
+[     23s]    [refine N=3 k=12] c= 1.41 <O>=0.839 dE=0.04103
+[     23s]    [refine N=3 k=12] c= 1.42 <O>=0.811 dE=0.04741
+[     24s]    [refine N=3 k=12] c= 1.43 <O>=0.778 dE=0.14032
+[     24s]    [refine N=3 k=12] c= 1.44 <O>=0.738 dE=0.13871
+[     24s]    [refine N=3 k=12] c= 1.45 <O>=0.691 dE=0.13294
+[     24s]    [refine N=3 k=12] c= 1.46 <O>=0.638 dE=0.12867
+[     24s]    [refine N=3 k=12] c= 1.47 <O>=0.581 dE=0.12613
+[     24s]    [refine N=3 k=12] c= 1.48 <O>=0.520 dE=0.12546
+[     24s]    [refine N=3 k=12] c= 1.49 <O>=0.459 dE=0.12669
+[     24s]    [refine N=3 k=12] c= 1.50 <O>=0.401 dE=0.12976
+[     25s]    [refine N=3 k=12] c= 1.51 <O>=0.348 dE=0.13443
+[     25s]    [refine N=3 k=12] c= 1.52 <O>=0.282 dE=0.14708
+[     25s]    [refine N=3 k=12] c= 1.53 <O>=0.245 dE=0.15447
+[     25s]    [refine N=3 k=12] c= 1.54 <O>=0.213 dE=0.04846
+[     25s]    [refine N=3 k=12] c= 1.55 <O>=0.187 dE=0.04396
+[     25s]    [refine N=3 k=12] c= 1.56 <O>=0.165 dE=0.04448
+[     25s]    [refine N=3 k=12] c= 1.57 <O>=0.146 dE=0.05017
+[     25s] [N=3 k=12] c*=1.480 dE=0.125455 <O>_gs=0.520 doublet=(0,3) start=21_1  overlap on doublet: product 0.6777, interacting 0.9600
+[     25s]       start energy above E0: product 2.611, interacting 0.107 (band of the lowest 8 levels: 0.312); weight on those levels: product 0.701, interacting 0.991; main levels of the interacting start: #0(E-E0=0.000, w=0.489) #3(E-E0=0.125, w=0.471) #5(E-E0=0.228, w=0.001) #6(E-E0=0.232, w=0.030)
+N=3 k=12 A=10: c*=1.48 <O>_gs=0.520 dE=0.1255 overlap 0.960 (product 0.678) doublet [0, 3] ok=True levels-E0 [0.0, 0.0688, 0.0976, 0.1255, 0.2249, 0.2278, 0.2321, 0.3122]
+[     26s]    [scan N=3 k=12] c= 0.00 dE=0.10139 <O>=1.028
+[     26s]    [scan N=3 k=12] c= 0.05 dE=0.10023 <O>=1.018
+[     26s]    [scan N=3 k=12] c= 0.10 dE=0.09949 <O>=1.013
+[     26s]    [scan N=3 k=12] c= 0.15 dE=0.09895 <O>=1.010
+[     26s]    [scan N=3 k=12] c= 0.20 dE=0.09854 <O>=1.008
+[     26s]    [scan N=3 k=12] c= 0.25 dE=0.09820 <O>=1.007
+[     26s]    [scan N=3 k=12] c= 0.30 dE=0.09793 <O>=1.006
+[     27s]    [scan N=3 k=12] c= 0.35 dE=0.09770 <O>=1.005
+[     27s]    [scan N=3 k=12] c= 0.40 dE=0.09750 <O>=1.004
+[     27s]    [scan N=3 k=12] c= 0.45 dE=0.09732 <O>=1.004
+[     27s]    [scan N=3 k=12] c= 0.50 dE=0.09716 <O>=1.003
+[     27s]    [scan N=3 k=12] c= 0.55 dE=0.09701 <O>=1.003
+[     27s]    [scan N=3 k=12] c= 0.60 dE=0.09687 <O>=1.002
+[     27s]    [scan N=3 k=12] c= 0.65 dE=0.09673 <O>=1.002
+[     27s]    [scan N=3 k=12] c= 0.70 dE=0.09659 <O>=1.002
+[     28s]    [scan N=3 k=12] c= 0.75 dE=0.09646 <O>=1.001
+[     28s]    [scan N=3 k=12] c= 0.80 dE=0.09633 <O>=1.001
+[     28s]    [scan N=3 k=12] c= 0.85 dE=0.09619 <O>=1.000
+[     28s]    [scan N=3 k=12] c= 0.90 dE=0.09604 <O>=1.000
+[     28s]    [scan N=3 k=12] c= 0.95 dE=0.09589 <O>=0.999
+[     28s]    [scan N=3 k=12] c= 1.00 dE=0.09572 <O>=0.999
+[     28s]    [scan N=3 k=12] c= 1.05 dE=0.09554 <O>=0.998
+[     28s]    [scan N=3 k=12] c= 1.10 dE=0.09533 <O>=0.997
+[     28s]    [scan N=3 k=12] c= 1.15 dE=0.09507 <O>=0.996
+[     29s]    [scan N=3 k=12] c= 1.20 dE=0.09474 <O>=0.994
+[     29s]    [scan N=3 k=12] c= 1.25 dE=0.09425 <O>=0.990
+[     29s]    [scan N=3 k=12] c= 1.30 dE=0.09344 <O>=0.985
+[     29s]    [scan N=3 k=12] c= 1.35 dE=0.09177 <O>=0.973
+[     29s]    [scan N=3 k=12] c= 1.40 dE=0.09676 <O>=0.918
+[     29s]    [scan N=3 k=12] c= 1.45 dE=0.06889 <O>=0.723
+[     29s]    [refine N=3 k=12] c= 1.33 <O>=0.979 dE=0.09052
+[     30s]    [refine N=3 k=12] c= 1.34 <O>=0.976 dE=0.08528
+[     30s]    [refine N=3 k=12] c= 1.35 <O>=0.973 dE=0.08301
+[     30s]    [refine N=3 k=12] c= 1.36 <O>=0.970 dE=0.08377
+[     30s]    [refine N=3 k=12] c= 1.37 <O>=0.965 dE=0.08703
+[     30s]    [refine N=3 k=12] c= 1.38 <O>=0.960 dE=0.02841
+[     30s]    [refine N=3 k=12] c= 1.39 <O>=0.953 dE=0.02667
+[     30s]    [refine N=3 k=12] c= 1.40 <O>=0.918 dE=0.03476
+[     30s]    [refine N=3 k=12] c= 1.41 <O>=0.898 dE=0.11228
+[     30s]    [refine N=3 k=12] c= 1.42 <O>=0.872 dE=0.10499
+[     31s]    [refine N=3 k=12] c= 1.43 <O>=0.836 dE=0.10102
+[     31s]    [refine N=3 k=12] c= 1.44 <O>=0.788 dE=0.10082
+[     31s]    [refine N=3 k=12] c= 1.45 <O>=0.723 dE=0.07541
+[     31s]    [refine N=3 k=12] c= 1.46 <O>=0.641 dE=0.08220
+[     31s]    [refine N=3 k=12] c= 1.47 <O>=0.546 dE=0.08324
+[     31s]    [refine N=3 k=12] c= 1.48 <O>=0.445 dE=0.08378
+[     31s]    [refine N=3 k=12] c= 1.49 <O>=0.353 dE=0.08765
+[     31s]    [refine N=3 k=12] c= 1.50 <O>=0.275 dE=0.09439
+[     32s]    [refine N=3 k=12] c= 1.51 <O>=0.215 dE=0.10328
+[     32s]    [refine N=3 k=12] c= 1.52 <O>=0.170 no doublet
+[     32s]    [refine N=3 k=12] c= 1.53 <O>=0.137 no doublet
+[     32s]    [refine N=3 k=12] c= 1.54 <O>=0.112 dE=0.03491
+[     32s]    [refine N=3 k=12] c= 1.55 <O>=0.067 dE=0.03697
+[     32s]    [refine N=3 k=12] c= 1.56 <O>=0.058 dE=0.04053
+[     32s]    [refine N=3 k=12] c= 1.57 <O>=0.051 no doublet
+[     32s] [N=3 k=12] c*=1.470 dE=0.083243 <O>_gs=0.546 doublet=(0,2) start=21_1  overlap on doublet: product 0.6714, interacting 0.9561
+[     32s]       start energy above E0: product 2.725, interacting 0.060 (band of the lowest 8 levels: 0.260); weight on those levels: product 0.701, interacting 0.997; main levels of the interacting start: #0(E-E0=0.000, w=0.532) #2(E-E0=0.083, w=0.424) #3(E-E0=0.084, w=0.025) #6(E-E0=0.194, w=0.011)
+N=3 k=12 A=12: c*=1.47 <O>_gs=0.546 dE=0.0832 overlap 0.956 (product 0.671) doublet [0, 2] ok=True levels-E0 [0.0, 0.0514, 0.0832, 0.0837, 0.1746, 0.1865, 0.1935, 0.2596]
+# exit 0   end 2026-10-06T20:56:39+00:00

@@ -1,0 +1,27 @@
+[      1s] [dynamics N=5 k=12] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[     36s] [N=5 k=12] c=2.92: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[     36s] [N=5 k=12] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the most populated pair (0,5): dE=0.151965, ov=0.0446.  Check <O>_gs ~ 0.5.
+[    165s] [N=5 k=12] c*=2.920 dE=0.151965 <O>_gs=0.479 doublet=(0,5) start=41_1  overlap on doublet: product 0.0446, interacting 0.3546
+[    165s]       start energy above E0: product 14.706, interacting 0.328 (band of the lowest 30 levels: 0.473); weight on those levels: product 0.120, interacting 0.922; main levels of the interacting start: #0(E-E0=0.000, w=0.354) #9(E-E0=0.184, w=0.015) #10(E-E0=0.216, w=0.204) #20(E-E0=0.362, w=0.329)
+[    176s]       [interacting] spectrum [19.7,112.6], T=200, dt=1, 201 snapshots, ~21800 matvecs; 15 cuts (0 skipped: dimension)
+[    249s]       [interacting] t=  10.0  <O>=0.387  elapsed     72s  eta   1377s
+[    319s]       [interacting] t=  20.0  <O>=0.441  elapsed    143s  eta   1285s
+[    389s]       [interacting] t=  30.0  <O>=0.530  elapsed    213s  eta   1208s
+[    458s]       [interacting] t=  40.0  <O>=0.592  elapsed    282s  eta   1126s
+[    524s]       [interacting] t=  50.0  <O>=0.659  elapsed    348s  eta   1043s
+[    590s]       [interacting] t=  60.0  <O>=0.356  elapsed    414s  eta    965s
+[    658s]       [interacting] t=  70.0  <O>=0.505  elapsed    482s  eta    895s
+[    727s]       [interacting] t=  80.0  <O>=0.539  elapsed    551s  eta    827s
+[    798s]       [interacting] t=  90.0  <O>=0.784  elapsed    622s  eta    760s
+[    870s]       [interacting] t= 100.0  <O>=0.352  elapsed    694s  eta    694s
+[    941s]       [interacting] t= 110.0  <O>=0.346  elapsed    764s  eta    625s
+[   1011s]       [interacting] t= 120.0  <O>=0.795  elapsed    835s  eta    557s
+[   1085s]       [interacting] t= 130.0  <O>=0.463  elapsed    908s  eta    489s
+[   1157s]       [interacting] t= 140.0  <O>=0.720  elapsed    981s  eta    420s
+[   1229s]       [interacting] t= 150.0  <O>=0.280  elapsed   1053s  eta    351s
+[   1301s]       [interacting] t= 160.0  <O>=0.431  elapsed   1125s  eta    281s
+[   1374s]       [interacting] t= 170.0  <O>=0.768  elapsed   1198s  eta    211s
+[   1449s]       [interacting] t= 180.0  <O>=0.515  elapsed   1273s  eta    141s
+[   1526s]       [interacting] t= 190.0  <O>=0.472  elapsed   1349s  eta     71s
+[   1602s]       [interacting] t= 200.0  <O>=0.335  elapsed   1425s  eta      0s
+[   1602s] [N=5 k=12] interacting: wrote data/runs/N5_k12_int_c2.920_T200_dt1.npz  <O> in [0.266, 0.997]  (1601s)

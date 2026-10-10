@@ -1,0 +1,47 @@
+# job mps_N3_k6   threads 1   host vm   start 2026-10-06T20:57:52+00:00
+# call: run_mps_case('N3_k6')
+[      1s]    [exact tilt N=3 k=6] c=1.26000 <O>_gs=0.97743
+[      1s]    [exact tilt N=3 k=6] c=2.36000 <O>_gs=0.00919
+[      1s]    [exact tilt N=3 k=6] c=1.81000 <O>_gs=0.00847
+[      1s]    [exact tilt N=3 k=6] c=1.53500 <O>_gs=0.90047
+[      1s]    [exact tilt N=3 k=6] c=1.67250 <O>_gs=0.12609
+[      1s]    [exact tilt N=3 k=6] c=1.60375 <O>_gs=0.67671
+[      1s]    [exact tilt N=3 k=6] c=1.63813 <O>_gs=0.32852
+[      1s]    [exact tilt N=3 k=6] c=1.62094 <O>_gs=0.51071
+[      1s]    [exact tilt N=3 k=6] c=1.62953 <O>_gs=0.41629
+[      2s]    [exact tilt N=3 k=6] c=1.62523 <O>_gs=0.46337
+[      2s]    [exact tilt N=3 k=6] c=1.62309 <O>_gs=0.48710
+[      2s]    [exact tilt N=3 k=6] c=1.62201 <O>_gs=0.49893
+[      2s]    [exact tilt N=3 k=6] c=1.62147 <O>_gs=0.50483
+[      2s]    [exact tilt N=3 k=6] c=1.62174 <O>_gs=0.50188
+[      2s]    [exact tilt N=3 k=6] c=1.62188 <O>_gs=0.50041
+N3_k6: tilt 1.6219 (exact bisection of <O>_gs = 1/2, theta_barrier = 0.5)
+[      2s] [dynamics N=3 k=6] protocol custom: T=60 dt=1 starts=['interacting'] cuts=bonds+pairs
+[      2s] [N=3 k=6] c*=1.622 dE=0.063720 <O>_gs=0.500 doublet=(0,4) start=21_1  overlap on doublet: product 0.5823, interacting 0.8832
+[      2s]       start energy above E0: product 2.280, interacting 0.080 (band of the lowest 8 levels: 0.276); weight on those levels: product 0.631, interacting 0.955; main levels of the interacting start: #0(E-E0=0.000, w=0.500) #3(E-E0=0.031, w=0.000) #4(E-E0=0.064, w=0.383) #7(E-E0=0.276, w=0.071)
+[      2s]       [interacting] spectrum [12.5,32.3], T=60, dt=1, 61 snapshots, ~3300 matvecs; 3 cuts (0 skipped: dimension)
+[      2s]       [interacting] t=  10.0  <O>=0.809  elapsed      0s  eta      0s
+[      2s]       [interacting] t=  20.0  <O>=0.645  elapsed      0s  eta      0s
+[      2s]       [interacting] t=  30.0  <O>=0.311  elapsed      0s  eta      0s
+[      2s]       [interacting] t=  40.0  <O>=0.203  elapsed      0s  eta      0s
+[      2s]       [interacting] t=  50.0  <O>=0.144  elapsed      0s  eta      0s
+[      2s]       [interacting] t=  60.0  <O>=0.179  elapsed      0s  eta      0s
+[      2s] [N=3 k=6] interacting: wrote data/mps/ed_ref/N3_k6_int_c1.622_T60_dt1.npz  <O> in [0.037, 0.988]  (0s)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mpo.py:151: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width=mps_unit_cell_width)
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mpo.py:151: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width=mps_unit_cell_width)
+[      3s] [mps N=3 k=6] start: DMRG 10 sweeps, chi 6, <H> = 12.567847, variance 1.7e-13
+/tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/lib/python3.13/site-packages/tenpy/networks/mpo.py:151: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width=mps_unit_cell_width)
+[      6s]       [N3k6] t=  10.0  <O>=0.809  chi_max=   6  trunc=0.0e+00  elapsed      3s  eta     14s
+[      8s]       [N3k6] t=  20.0  <O>=0.645  chi_max=   6  trunc=0.0e+00  elapsed      5s  eta     11s
+[     11s]       [N3k6] t=  30.0  <O>=0.311  chi_max=   6  trunc=0.0e+00  elapsed      8s  eta      8s
+[     14s]       [N3k6] t=  40.0  <O>=0.203  chi_max=   6  trunc=0.0e+00  elapsed     11s  eta      5s
+[     16s]       [N3k6] t=  50.0  <O>=0.144  chi_max=   6  trunc=0.0e+00  elapsed     13s  eta      3s
+[     19s]       [N3k6] t=  60.0  <O>=0.179  chi_max=   6  trunc=0.0e+00  elapsed     16s  eta      0s
+wrote data/mps/N3_k6_mps_c1.622_T60_dt1_chi120_eps1e-08.npz
+N=3 k=6 c=1.6219 T=60: max |dS| over every cut 1.82e-05 bit, max |d<O>| 5.29e-06
+# exit 0   end 2026-10-06T20:58:11+00:00

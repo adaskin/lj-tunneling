@@ -1,0 +1,25 @@
+[    517s] [dynamics N=3 k=32] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[    526s] [N=3 k=32] c*=1.210 dE=0.196084 <O>_gs=0.568 doublet=(0,1) start=21_1  overlap on doublet: product 0.7457, interacting 0.9592
+[    526s]       start energy above E0: product 2.686, interacting 0.200 (band of the lowest 8 levels: 0.672); weight on those levels: product 0.761, interacting 0.978; main levels of the interacting start: #0(E-E0=0.000, w=0.500) #1(E-E0=0.196, w=0.459) #4(E-E0=0.406, w=0.016) #6(E-E0=0.645, w=0.002)
+[    529s]       [interacting] spectrum [12.6,69.5], T=200, dt=1, 201 snapshots, ~17000 matvecs; 3 cuts (0 skipped: dimension)
+[    542s]       [interacting] t=  10.0  <O>=0.471  elapsed     14s  eta    261s
+[    556s]       [interacting] t=  20.0  <O>=0.369  elapsed     27s  eta    246s
+[    569s]       [interacting] t=  30.0  <O>=0.956  elapsed     41s  eta    232s
+[    591s]       [interacting] t=  40.0  <O>=0.608  elapsed     63s  eta    252s
+[    620s]       [interacting] t=  50.0  <O>=0.297  elapsed     91s  eta    274s
+[    649s]       [interacting] t=  60.0  <O>=0.871  elapsed    121s  eta    281s
+[    679s]       [interacting] t=  70.0  <O>=0.733  elapsed    150s  eta    279s
+[    700s]       [interacting] t=  80.0  <O>=0.279  elapsed    171s  eta    257s
+[    714s]       [interacting] t=  90.0  <O>=0.732  elapsed    185s  eta    227s
+[    728s]       [interacting] t= 100.0  <O>=0.852  elapsed    199s  eta    199s
+[    741s]       [interacting] t= 110.0  <O>=0.312  elapsed    212s  eta    174s
+[    755s]       [interacting] t= 120.0  <O>=0.553  elapsed    226s  eta    151s
+[    769s]       [interacting] t= 130.0  <O>=0.940  elapsed    240s  eta    129s
+[    782s]       [interacting] t= 140.0  <O>=0.398  elapsed    254s  eta    109s
+[    796s]       [interacting] t= 150.0  <O>=0.389  elapsed    267s  eta     89s
+[    809s]       [interacting] t= 160.0  <O>=0.970  elapsed    280s  eta     70s
+[    823s]       [interacting] t= 170.0  <O>=0.539  elapsed    295s  eta     52s
+[    837s]       [interacting] t= 180.0  <O>=0.244  elapsed    309s  eta     34s
+[    851s]       [interacting] t= 190.0  <O>=0.964  elapsed    322s  eta     17s
+[    864s]       [interacting] t= 200.0  <O>=0.680  elapsed    335s  eta      0s
+[    864s] [N=3 k=32] interacting: wrote data/runs/N3_k32_int_c1.210_T200_dt1.npz  <O> in [0.175, 1.000]  (347s)

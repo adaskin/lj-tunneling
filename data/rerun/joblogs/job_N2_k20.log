@@ -1,0 +1,28 @@
+# job N2_k20   threads 1   host vm   start 2026-10-06T20:58:52+00:00
+# call: run_production(2, 20, starts=('interacting',))
+[      1s] [dynamics N=2 k=20] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[      1s] [N=2 k=20] c*=0.700 dE=0.192405 <O>_gs=0.422 doublet=(0,1) start=11_1  overlap on doublet: product 0.9803, interacting 0.9776
+[      1s]       start energy above E0: product 0.170, interacting 0.181 (band of the lowest 4 levels: 0.418); weight on those levels: product 0.990, interacting 0.987; main levels of the interacting start: #0(E-E0=0.000, w=0.372) #1(E-E0=0.192, w=0.606) #2(E-E0=0.279, w=0.000) #3(E-E0=0.418, w=0.010)
+[      1s]       [interacting] spectrum [8.5,32.0], T=200, dt=1, 201 snapshots, ~11800 matvecs; 1 cuts (0 skipped: dimension)
+[      1s]       [interacting] t=  10.0  <O>=0.462  elapsed      0s  eta      3s
+[      1s]       [interacting] t=  20.0  <O>=0.282  elapsed      0s  eta      3s
+[      1s]       [interacting] t=  30.0  <O>=0.953  elapsed      1s  eta      3s
+[      2s]       [interacting] t=  40.0  <O>=0.675  elapsed      1s  eta      3s
+[      2s]       [interacting] t=  50.0  <O>=0.192  elapsed      1s  eta      3s
+[      2s]       [interacting] t=  60.0  <O>=0.821  elapsed      1s  eta      3s
+[      2s]       [interacting] t=  70.0  <O>=0.857  elapsed      1s  eta      2s
+[      2s]       [interacting] t=  80.0  <O>=0.188  elapsed      1s  eta      2s
+[      3s]       [interacting] t=  90.0  <O>=0.642  elapsed      2s  eta      2s
+[      3s]       [interacting] t= 100.0  <O>=0.971  elapsed      2s  eta      2s
+[      3s]       [interacting] t= 110.0  <O>=0.280  elapsed      2s  eta      2s
+[      3s]       [interacting] t= 120.0  <O>=0.449  elapsed      2s  eta      1s
+[      3s]       [interacting] t= 130.0  <O>=0.989  elapsed      2s  eta      1s
+[      3s]       [interacting] t= 140.0  <O>=0.470  elapsed      2s  eta      1s
+[      4s]       [interacting] t= 150.0  <O>=0.312  elapsed      3s  eta      1s
+[      4s]       [interacting] t= 160.0  <O>=0.902  elapsed      3s  eta      1s
+[      4s]       [interacting] t= 170.0  <O>=0.670  elapsed      3s  eta      1s
+[      4s]       [interacting] t= 180.0  <O>=0.256  elapsed      3s  eta      0s
+[      4s]       [interacting] t= 190.0  <O>=0.731  elapsed      3s  eta      0s
+[      4s]       [interacting] t= 200.0  <O>=0.849  elapsed      3s  eta      0s
+[      4s] [N=2 k=20] interacting: wrote data/runs/N2_k20_int_c0.700_T200_dt1.npz  <O> in [0.140, 1.000]  (4s)
+# exit 0   end 2026-10-06T20:58:57+00:00

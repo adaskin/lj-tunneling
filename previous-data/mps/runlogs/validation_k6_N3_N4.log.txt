@@ -1,0 +1,57 @@
+[      2s] [dynamics N=3 k=6] protocol custom: T=60 dt=1 starts=['interacting'] cuts=bonds+pairs
+[      3s] [N=3 k=6] c*=1.621 dE=0.063822 <O>_gs=0.502 doublet=(0,4) start=21_1  overlap on doublet: product 0.5827, interacting 0.8830
+[      3s]       start energy above E0: product 2.279, interacting 0.079 (band of the lowest 8 levels: 0.276); weight on those levels: product 0.631, interacting 0.954; main levels of the interacting start: #0(E-E0=0.000, w=0.507) #3(E-E0=0.031, w=0.000) #4(E-E0=0.064, w=0.376) #7(E-E0=0.276, w=0.071)
+[      3s]       [interacting] spectrum [12.5,32.3], T=60, dt=1, 61 snapshots, ~3300 matvecs; 3 cuts (0 skipped: dimension)
+[      3s]       [interacting] t=  10.0  <O>=0.802  elapsed      0s  eta      0s
+[      3s]       [interacting] t=  20.0  <O>=0.639  elapsed      0s  eta      0s
+[      3s]       [interacting] t=  30.0  <O>=0.306  elapsed      0s  eta      0s
+[      3s]       [interacting] t=  40.0  <O>=0.200  elapsed      0s  eta      0s
+[      3s]       [interacting] t=  50.0  <O>=0.145  elapsed      0s  eta      0s
+[      3s]       [interacting] t=  60.0  <O>=0.179  elapsed      0s  eta      0s
+[      3s] [N=3 k=6] interacting: wrote data/mps/ed_ref/N3_k6_int_c1.621_T60_dt1.npz  <O> in [0.036, 0.982]  (0s)
+[      3s] [mps N=3 k=6] start: DMRG 10 sweeps, chi 6, <H> = 12.568530, variance -1.4e-13
+[      6s]       [N3k6] t=  10.0  <O>=0.802  chi_max=   6  trunc=0.0e+00  elapsed      2s  eta     12s
+[      8s]       [N3k6] t=  20.0  <O>=0.639  chi_max=   6  trunc=0.0e+00  elapsed      5s  eta      9s
+[     10s]       [N3k6] t=  30.0  <O>=0.306  chi_max=   6  trunc=0.0e+00  elapsed      7s  eta      7s
+[     12s]       [N3k6] t=  40.0  <O>=0.200  chi_max=   6  trunc=0.0e+00  elapsed      9s  eta      4s
+[     14s]       [N3k6] t=  50.0  <O>=0.145  chi_max=   6  trunc=0.0e+00  elapsed     11s  eta      2s
+[     17s]       [N3k6] t=  60.0  <O>=0.179  chi_max=   6  trunc=0.0e+00  elapsed     13s  eta      0s
+[     17s] DONE {"N": 3, "k": 6, "status": "ok", "c": 1.6212, "t_ed": 0.4483175277709961, "t_mps": 13.804257154464722, "max_dS_cuts": 1.8153621284211496e-05, "max_dO": 5.770885843858764e-06}
+[     20s] [dynamics N=4 k=6] protocol custom: T=60 dt=1 starts=['interacting'] cuts=bonds+pairs
+[     20s] [N=4 k=6] c=2.455: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[     20s] [N=4 k=6] c*=2.455 dE=0.000195 <O>_gs=0.500 doublet=(0,1) start=31_1  overlap on doublet: product 0.0994, interacting 0.3975
+[     20s]       start energy above E0: product 6.942, interacting 0.158 (band of the lowest 8 levels: 0.041); weight on those levels: product 0.134, interacting 0.600; main levels of the interacting start: #0(E-E0=0.000, w=0.017) #1(E-E0=0.000, w=0.381) #2(E-E0=0.005, w=0.137) #7(E-E0=0.041, w=0.065)
+[     20s]       [interacting] spectrum [16.0,57.1], T=60, dt=1, 61 snapshots, ~4380 matvecs; 7 cuts (0 skipped: dimension)
+[     20s]       [interacting] t=  10.0  <O>=0.538  elapsed      0s  eta      1s
+[     20s]       [interacting] t=  20.0  <O>=0.768  elapsed      0s  eta      0s
+[     20s]       [interacting] t=  30.0  <O>=0.611  elapsed      0s  eta      0s
+[     20s]       [interacting] t=  40.0  <O>=0.605  elapsed      0s  eta      0s
+[     21s]       [interacting] t=  50.0  <O>=0.583  elapsed      1s  eta      0s
+[     21s]       [interacting] t=  60.0  <O>=0.501  elapsed      1s  eta      0s
+[     21s] [N=4 k=6] interacting: wrote data/mps/ed_ref/N4_k6_int_c2.455_T60_dt1.npz  <O> in [0.254, 0.960]  (1s)
+final DMRG state not in canonical form up to norm_tol=1.00e-05: norm_err=6.36e-04
+[     62s] [mps N=4 k=6] start: DMRG 125 sweeps, chi 26, <H> = 16.186124, variance 1.7e-07
+[     70s]       [N4k6] t=  10.0  <O>=0.538  chi_max=  33  trunc=1.6e-07  elapsed      8s  eta     38s
+[     78s]       [N4k6] t=  20.0  <O>=0.768  chi_max=  33  trunc=3.7e-07  elapsed     16s  eta     31s
+[     85s]       [N4k6] t=  30.0  <O>=0.611  chi_max=  34  trunc=5.6e-07  elapsed     23s  eta     23s
+[     93s]       [N4k6] t=  40.0  <O>=0.605  chi_max=  34  trunc=7.5e-07  elapsed     31s  eta     15s
+[    101s]       [N4k6] t=  50.0  <O>=0.583  chi_max=  33  trunc=9.3e-07  elapsed     38s  eta      8s
+[    108s]       [N4k6] t=  60.0  <O>=0.501  chi_max=  34  trunc=1.1e-06  elapsed     46s  eta      0s
+[    108s] DONE {"N": 4, "k": 6, "status": "ok", "c": 2.455, "t_ed": 1.117722988128662, "t_mps": 87.52804970741272, "max_dS_cuts": 0.0007348968760916286, "max_dO": 0.00011268299940969673}
+[    116s] [dynamics N=5 k=6] protocol custom: T=60 dt=1 starts=['interacting'] cuts=bonds+pairs
+[    116s] [N=5 k=6] c=3.1639: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[    117s] [N=5 k=6] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the most populated pair (1,2): dE=0.000076, ov=0.0000.  Check <O>_gs ~ 0.5.
+[    118s] [N=5 k=6] c*=3.164 dE=0.000076 <O>_gs=0.500 doublet=(1,2) start=41_4  overlap on doublet: product 0.0000, interacting 0.0000
+[    118s]       start energy above E0: product 15.552, interacting 1.266 (band of the lowest 30 levels: 0.362); weight on those levels: product 0.001, interacting 0.003; main levels of the interacting start: #5(E-E0=0.025, w=0.000) #20(E-E0=0.271, w=0.002) #24(E-E0=0.283, w=0.000) #29(E-E0=0.362, w=0.000)
+[    118s]       [interacting] spectrum [19.8,84.8], T=60, dt=1, 61 snapshots, ~5400 matvecs; 15 cuts (0 skipped: dimension)
+[    119s]       [interacting] t=  10.0  <O>=0.375  elapsed      1s  eta      4s
+[    120s]       [interacting] t=  20.0  <O>=0.287  elapsed      2s  eta      3s
+[    120s]       [interacting] t=  30.0  <O>=0.366  elapsed      2s  eta      2s
+[    121s]       [interacting] t=  40.0  <O>=0.540  elapsed      3s  eta      2s
+[    134s]       [interacting] t=  50.0  <O>=0.425  elapsed     16s  eta      3s
+[    135s]       [interacting] t=  60.0  <O>=0.406  elapsed     17s  eta      0s
+[    135s] [N=5 k=6] interacting: wrote data/mps/ed_ref/N5_k6_int_c3.164_T60_dt1.npz  <O> in [0.222, 0.751]  (19s)
+final DMRG state not in canonical form up to norm_tol=1.00e-05: norm_err=1.83e-03
+[    499s] [mps N=5 k=6] start: DMRG 216 sweeps, chi 35, <H> = 21.029225, variance 2.2e-07
+[    767s]       [N5k6] t=  10.0  <O>=0.375  chi_max=  36  trunc=0.0e+00  elapsed    267s  eta   1336s
+[   1141s]       [N5k6] t=  20.0  <O>=0.287  chi_max=  36  trunc=0.0e+00  elapsed    642s  eta   1284s

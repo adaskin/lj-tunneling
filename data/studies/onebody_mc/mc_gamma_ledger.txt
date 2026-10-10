@@ -1,0 +1,15 @@
+L 8.0
+ginf 64 2.50000000e-01 52.625039
+ginf 128 1.25000000e-01 210.538710
+ginf 256 6.25000000e-02 842.193391
+ginf 512 3.12500000e-02 3368.812118
+ginf 1024 1.56250000e-02 13475.287025
+ginf 2048 7.81250000e-03 53901.186651
+ginf 4096 3.90625000e-03 215604.785159
+ginf 8192 1.95312500e-03 862419.179189
+ginf 16384 9.76562500e-04 3449676.755308
+ginf 32768 4.88281250e-04 13798707.059785
+ginf 65536 2.44140625e-04 55194828.277691
+p_UV 2.000002
+alpha_UV 1.285083e-02
+verdict Gamma_inf ~ M^2 (p_UV = 2): UV divergence of the spectral Laplacian off-diagonal l1 norm; with M(eps)=Theta(eps^-1/2), ln nu = Omega(t N / eps): position-basis real-time MC excluded by essential singularity in precision.

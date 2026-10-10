@@ -1,0 +1,13 @@
+[    116s] [dynamics N=5 k=6] protocol custom: T=60 dt=1 starts=['interacting'] cuts=bonds+pairs
+[    116s] [N=5 k=6] c=3.1639: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[    117s] [N=5 k=6] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the most populated pair (1,2): dE=0.000076, ov=0.0000.  Check <O>_gs ~ 0.5.
+[    118s] [N=5 k=6] c*=3.164 dE=0.000076 <O>_gs=0.500 doublet=(1,2) start=41_4  overlap on doublet: product 0.0000, interacting 0.0000
+[    118s]       start energy above E0: product 15.552, interacting 1.266 (band of the lowest 30 levels: 0.362); weight on those levels: product 0.001, interacting 0.003; main levels of the interacting start: #5(E-E0=0.025, w=0.000) #20(E-E0=0.271, w=0.002) #24(E-E0=0.283, w=0.000) #29(E-E0=0.362, w=0.000)
+[    118s]       [interacting] spectrum [19.8,84.8], T=60, dt=1, 61 snapshots, ~5400 matvecs; 15 cuts (0 skipped: dimension)
+[    119s]       [interacting] t=  10.0  <O>=0.375  elapsed      1s  eta      4s
+[    120s]       [interacting] t=  20.0  <O>=0.287  elapsed      2s  eta      3s
+[    120s]       [interacting] t=  30.0  <O>=0.366  elapsed      2s  eta      2s
+[    121s]       [interacting] t=  40.0  <O>=0.540  elapsed      3s  eta      2s
+[    134s]       [interacting] t=  50.0  <O>=0.425  elapsed     16s  eta      3s
+[    135s]       [interacting] t=  60.0  <O>=0.406  elapsed     17s  eta      0s
+[    135s] [N=5 k=6] interacting: wrote data/mps/ed_ref/N5_k6_int_c3.164_T60_dt1.npz  <O> in [0.222, 0.751]  (19s)

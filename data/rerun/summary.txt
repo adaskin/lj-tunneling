@@ -1,0 +1,37 @@
+rerun_all.sh   started 2026-10-06T17:50:26+00:00   host vm   cores used by the pool: 4
+git            f874afa8b3392ac5c0681da41b73c8b9969ee4dd  (2 modified tracked files)
+config sha256  981af6b47a477ec15987d6e49f3df39b1ec05b3698dce383e60ea118835eadf6
+python 3.13.16  numpy 2.5.3  scipy 1.18.1  tenpy 1.1.1
+cpu            Intel(R) Xeon(R) Processor @ 2.10GHz   (4 logical, 4 physical)
+
+finished       2026-10-07T09:25:16+00:00   (elapsed 15h34m)
+jobs           job  threads  seconds  exit
+               N2_k12                      1        2  0
+               N2_k16                      1        2  0
+               N2_k20                      1        5  0
+               N3_k12                      1        8  0
+               N3_k16                      1       11  0
+               N3_k20                      1       33  0
+               N3_k24                      1       84  0
+               N3_k28                      1      173  0
+               N3_k32                      1      345  0
+               N4_k12                      1      108  0
+               N4_k16                      1      296  0
+               N4_k20                      1     1112  0
+               N5_k12                      1     1603  0
+               N5_k16                      2     8547  0
+               N5_k20                      2    37718  0
+               N6_k12                      2    39532  0
+               control_N5_offres           1     1581  0
+               dt_scan_N3                  1       13  0
+               dt_scan_N4                  1      208  0
+               fullgrid_N2                 1      135  0
+               fullgrid_resonance          1      602  0
+               mps_N3_k6                   1       19  0
+               mps_N4_k12                  2     2173  0
+               mps_N4_k6                   1      100  0
+               mps_N5_k6                   2      493  0
+               parameter_scan_N3           1       33  0
+               parameter_scan_N4           1      187  0
+               tier1_parameter_map         2     1960  0
+check          exit 0;  post-processing steps failed: 1;  paper: see log

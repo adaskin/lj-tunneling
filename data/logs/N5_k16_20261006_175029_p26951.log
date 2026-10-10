@@ -1,0 +1,2 @@
+[      1s] [dynamics N=5 k=16] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[    232s] [N=5 k=16] c=2.72: NO clean doublet among the lowest levels; using levels (0,1) for dE

@@ -1,0 +1,263 @@
+[17:49:53] == rerun_all.sh: Theta(x=0) rerun, 2026-10-06 17:49:53 ==
+[17:49:53] preflight: python 3.13.16  at /tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/bin/python3;  bash 5.2.21(1)-release;  4 cores for the pool
+[17:49:55] preflight: config theta_barrier = 0.5
+[17:49:55] preflight: 28 GB free
+[17:49:55] preflight: git 2c30e74, 0 modified tracked files
+[17:49:55] preflight: pdflatex NOT found: the PDF will not be built (numbers.tex, tables and figures are)
+[17:49:55] tests: tests/test_numerics.py (~15 s) and tests/test_mps.py (~1 min)
+[17:50:26] plan:
+   job                    thr    start      end   (hours, estimate)
+   N5_k16                   2     0.00     2.00
+   tier1_parameter_map      2     0.00     0.92
+   mps_N4_k12               2     0.92     1.69
+   N5_k12                   1     1.69     2.02
+   control_N5_offres        1     1.69     2.02
+   N4_k20                   1     2.00     2.21
+   fullgrid_resonance       1     2.00     2.13
+   N3_k32                   1     2.02     2.09
+   N4_k16                   1     2.02     2.08
+   parameter_scan_N4        1     2.08     2.14
+   N4_k12                   1     2.09     2.15
+   dt_scan_N4               1     2.13     2.18
+   mps_N4_k6                1     2.14     2.18
+   N3_k28                   1     2.15     2.18
+   N3_k24                   1     2.18     2.19
+   parameter_scan_N3        1     2.18     2.19
+   fullgrid_N2              1     2.18     2.20
+   N3_k20                   1     2.19     2.20
+   mps_N3_k6                1     2.19     2.20
+   dt_scan_N3               1     2.20     2.21
+   N3_k16                   1     2.20     2.20
+   N3_k12                   1     2.20     2.20
+   N2_k20                   1     2.20     2.21
+   N2_k16                   1     2.20     2.21
+   N2_k12                   1     2.21     2.21
+   mps_N5_k6                2     2.21     2.40
+   N6_k12                   2     2.21    11.21
+   N5_k20                   2     2.40    11.25
+   28 jobs, 44.9 core-hours, estimated wall time of the pool 11.2 h on 4 cores at speed x1.3 (the longest jobs set it: extra cores beyond what they and the short jobs can use do not shorten it)
+[17:50:27] archive: 70 items moved to data/archive/theta_left (1.1M)
+[17:50:28] pool: 28 jobs (0 already done), 4 cores; the longest start first
+[17:50:28] start  N5_k16  (2 threads, est 2.6 h)   [2/4 threads in use]
+[17:50:28] start  tier1_parameter_map  (2 threads, est 1.2 h)   [4/4 threads in use]
+[18:54:04] == resume (started 2026-10-06 17:50:26) ==
+[18:54:04] preflight: python 3.13.16  at /tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/bin/python3;  bash 5.2.21(1)-release;  4 cores for the pool
+[18:54:07] preflight: config theta_barrier = 0.5
+[18:54:07] preflight: 28 GB free
+[18:54:07] preflight: git 9b6d5ae, 4 modified tracked files
+[18:54:07] preflight: pdflatex NOT found: the PDF will not be built (numbers.tex, tables and figures are)
+[18:54:08] pool: 28 jobs (0 already done), 4 cores; the longest start first
+[18:54:08] start  N5_k16  (2 threads, est 2.6 h)   [2/4 threads in use]
+[18:54:08] start  tier1_parameter_map  (2 threads, est 1.2 h)   [4/4 threads in use]
+[19:14:11] heartbeat: elapsed 20m03s, 2 running, 26 waiting
+         N5_k16: [    863s]       [interacting] spectrum [19.9,124.8], T=200, dt=1, 201 snapshots, ~23400 matvecs; 15 cuts (0 s
+         tier1_parameter_map: {"label": "eps=4", "A": 8.0, "wy": 2.0, "eps": 4.0, "sig": 0.18, "C0": 0.15, "cap": 100.0, "c_star": 0.4007568
+[19:26:52] done   tier1_parameter_map  in 32m40s
+[19:26:52] start  mps_N4_k12  (2 threads, est 1.0 h)   [4/4 threads in use]
+[19:34:13] heartbeat: elapsed 40m04s, 2 running, 25 waiting
+         N5_k16: [   2075s]       [interacting] t=  30.0  <O>=0.942  elapsed   1212s  eta   6868s
+         mps_N4_k12:   super().__init__(sites, bc, unit_cell_width=mps_unit_cell_width)
+[19:54:15] heartbeat: elapsed 1h00m, 2 running, 25 waiting
+         N5_k16: [   3234s]       [interacting] t=  60.0  <O>=0.785  elapsed   2371s  eta   5533s
+         mps_N4_k12: [   1374s]       [N4k12] t=  20.0  <O>=0.381  chi_max=  64  trunc=3.4e-03  elapsed    810s  eta    810s
+[20:03:05] done   mps_N4_k12  in 36m13s
+[20:03:05] start  N5_k12  (1 threads, est 0.42 h)   [3/4 threads in use]
+[20:03:05] start  control_N5_offres  (1 threads, est 0.42 h)   [4/4 threads in use]
+[20:14:17] heartbeat: elapsed 1h20m, 3 running, 23 waiting
+         N5_k16: [   4736s]       [interacting] t= 100.0  <O>=0.420  elapsed   3873s  eta   3873s
+         N5_k12: [    658s]       [interacting] t=  70.0  <O>=0.505  elapsed    482s  eta    895s
+         control_N5_offres: [    640s]       [interacting] t=  70.0  <O>=0.907  elapsed    485s  eta    901s
+[20:29:28] done   control_N5_offres  in 26m21s
+[20:29:28] start  N4_k20  (1 threads, est 0.27 h)   [4/4 threads in use]
+[20:29:48] done   N5_k12  in 26m43s
+[20:29:48] start  fullgrid_resonance  (1 threads, est 0.17 h)   [4/4 threads in use]
+[20:34:19] heartbeat: elapsed 1h40m, 3 running, 21 waiting
+         N5_k16: [   5896s]       [interacting] t= 130.0  <O>=0.575  elapsed   5033s  eta   2710s
+         N4_k20: [    246s]       [interacting] t=  40.0  <O>=0.384  elapsed    219s  eta    877s
+         fullgrid_resonance: [    149s]    [fullgrid] c=0.20000  <O>_gs=0.9582  dE=0.252271  (148s)
+[20:39:54] done   fullgrid_resonance  in 10m02s
+[20:39:54] start  N3_k32  (1 threads, est 0.1 h)   [4/4 threads in use]
+[20:45:45] done   N3_k32  in 5m45s
+[20:45:45] start  N4_k16  (1 threads, est 0.08 h)   [4/4 threads in use]
+[20:48:00] done   N4_k20  in 18m32s
+[20:48:00] start  parameter_scan_N4  (1 threads, est 0.08 h)   [4/4 threads in use]
+[20:50:46] done   N4_k16  in 4m56s
+[20:50:46] start  N4_k12  (1 threads, est 0.07 h)   [4/4 threads in use]
+[20:51:11] done   parameter_scan_N4  in 3m07s
+[20:51:11] start  dt_scan_N4  (1 threads, est 0.07 h)   [4/4 threads in use]
+[20:52:36] done   N4_k12  in 1m48s
+[20:52:36] start  mps_N4_k6  (1 threads, est 0.05 h)   [4/4 threads in use]
+[20:54:21] done   mps_N4_k6  in 1m40s
+[20:54:21] heartbeat: elapsed 2h00m, 3 running, 15 waiting
+         N5_k16: [   7028s]       [interacting] t= 160.0  <O>=0.616  elapsed   6166s  eta   1541s
+         dt_scan_N4: [    185s]       [interacting] t=  40.0  <O>=0.713  elapsed      6s  eta     23s
+[20:54:21] start  N3_k28  (1 threads, est 0.04 h)   [4/4 threads in use]
+[20:54:41] done   dt_scan_N4  in 3m28s
+[20:54:41] start  N3_k24  (1 threads, est 0.02 h)   [4/4 threads in use]
+[20:56:06] done   N3_k24  in 1m24s
+[20:56:06] start  parameter_scan_N3  (1 threads, est 0.02 h)   [4/4 threads in use]
+[20:56:41] done   parameter_scan_N3  in 0m33s
+[20:56:41] start  fullgrid_N2  (1 threads, est 0.02 h)   [4/4 threads in use]
+[20:57:17] done   N3_k28  in 2m53s
+[20:57:17] start  N3_k20  (1 threads, est 0.01 h)   [4/4 threads in use]
+[20:57:52] done   N3_k20  in 0m33s
+[20:57:52] start  mps_N3_k6  (1 threads, est 0.01 h)   [4/4 threads in use]
+[20:58:12] done   mps_N3_k6  in 0m19s
+[20:58:12] start  dt_scan_N3  (1 threads, est 0.01 h)   [4/4 threads in use]
+[20:58:27] done   dt_scan_N3  in 0m13s
+[20:58:27] start  N3_k16  (1 threads, est 0.005 h)   [4/4 threads in use]
+[20:58:42] done   N3_k16  in 0m11s
+[20:58:42] start  N3_k12  (1 threads, est 0.005 h)   [4/4 threads in use]
+[20:58:52] done   N3_k12  in 0m08s
+[20:58:52] start  N2_k20  (1 threads, est 0.002 h)   [4/4 threads in use]
+[20:58:57] done   fullgrid_N2  in 2m15s
+[20:58:57] done   N2_k20  in 0m05s
+[20:58:57] start  mps_N5_k6  (2 threads, est 0.25 h)   [4/4 threads in use]
+[21:07:13] done   mps_N5_k6  in 8m13s
+[21:07:13] start  N2_k16  (1 threads, est 0.002 h)   [3/4 threads in use]
+[21:07:13] start  N2_k12  (1 threads, est 0.002 h)   [4/4 threads in use]
+[21:07:18] done   N2_k16  in 0m02s
+[21:07:18] done   N2_k12  in 0m02s
+[21:07:18] start  N6_k12  (2 threads, est 11.7 h)   [4/4 threads in use]
+[21:14:23] heartbeat: elapsed 2h20m, 2 running, 1 waiting
+         N5_k16: [   8171s]       [interacting] t= 190.0  <O>=0.669  elapsed   7308s  eta    385s
+         N6_k12: [      1s] [dynamics N=6 k=12] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[21:16:39] done   N5_k16  in 2h22m
+[21:16:39] start  N5_k20  (2 threads, est 11.5 h)   [4/4 threads in use]
+[21:34:25] heartbeat: elapsed 2h40m, 2 running, 0 waiting
+         N6_k12: [   1282s] [N=6 k=12] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the 
+         N5_k20: [    520s] [N=5 k=20] c=2.62: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[21:54:27] heartbeat: elapsed 3h00m, 2 running, 0 waiting
+         N6_k12: [   2824s]       [interacting] spectrum [22.7,159.1], T=200, dt=1, 201 snapshots, ~27400 matvecs; 31 cuts (0 s
+         N5_k20: [   2029s]       [interacting] spectrum [20.0,134.7], T=200, dt=1, 201 snapshots, ~24600 matvecs; 15 cuts (0 s
+[22:17:28] == resume (started 2026-10-06 17:50:26) ==
+[22:17:28] preflight: python 3.13.16  at /tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/venv/bin/python3;  bash 5.2.21(1)-release;  4 cores for the pool
+[22:17:33] preflight: config theta_barrier = 0.5
+[22:17:33] preflight: 28 GB free
+[22:17:33] preflight: git f874afa, 1 modified tracked files
+[22:17:33] preflight: pdflatex NOT found: the PDF will not be built (numbers.tex, tables and figures are)
+[22:17:34] pool: 28 jobs (26 already done), 4 cores; the longest start first
+[22:17:34] start  N6_k12  (2 threads, est 11.7 h)   [2/4 threads in use]
+[22:17:34] start  N5_k20  (2 threads, est 11.5 h)   [4/4 threads in use]
+[22:37:36] heartbeat: elapsed 20m02s, 2 running, 0 waiting
+         N6_k12: [   1093s] [N=6 k=12] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the 
+         N5_k20: [    519s] [N=5 k=20] c=2.62: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[22:57:38] heartbeat: elapsed 40m04s, 2 running, 0 waiting
+         N6_k12: [   2389s]       start energy above E0: product 24.707, interacting 0.468 (band of the lowest 16 levels: 0.222
+         N5_k20: [   2071s]       [interacting] spectrum [20.0,134.7], T=200, dt=1, 201 snapshots, ~24600 matvecs; 15 cuts (0 s
+[23:17:40] heartbeat: elapsed 1h00m, 2 running, 0 waiting
+         N6_k12: [   2534s]       [interacting] spectrum [22.7,159.1], T=200, dt=1, 201 snapshots, ~27400 matvecs; 31 cuts (0 s
+         N5_k20: [   2071s]       [interacting] spectrum [20.0,134.7], T=200, dt=1, 201 snapshots, ~24600 matvecs; 15 cuts (0 s
+[23:37:42] heartbeat: elapsed 1h20m, 2 running, 0 waiting
+         N6_k12: [   4444s]       [interacting] t=  10.0  <O>=0.554  elapsed   1910s  eta  36294s
+         N5_k20: [   3911s]       [interacting] t=  10.0  <O>=0.472  elapsed   1840s  eta  34959s
+[23:57:44] heartbeat: elapsed 1h40m, 2 running, 0 waiting
+         N6_k12: [   4444s]       [interacting] t=  10.0  <O>=0.554  elapsed   1910s  eta  36294s
+         N5_k20: [   5751s]       [interacting] t=  20.0  <O>=0.550  elapsed   3680s  eta  33119s
+[00:17:46] heartbeat: elapsed 2h00m, 2 running, 0 waiting
+         N6_k12: [   6332s]       [interacting] t=  20.0  <O>=0.508  elapsed   3798s  eta  34183s
+         N5_k20: [   5751s]       [interacting] t=  20.0  <O>=0.550  elapsed   3680s  eta  33119s
+[00:37:48] heartbeat: elapsed 2h20m, 2 running, 0 waiting
+         N6_k12: [   8224s]       [interacting] t=  30.0  <O>=0.902  elapsed   5690s  eta  32241s
+         N5_k20: [   7582s]       [interacting] t=  30.0  <O>=0.804  elapsed   5511s  eta  31227s
+[00:57:49] heartbeat: elapsed 2h40m, 2 running, 0 waiting
+         N6_k12: [   8224s]       [interacting] t=  30.0  <O>=0.902  elapsed   5690s  eta  32241s
+         N5_k20: [   9422s]       [interacting] t=  40.0  <O>=0.395  elapsed   7350s  eta  29402s
+[01:17:51] heartbeat: elapsed 3h00m, 2 running, 0 waiting
+         N6_k12: [  10143s]       [interacting] t=  40.0  <O>=0.543  elapsed   7609s  eta  30435s
+         N5_k20: [   9422s]       [interacting] t=  40.0  <O>=0.395  elapsed   7350s  eta  29402s
+[01:37:53] heartbeat: elapsed 3h20m, 2 running, 0 waiting
+         N6_k12: [  10143s]       [interacting] t=  40.0  <O>=0.543  elapsed   7609s  eta  30435s
+         N5_k20: [  11288s]       [interacting] t=  50.0  <O>=0.873  elapsed   9217s  eta  27650s
+[01:57:55] heartbeat: elapsed 3h40m, 2 running, 0 waiting
+         N6_k12: [  12075s]       [interacting] t=  50.0  <O>=0.429  elapsed   9541s  eta  28624s
+         N5_k20: [  13164s]       [interacting] t=  60.0  <O>=0.700  elapsed  11093s  eta  25883s
+[02:17:57] heartbeat: elapsed 4h00m, 2 running, 0 waiting
+         N6_k12: [  14032s]       [interacting] t=  60.0  <O>=0.777  elapsed  11498s  eta  26828s
+         N5_k20: [  13164s]       [interacting] t=  60.0  <O>=0.700  elapsed  11093s  eta  25883s
+[02:37:59] heartbeat: elapsed 4h20m, 2 running, 0 waiting
+         N6_k12: [  14032s]       [interacting] t=  60.0  <O>=0.777  elapsed  11498s  eta  26828s
+         N5_k20: [  15042s]       [interacting] t=  70.0  <O>=0.367  elapsed  12971s  eta  24089s
+[02:58:01] heartbeat: elapsed 4h40m, 2 running, 0 waiting
+         N6_k12: [  15981s]       [interacting] t=  70.0  <O>=0.617  elapsed  13447s  eta  24974s
+         N5_k20: [  15042s]       [interacting] t=  70.0  <O>=0.367  elapsed  12971s  eta  24089s
+[03:18:03] heartbeat: elapsed 5h00m, 2 running, 0 waiting
+         N6_k12: [  17925s]       [interacting] t=  80.0  <O>=0.444  elapsed  15391s  eta  23087s
+         N5_k20: [  16922s]       [interacting] t=  80.0  <O>=0.953  elapsed  14851s  eta  22276s
+[03:38:05] heartbeat: elapsed 5h20m, 2 running, 0 waiting
+         N6_k12: [  17925s]       [interacting] t=  80.0  <O>=0.444  elapsed  15391s  eta  23087s
+         N5_k20: [  18793s]       [interacting] t=  90.0  <O>=0.469  elapsed  16722s  eta  20438s
+[03:58:07] heartbeat: elapsed 5h40m, 2 running, 0 waiting
+         N6_k12: [  19850s]       [interacting] t=  90.0  <O>=0.647  elapsed  17316s  eta  21164s
+         N5_k20: [  18793s]       [interacting] t=  90.0  <O>=0.469  elapsed  16722s  eta  20438s
+[04:18:09] heartbeat: elapsed 6h00m, 2 running, 0 waiting
+         N6_k12: [  19850s]       [interacting] t=  90.0  <O>=0.647  elapsed  17316s  eta  21164s
+         N5_k20: [  20647s]       [interacting] t= 100.0  <O>=0.587  elapsed  18576s  eta  18576s
+[04:38:12] heartbeat: elapsed 6h20m, 2 running, 0 waiting
+         N6_k12: [  21783s]       [interacting] t= 100.0  <O>=0.685  elapsed  19249s  eta  19249s
+         N5_k20: [  22687s]       [interacting] t= 110.0  <O>=0.907  elapsed  20615s  eta  16867s
+[04:58:14] heartbeat: elapsed 6h40m, 2 running, 0 waiting
+         N6_k12: [  23849s]       [interacting] t= 110.0  <O>=0.550  elapsed  21315s  eta  17440s
+         N5_k20: [  22687s]       [interacting] t= 110.0  <O>=0.907  elapsed  20615s  eta  16867s
+[05:18:16] heartbeat: elapsed 7h00m, 2 running, 0 waiting
+         N6_k12: [  23849s]       [interacting] t= 110.0  <O>=0.550  elapsed  21315s  eta  17440s
+         N5_k20: [  24395s]       [interacting] t= 120.0  <O>=0.378  elapsed  22324s  eta  14882s
+[05:38:18] heartbeat: elapsed 7h20m, 2 running, 0 waiting
+         N6_k12: [  25453s]       [interacting] t= 120.0  <O>=0.597  elapsed  22919s  eta  15279s
+         N5_k20: [  25951s]       [interacting] t= 130.0  <O>=0.800  elapsed  23880s  eta  12858s
+[05:58:20] heartbeat: elapsed 7h40m, 2 running, 0 waiting
+         N6_k12: [  27098s]       [interacting] t= 130.0  <O>=0.686  elapsed  24565s  eta  13227s
+         N5_k20: [  27561s]       [interacting] t= 140.0  <O>=0.637  elapsed  25490s  eta  10924s
+[06:18:22] heartbeat: elapsed 8h00m, 2 running, 0 waiting
+         N6_k12: [  28832s]       [interacting] t= 140.0  <O>=0.608  elapsed  26298s  eta  11270s
+         N5_k20: [  27561s]       [interacting] t= 140.0  <O>=0.637  elapsed  25490s  eta  10924s
+[06:38:24] heartbeat: elapsed 8h20m, 2 running, 0 waiting
+         N6_k12: [  28832s]       [interacting] t= 140.0  <O>=0.608  elapsed  26298s  eta  11270s
+         N5_k20: [  29228s]       [interacting] t= 150.0  <O>=0.442  elapsed  27157s  eta   9052s
+[06:58:26] heartbeat: elapsed 8h40m, 2 running, 0 waiting
+         N6_k12: [  30558s]       [interacting] t= 150.0  <O>=0.535  elapsed  28024s  eta   9341s
+         N5_k20: [  30891s]       [interacting] t= 160.0  <O>=0.944  elapsed  28820s  eta   7205s
+[07:18:28] heartbeat: elapsed 9h00m, 2 running, 0 waiting
+         N6_k12: [  32335s]       [interacting] t= 160.0  <O>=0.660  elapsed  29801s  eta   7450s
+         N5_k20: [  30891s]       [interacting] t= 160.0  <O>=0.944  elapsed  28820s  eta   7205s
+[07:38:30] heartbeat: elapsed 9h20m, 2 running, 0 waiting
+         N6_k12: [  32335s]       [interacting] t= 160.0  <O>=0.660  elapsed  29801s  eta   7450s
+         N5_k20: [  32586s]       [interacting] t= 170.0  <O>=0.494  elapsed  30515s  eta   5385s
+[07:58:32] heartbeat: elapsed 9h40m, 2 running, 0 waiting
+         N6_k12: [  34110s]       [interacting] t= 170.0  <O>=0.679  elapsed  31576s  eta   5572s
+         N5_k20: [  34279s]       [interacting] t= 180.0  <O>=0.482  elapsed  32208s  eta   3579s
+[08:18:34] heartbeat: elapsed 10h01m, 2 running, 0 waiting
+         N6_k12: [  35907s]       [interacting] t= 180.0  <O>=0.522  elapsed  33373s  eta   3708s
+         N5_k20: [  35986s]       [interacting] t= 190.0  <O>=0.860  elapsed  33914s  eta   1785s
+[08:38:36] heartbeat: elapsed 10h21m, 2 running, 0 waiting
+         N6_k12: [  35907s]       [interacting] t= 180.0  <O>=0.522  elapsed  33373s  eta   3708s
+         N5_k20: [  35986s]       [interacting] t= 190.0  <O>=0.860  elapsed  33914s  eta   1785s
+[08:46:17] done   N5_k20  in 10h28m
+[08:58:37] heartbeat: elapsed 10h41m, 1 running, 0 waiting
+         N6_k12: [  37733s]       [interacting] t= 190.0  <O>=0.607  elapsed  35200s  eta   1853s
+[09:16:28] done   N6_k12  in 10h58m
+[09:16:28] pool finished in 10h58m: 28 of 28 jobs done, 0 not
+[09:16:28] == derive ==
+[09:16:30] step   records  ok (0m02s)
+[09:16:31] step   protocol_tables  ok (0m01s)
+[09:16:32] step   extrapolation  ok (0m01s)
+[09:16:33] step   quantum  ok (0m01s)
+[09:16:36] step   cosine_check  ok (0m03s)
+[09:16:37] step   parameter_choice  ok (0m01s)
+[09:16:37] step   mps_tables with the timing measurement (alone on the idle machine, ~5-10 min)
+[09:24:46] step   mps_tables  ok (8m09s)
+[09:24:47] step   theta_effect  ok (0m01s)
+[09:24:47] == check ==
+   data/runs: 19 expected files, 0 unexpected
+   NOTE: full-grid t0 = 16.3741 at the exact <O>_gs = 1/2 resonance c* = 0.4633; [quantum] t_star_0 = 16.5212 (-0.89 %).  dE depends steeply on c, so t0 depends on the exact c.
+   rerun check: all expected files present, current, in the config convention
+[09:24:48] tests: tests/test_numerics.py (~15 s) and tests/test_mps.py (~1 min)
+[09:25:00] tests failed AFTER the rerun (see data/rerun/joblogs/tests_post.log)
+[09:25:00] == paper ==
+paper: 13/13 hand-written claims confirmed by the data
+[09:25:16] paper: numbers.tex, tab_*.tex and the figures rebuilt
+[09:25:16] paper: \pending markers left in: paper/tab_k.tex(1) 
+[09:25:16] paper: every \num key of the text is defined
+[09:25:16] paper: pdflatex is not installed: paper/main.pdf is the OLD one; compile paper/main.tex elsewhere
+[09:25:16] == summary: data/rerun/summary.txt ==
+[09:25:16] FINISHED WITH PROBLEMS (check: 0, steps failed: 1, paper: 1).  The data are in place; see the logs named above.

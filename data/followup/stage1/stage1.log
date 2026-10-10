@@ -1,0 +1,332 @@
+[      0s] [N=3 k=6] c=1.6219: L=216 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      0s]       correlated: B2=0.883 pair=(0,4) omega*=0.0637 omega*/sqrtN=0.0368 D=0.000 n_between=3 n95=3 -> holds
+[      0s]       wrote data/followup/stage1/N3_k6_c1.6219.npz (0 s)
+[      1s] [N=4 k=6] c=2.4562: L=1296 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      1s]       correlated: B2=0.620 pair=(1,20) omega*=0.2764 omega*/sqrtN=0.1382 D=0.148 n_between=18 n95=8 -> breaks
+[      1s]       wrote data/followup/stage1/N4_k6_c2.4562.npz (0 s)
+[     27s] [N=5 k=6] c=3.1696: L=7776 levels in 26 s (0 H v), coverage correlated 1.0000, product 1.0000
+[     27s]       correlated: B2=0.889 pair=(0,5) omega*=0.0284 omega*/sqrtN=0.0127 D=0.005 n_between=4 n95=9 -> holds+tail
+[     27s]       wrote data/followup/stage1/N5_k6_c3.1696.npz (27 s)
+[      0s] [N=2 k=12] c=0.7000: L=144 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      0s]       reproduction against data/runs/N2_k12_int_c0.700_T200_dt1.npz: max |dw| over 4 levels = 6.77e-13
+[      0s]       correlated: B2=0.976 pair=(0,1) omega*=0.1796 omega*/sqrtN=0.1270 D=0.000 n_between=0 n95=2 -> holds
+[      0s]       wrote data/followup/stage1/N2_k12_c0.7000.npz (0 s)
+[      0s] [N=2 k=16] c=0.7000: L=256 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      0s]       reproduction against data/runs/N2_k16_int_c0.700_T200_dt1.npz: max |dw| over 4 levels = 1.03e-13
+[      0s]       correlated: B2=0.976 pair=(0,1) omega*=0.1849 omega*/sqrtN=0.1307 D=0.000 n_between=0 n95=2 -> holds
+[      0s]       wrote data/followup/stage1/N2_k16_c0.7000.npz (0 s)
+[      0s] [N=2 k=20] c=0.7000: L=400 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      0s]       reproduction against data/runs/N2_k20_int_c0.700_T200_dt1.npz: max |dw| over 4 levels = 1.77e-13
+[      0s]       correlated: B2=0.978 pair=(0,1) omega*=0.1924 omega*/sqrtN=0.1361 D=0.000 n_between=0 n95=2 -> holds
+[      0s]       wrote data/followup/stage1/N2_k20_c0.7000.npz (0 s)
+[      1s] [N=3 k=12] c=1.4600: L=1728 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      1s]       reproduction against data/runs/N3_k12_int_c1.460_T200_dt1.npz: max |dw| over 8 levels = 1.90e-12
+[      1s]       correlated: B2=0.938 pair=(0,3) omega*=0.1886 omega*/sqrtN=0.1089 D=0.000 n_between=2 n95=3 -> holds
+[      1s]       wrote data/followup/stage1/N3_k12_c1.4600.npz (0 s)
+[      5s] [N=3 k=16] c=1.3600: L=4096 levels in 4 s (0 H v), coverage correlated 1.0000, product 1.0000
+[      5s]       reproduction against data/runs/N3_k16_int_c1.360_T200_dt1.npz: max |dw| over 8 levels = 1.80e-12
+[      5s]       correlated: B2=0.952 pair=(0,2) omega*=0.1910 omega*/sqrtN=0.1103 D=0.000 n_between=1 n95=2 -> holds
+[      5s]       wrote data/followup/stage1/N3_k16_c1.3600.npz (5 s)
+[     26s] [N=3 k=20] c=1.3100: L=8000 levels in 21 s (0 H v), coverage correlated 1.0000, product 1.0000
+[     26s]       reproduction against data/runs/N3_k20_int_c1.310_T200_dt1.npz: max |dw| over 8 levels = 1.62e-12
+[     26s]       correlated: B2=0.955 pair=(0,2) omega*=0.1931 omega*/sqrtN=0.1115 D=0.000 n_between=1 n95=2 -> holds
+[     26s]       wrote data/followup/stage1/N3_k20_c1.3100.npz (21 s)
+[     27s] [N=4 k=12] c=2.2600: L=40 levels in 1 s (624 H v), coverage correlated 0.9784, product 0.3344
+[     31s] [N=4 k=12] c=2.2600: L=80 levels in 4 s (1133 H v), coverage correlated 0.9791, product 0.3348
+[     45s] [N=4 k=12] c=2.2600: L=160 levels in 14 s (1925 H v), coverage correlated 0.9838, product 0.5134
+[     85s] [N=4 k=12] c=2.2600: L=320 levels in 40 s (3003 H v), coverage correlated 0.9926, product 0.5488
+[     85s]       reproduction against data/runs/N4_k12_int_c2.260_T200_dt1.npz: max |dw| over 8 levels = 1.26e-10
+[     85s]       correlated: B2=0.668 pair=(0,4) omega*=0.1843 omega*/sqrtN=0.0922 D=0.000 n_between=3 n95=6 -> intermediate
+[     85s]       wrote data/followup/stage1/N4_k12_c2.2600.npz (59 s)
+[     90s] [N=4 k=16] c=2.1400: L=40 levels in 5 s (729 H v), coverage correlated 0.9636, product 0.3587
+[    105s] [N=4 k=16] c=2.1400: L=80 levels in 15 s (1283 H v), coverage correlated 0.9638, product 0.3588
+[    149s] [N=4 k=16] c=2.1400: L=160 levels in 43 s (2042 H v), coverage correlated 0.9723, product 0.5394
+[    285s] [N=4 k=16] c=2.1400: L=320 levels in 137 s (3214 H v), coverage correlated 0.9855, product 0.5537
+[    285s]       reproduction against data/runs/N4_k16_int_c2.140_T200_dt1.npz: max |dw| over 8 levels = 5.29e-12
+[    285s]       correlated: B2=0.845 pair=(0,4) omega*=0.2253 omega*/sqrtN=0.1126 D=0.000 n_between=3 n95=4 -> holds
+[    285s]       wrote data/followup/stage1/N4_k16_c2.1400.npz (200 s)
+[    298s] [N=4 k=20] c=2.0200: L=40 levels in 12 s (756 H v), coverage correlated 0.9648, product 0.3829
+[    334s] [N=4 k=20] c=2.0200: L=80 levels in 36 s (1261 H v), coverage correlated 0.9648, product 0.3829
+[    470s] [N=4 k=20] c=2.0200: L=160 levels in 136 s (2314 H v), coverage correlated 0.9748, product 0.5621
+[    845s] [N=4 k=20] c=2.0200: L=320 levels in 375 s (3608 H v), coverage correlated 0.9858, product 0.5653
+[    845s]       reproduction against data/runs/N4_k20_int_c2.020_T200_dt1.npz: max |dw| over 8 levels = 1.09e-12
+[    845s]       correlated: B2=0.906 pair=(0,4) omega*=0.2177 omega*/sqrtN=0.1089 D=0.000 n_between=3 n95=4 -> holds
+[    845s]       wrote data/followup/stage1/N4_k20_c2.0200.npz (559 s)
+[    902s] [N=5 k=12] c=2.9200: L=40 levels in 53 s (1993 H v), coverage correlated 0.9512, product 0.1249
+[   1008s] [N=5 k=12] c=2.9200: L=80 levels in 106 s (2354 H v), coverage correlated 0.9653, product 0.1272
+[   1379s] [N=5 k=12] c=2.9200: L=160 levels in 371 s (4333 H v), coverage correlated 0.9709, product 0.1285
+[      0s] [N=2 k=12] data/followup/stage1/N2_k12_c0.7000.npz exists: skipped
+[      0s] [N=2 k=16] data/followup/stage1/N2_k16_c0.7000.npz exists: skipped
+[      0s] [N=2 k=20] data/followup/stage1/N2_k20_c0.7000.npz exists: skipped
+[      0s] [N=3 k=12] data/followup/stage1/N3_k12_c1.4600.npz exists: skipped
+[      0s] [N=3 k=16] data/followup/stage1/N3_k16_c1.3600.npz exists: skipped
+[      0s] [N=3 k=20] data/followup/stage1/N3_k20_c1.3100.npz exists: skipped
+[      0s] [N=4 k=12] data/followup/stage1/N4_k12_c2.2600.npz exists: skipped
+[      0s] [N=4 k=16] data/followup/stage1/N4_k16_c2.1400.npz exists: skipped
+[      0s] [N=4 k=16_krylov] exists: skipped
+[      0s] [N=4 k=20] data/followup/stage1/N4_k20_c2.0200.npz exists: skipped
+[      0s] [N=4 k=20_krylov] exists: skipped
+[     61s] [N=5 k=12] c=2.9200: L=40 levels in 57 s (1946 H v), coverage correlated 0.9512, product 0.1249
+[    175s] [N=5 k=12] c=2.9200: L=80 levels in 115 s (2355 H v), coverage correlated 0.9653, product 0.1272
+[    569s] [N=5 k=12] c=2.9200: L=160 levels in 394 s (4328 H v), coverage correlated 0.9709, product 0.1285
+[    569s]       reproduction against data/runs/N5_k12_int_c2.920_T200_dt1.npz: max |dw| over 30 levels = 9.94e-12
+[    569s]       correlated: B2=0.683 pair=(0,20) omega*=0.3617 omega*/sqrtN=0.1618 D=0.204 n_between=19 n95=10 -> unresolved
+[    569s]       wrote data/followup/stage1/N5_k12_c2.9200.npz (569 s)
+[    576s] [N=5 k=12_krylov] interacting: m=500 (3 s): resolved coverage 0.3544 in 27 levels, B2=0.3544 pair=(0,3) omega*=0.07064 D=0.0000 n95=None -> unresolved
+[    582s] [N=5 k=12_krylov] interacting: m=1000 (6 s): resolved coverage 0.9212 in 79 levels, B2=0.6834 pair=(0,20) omega*=0.36171 D=0.2036 n95=None -> unresolved
+[    594s] [N=5 k=12_krylov] interacting: m=2000 (12 s): resolved coverage 0.9501 in 107 levels, B2=0.6834 pair=(0,20) omega*=0.36171 D=0.2036 n95=19 -> unresolved
+[    597s] [N=5 k=12_krylov] product: m=500 (3 s): resolved coverage 0.0446 in 27 levels, B2=0.0446 pair=(0,12) omega*=72.42094 D=0.0000 n95=None -> unresolved
+[    603s] [N=5 k=12_krylov] product: m=1000 (6 s): resolved coverage 0.1210 in 79 levels, B2=0.0904 pair=(0,20) omega*=0.36171 D=0.0255 n95=None -> unresolved
+[    615s] [N=5 k=12_krylov] product: m=2000 (12 s): resolved coverage 0.1254 in 106 levels, B2=0.0904 pair=(0,20) omega*=0.36171 D=0.0255 n95=None -> unresolved
+[    615s]       wrote data/followup/stage1/N5_k12_c2.9200_krylov.npz (46 s)
+[   1036s] [N=5 k=16] c=2.7200: L=40 levels in 395 s (2079 H v), coverage correlated 0.9335, product 0.1427
+[   1775s] [N=5 k=16] c=2.7200: L=80 levels in 739 s (2488 H v), coverage correlated 0.9393, product 0.1438
+[   3733s] [N=5 k=16] c=2.7200: L=160 levels in 1958 s (3829 H v), coverage correlated 0.9421, product 0.1446
+[   3733s]       reproduction against data/runs/N5_k16_int_c2.720_T200_dt1.npz: max |dw| over 30 levels = 1.57e-11
+[   3733s]       correlated: B2=0.780 pair=(0,5) omega*=0.2289 omega*/sqrtN=0.1024 D=0.000 n_between=4 n95=None -> unresolved
+[   3733s]       wrote data/followup/stage1/N5_k16_c2.7200.npz (3118 s)
+[   3793s] [N=5 k=16_krylov] interacting: m=500 (36 s): resolved coverage 0.7803 in 34 levels, B2=0.7803 pair=(0,5) omega*=0.22892 D=0.0001 n95=None -> unresolved
+[   3866s] [N=5 k=16_krylov] interacting: m=1000 (73 s): resolved coverage 0.9325 in 65 levels, B2=0.7803 pair=(0,5) omega*=0.22892 D=0.0001 n95=None -> unresolved
+[   3903s] [N=5 k=16_krylov] product: m=500 (36 s): resolved coverage 0.1172 in 34 levels, B2=0.1172 pair=(0,5) omega*=0.22892 D=0.0000 n95=None -> unresolved
+[   3977s] [N=5 k=16_krylov] product: m=1000 (74 s): resolved coverage 0.1425 in 64 levels, B2=0.1172 pair=(0,5) omega*=0.22892 D=0.0000 n95=None -> unresolved
+[   3977s]       wrote data/followup/stage1/N5_k16_c2.7200_krylov.npz (243 s)
+[   5007s] [N=5 k=20] c=2.6200: L=40 levels in 957 s (2111 H v), coverage correlated 0.9378, product 0.1498
+[   6702s] [N=5 k=20] c=2.6200: L=80 levels in 1695 s (2380 H v), coverage correlated 0.9412, product 0.1507
+[  11553s] [N=5 k=20] c=2.6200: L=160 levels in 4851 s (3902 H v), coverage correlated 0.9426, product 0.1512
+[  11553s]       reproduction against data/runs/N5_k20_int_c2.620_T200_dt1.npz: max |dw| over 30 levels = 2.40e-12
+[  11553s]       correlated: B2=0.812 pair=(0,5) omega*=0.2331 omega*/sqrtN=0.1042 D=0.000 n_between=4 n95=None -> holds
+[  11553s]       wrote data/followup/stage1/N5_k20_c2.6200.npz (7576 s)
+[  11704s] [N=5 k=20_krylov] interacting: m=500 (79 s): resolved coverage 0.8124 in 40 levels, B2=0.8123 pair=(0,5) omega*=0.23307 D=0.0001 n95=None -> holds
+[  11861s] [N=5 k=20_krylov] interacting: m=1000 (157 s): resolved coverage 0.9330 in 69 levels, B2=0.8123 pair=(0,5) omega*=0.23307 D=0.0001 n95=None -> holds
+[  11939s] [N=5 k=20_krylov] product: m=500 (78 s): resolved coverage 0.1267 in 42 levels, B2=0.1266 pair=(0,5) omega*=0.23307 D=0.0000 n95=None -> unresolved
+[  12096s] [N=5 k=20_krylov] product: m=1000 (156 s): resolved coverage 0.1488 in 67 levels, B2=0.1266 pair=(0,5) omega*=0.23307 D=0.0000 n95=None -> unresolved
+[  12096s]       wrote data/followup/stage1/N5_k20_c2.6200_krylov.npz (543 s)
+[  13892s] [N=6 k=12] c=3.6600: L=40 levels in 1729 s (4011 H v), coverage correlated 0.4395, product 0.0162
+[  17026s] [N=6 k=12] c=3.6600: L=80 levels in 3134 s (4600 H v), coverage correlated 0.8737, product 0.0339
+[  25003s] [N=6 k=12] c=3.6600: L=160 levels in 7977 s (6826 H v), coverage correlated 0.9365, product 0.0367
+[  25003s]       reproduction against data/runs/N6_k12_int_c3.660_T200_dt1.npz: max |dw| over 16 levels = 6.65e-12
+[  25003s]       correlated: B2=0.729 pair=(0,44) omega*=0.4370 omega*/sqrtN=0.1784 D=0.107 n_between=43 n95=None -> breaks
+[  25003s]       wrote data/followup/stage1/N6_k12_c3.6600.npz (12907 s)
+[  25148s] [N=6 k=12_krylov] interacting: m=500 (77 s): resolved coverage 0.3044 in 22 levels, B2=0.3044 pair=(0,6) omega*=108.57926 D=0.0000 n95=None -> unresolved
+[  25303s] [N=6 k=12_krylov] interacting: m=1000 (156 s): resolved coverage 0.3069 in 64 levels, B2=0.3066 pair=(0,6) omega*=0.17309 D=0.0002 n95=None -> unresolved
+[  25614s] [N=6 k=12_krylov] interacting: m=2000 (311 s): resolved coverage 0.4394 in 103 levels, B2=0.4115 pair=(0,17) omega*=0.22663 D=0.0109 n95=None -> unresolved
+[  25692s] [N=6 k=12_krylov] product: m=500 (77 s): resolved coverage 0.0114 in 21 levels, B2=0.0113 pair=(0,8) omega*=112.26952 D=0.0000 n95=None -> unresolved
+[  25847s] [N=6 k=12_krylov] product: m=1000 (155 s): resolved coverage 0.0117 in 61 levels, B2=0.0114 pair=(0,11) omega*=101.44654 D=0.0000 n95=None -> unresolved
+[  26156s] [N=6 k=12_krylov] product: m=2000 (309 s): resolved coverage 0.0166 in 100 levels, B2=0.0152 pair=(0,17) omega*=0.22663 D=0.0004 n95=None -> unresolved
+[  26156s]       wrote data/followup/stage1/N6_k12_c3.6600_krylov.npz (1153 s)
+[      0s] [N=3 k=6] data/followup/stage1/N3_k6_c1.6219.npz exists: skipped
+[      0s] [N=4 k=6] data/followup/stage1/N4_k6_c2.4562.npz exists: skipped
+[      0s] [N=5 k=6] data/followup/stage1/N5_k6_c3.1696.npz exists: skipped
+[      0s] [untilted N=3 k=12] c=0.0: C0=0.15: lowest band = None levels (N+1 = 4, 2^N = 8), width None, gap after None; all-left weight on the band None (0 s)
+[      1s] [untilted N=3 k=12_C00] c=0.0: C0=0.0: lowest band = 12 levels (N+1 = 4, 2^N = 8), width 0.40535258458786316, gap after 1.0517825503447842; all-left weight on the band 0.0025627324515501747 (0 s)
+[      4s] [untilted N=4 k=12] c=0.0: C0=0.15: lowest band = None levels (N+1 = 5, 2^N = 16), width None, gap after None; all-left weight on the band None (3 s)
+[     10s] [untilted N=4 k=12_C00] c=0.0: C0=0.0: lowest band = 24 levels (N+1 = 5, 2^N = 16), width 0.2922403999136378, gap after 1.0354786074967244; all-left weight on the band 2.9637411040640843e-05 (6 s)
+[     87s] [untilted N=5 k=12] c=0.0: C0=0.15: lowest band = None levels (N+1 = 6, 2^N = 32), width None, gap after None; all-left weight on the band None (77 s)
+[    240s] [untilted N=5 k=12_C00] c=0.0: C0=0.0: lowest band = None levels (N+1 = 6, 2^N = 32), width None, gap after None; all-left weight on the band None (153 s)
+[    240s]    [tilt N=3 k=8] c=1.60000 <O>_gs=0.47812
+[    240s]    [tilt N=3 k=8] c=1.50000 <O>_gs=0.76460
+[    240s]    [tilt N=3 k=8] c=1.59236 <O>_gs=0.50231
+[    240s]    [tilt N=3 k=8] c=1.59309 <O>_gs=0.49999
+[    240s]    [tilt N=3 k=8] c=1.59304 <O>_gs=0.50015
+[    241s] [N=3 k=8] c=1.5931: L=512 levels in 0 s (0 H v), coverage correlated 1.0000, product 1.0000
+[    241s]       correlated: B2=0.939 pair=(0,6) omega*=0.2243 omega*/sqrtN=0.1295 D=0.040 n_between=5 n95=3 -> intermediate
+[    241s]       wrote data/followup/stage1/N3_k8_c1.5931.npz (0 s)
+[    241s]    [tilt N=4 k=8] c=2.40000 <O>_gs=0.57699
+[    241s]    [tilt N=4 k=8] c=2.50000 <O>_gs=0.36555
+[    241s]    [tilt N=4 k=8] c=2.43641 <O>_gs=0.49535
+[    241s]    [tilt N=4 k=8] c=2.43434 <O>_gs=0.49995
+[    241s]    [tilt N=4 k=8] c=2.43429 <O>_gs=0.50007
+[    246s] [N=4 k=8] c=2.4343: L=4096 levels in 4 s (0 H v), coverage correlated 1.0000, product 1.0000
+[    246s]       correlated: B2=0.883 pair=(1,19) omega*=0.2575 omega*/sqrtN=0.1287 D=0.007 n_between=17 n95=7 -> holds+tail
+[    246s]       wrote data/followup/stage1/N4_k8_c2.4343.npz (5 s)
+[    248s]    [tilt N=5 k=8] c=3.10000 <O>_gs=0.65524
+[    250s]    [tilt N=5 k=8] c=3.20000 <O>_gs=0.39150
+[    253s]    [tilt N=5 k=8] c=3.15886 <O>_gs=0.54018
+[    255s]    [tilt N=5 k=8] c=3.16998 <O>_gs=0.43989
+[    257s]    [tilt N=5 k=8] c=3.16332 <O>_gs=0.53115
+[    260s]    [tilt N=5 k=8] c=3.16665 <O>_gs=0.52441
+[    262s]    [tilt N=5 k=8] c=3.16831 <O>_gs=0.52104
+[    265s]    [tilt N=5 k=8] c=3.16915 <O>_gs=0.44130
+[    267s]    [tilt N=5 k=8] c=3.16853 <O>_gs=0.52059
+[    269s]    [tilt N=5 k=8] c=3.16884 <O>_gs=0.44181
+[    271s]    [tilt N=5 k=8] c=3.16861 <O>_gs=0.52043
+[    274s]    [tilt N=5 k=8] c=3.16873 <O>_gs=0.44200
+[    275s]    [tilt N=5 k=8] c=3.16866 <O>_gs=0.44211
+[    283s] [N=5 k=8] c=3.1686: L=40 levels in 6 s (1710 H v), coverage correlated 0.7535, product 0.0821
+[    296s] [N=5 k=8] c=3.1686: L=80 levels in 13 s (2101 H v), coverage correlated 0.9529, product 0.1185
+[    330s] [N=5 k=8] c=3.1686: L=160 levels in 34 s (3029 H v), coverage correlated 0.9748, product 0.1266
+[    330s]       correlated: B2=0.629 pair=(1,39) omega*=0.3571 omega*/sqrtN=0.1597 D=0.082 n_between=37 n95=15 -> breaks
+[    330s]       wrote data/followup/stage1/N5_k8_c3.1686.npz (54 s)
+[    334s] [N=5 k=8_krylov] interacting: 2000 Lanczos steps in 2 s
+[    334s]       interacting: m=500: resolved coverage 0.4772 in 35 levels, B2=0.4772 pair=(0,1) omega*=0.02260 D=0.0000 n95=None -> unresolved
+[    334s]       interacting: m=1000: resolved coverage 0.5951 in 75 levels, B2=0.5590 pair=(1,3) omega*=0.00789 D=0.0001 n95=None -> unresolved
+[    334s]       interacting: m=2000: resolved coverage 0.8399 in 176 levels, B2=0.6292 pair=(1,38) omega*=0.35712 D=0.0818 n95=None -> unresolved
+[    336s] [N=5 k=8_krylov] product: 2000 Lanczos steps in 2 s
+[    336s]       product: m=500: resolved coverage 0.0136 in 37 levels, B2=0.0126 pair=(0,20) omega*=53.74547 D=0.0003 n95=None -> unresolved
+[    336s]       product: m=1000: resolved coverage 0.1287 in 71 levels, B2=0.0903 pair=(8,28) omega*=49.29602 D=0.0199 n95=None -> unresolved
+[    336s]       product: m=2000: resolved coverage 0.1814 in 177 levels, B2=0.0903 pair=(40,134) omega*=48.98114 D=0.0037 n95=None -> unresolved
+[    336s]       wrote data/followup/stage1/N5_k8_c3.1686_krylov.npz (6 s)
+[    337s]    [tilt N=6 k=6] c=3.85000 <O>_gs=0.49469
+[    337s]    [tilt N=6 k=6] c=3.75000 <O>_gs=0.58249
+[    338s]    [tilt N=6 k=6] c=3.84395 <O>_gs=0.50002
+[    338s]    [tilt N=6 k=6] c=3.84400 <O>_gs=0.49997
+[    350s] [N=6 k=6] c=3.8439: L=40 levels in 11 s (2074 H v), coverage correlated 0.8192, product 0.0137
+[    375s] [N=6 k=6] c=3.8439: L=80 levels in 25 s (2784 H v), coverage correlated 0.8196, product 0.0163
+[    445s] [N=6 k=6] c=3.8439: L=160 levels in 70 s (4228 H v), coverage correlated 0.8246, product 0.0376
+[    445s]       correlated: B2=0.803 pair=(0,1) omega*=0.5906 omega*/sqrtN=0.2411 D=0.000 n_between=0 n95=None -> holds
+[    445s]       wrote data/followup/stage1/N6_k6_c3.8439.npz (107 s)
+[    450s] [N=6 k=6_krylov] interacting: 2000 Lanczos steps in 3 s
+[    450s]       interacting: m=500: resolved coverage 0.8155 in 31 levels, B2=0.8032 pair=(0,1) omega*=0.59060 D=0.0000 n95=None -> holds
+[    450s]       interacting: m=1000: resolved coverage 0.8155 in 73 levels, B2=0.8032 pair=(0,1) omega*=0.59060 D=0.0000 n95=None -> holds
+[    450s]       wrote data/followup/stage1/N6_k6_c3.8439_krylov.npz (4 s)
+[    481s]    [tilt N=6 k=8] c=3.80000 <O>_gs=0.56785
+[    511s]    [tilt N=6 k=8] c=3.90000 <O>_gs=0.46202
+[    552s]    [tilt N=6 k=8] c=3.86411 <O>_gs=0.49868
+[    590s]    [tilt N=6 k=8] c=3.86284 <O>_gs=0.50001
+[    630s]    [tilt N=6 k=8] c=3.86289 <O>_gs=0.49995
+[    778s] [N=6 k=8] c=3.8628: L=40 levels in 104 s (2502 H v), coverage correlated 0.3835, product 0.0159
+[   1060s] [N=6 k=8] c=3.8628: L=80 levels in 282 s (3968 H v), coverage correlated 0.8149, product 0.0164
+[   1834s] [N=6 k=8] c=3.8628: L=160 levels in 774 s (6092 H v), coverage correlated 0.9029, product 0.0366
+[   1834s]       correlated: B2=0.496 pair=(0,63) omega*=0.4054 omega*/sqrtN=0.1655 D=0.132 n_between=62 n95=None -> breaks
+[   1834s]       wrote data/followup/stage1/N6_k8_c3.8628.npz (1204 s)
+[   1906s] [N=6 k=8_krylov] interacting: 2000 Lanczos steps in 27 s
+[   1906s]       interacting: m=500: resolved coverage 0.3194 in 37 levels, B2=0.3184 pair=(0,1) omega*=0.00689 D=0.0000 n95=None -> unresolved
+[   1906s]       interacting: m=1000: resolved coverage 0.3194 in 59 levels, B2=0.3184 pair=(0,1) omega*=0.00689 D=0.0000 n95=None -> unresolved
+[   1906s]       wrote data/followup/stage1/N6_k8_c3.8628_krylov.npz (72 s)
+[   2006s]    [tilt N=7 k=6] c=4.50000 <O>_gs=0.04522
+[   2020s]    [tilt N=7 k=6] c=4.40000 <O>_gs=0.04779
+[   2032s]    [tilt N=7 k=6] c=4.30000 <O>_gs=0.06289
+[   2043s]    [tilt N=7 k=6] c=4.20000 <O>_gs=0.08824
+[   2122s]    [tilt N=7 k=6] c=4.10000 <O>_gs=0.17870
+[   2181s]    [tilt N=7 k=6] c=4.00000 <O>_gs=0.52793
+[   2226s]    [tilt N=7 k=6] c=4.00800 <O>_gs=0.51597
+[   2337s]    [tilt N=7 k=6] c=4.01817 <O>_gs=0.50103
+[   2409s]    [tilt N=7 k=6] c=4.01885 <O>_gs=0.50004
+[   2481s]    [tilt N=7 k=6] c=4.01890 <O>_gs=0.49997
+[   2577s] [N=7 k=6] c=4.0189: L=40 levels in 86 s (2365 H v), coverage correlated 0.6148, product 0.0078
+[   2782s] [N=7 k=6] c=4.0189: L=80 levels in 205 s (3402 H v), coverage correlated 0.6450, product 0.0080
+[   3476s] [N=7 k=6] c=4.0189: L=160 levels in 694 s (6510 H v), coverage correlated 0.8534, product 0.0090
+[   3476s]       correlated: B2=0.681 pair=(4,96) omega*=0.6361 omega*/sqrtN=0.2404 D=0.026 n_between=91 n95=None -> breaks
+[   3476s]       wrote data/followup/stage1/N7_k6_c4.0189.npz (995 s)
+[   3505s] [N=7 k=6_krylov] interacting: 2000 Lanczos steps in 20 s
+[   3505s]       interacting: m=500: resolved coverage 0.6127 in 35 levels, B2=0.6043 pair=(2,3) omega*=0.01873 D=0.0000 n95=None -> unresolved
+[   3505s]       interacting: m=1000: resolved coverage 0.6127 in 73 levels, B2=0.6043 pair=(3,4) omega*=0.01873 D=0.0000 n95=None -> unresolved
+[   3505s]       interacting: m=2000: resolved coverage 0.6127 in 157 levels, B2=0.6043 pair=(3,4) omega*=0.01873 D=0.0000 n95=None -> unresolved
+[   3505s]       wrote data/followup/stage1/N7_k6_c4.0189_krylov.npz (29 s)
+[      0s] [N=3 k=6] data/followup/stage1/N3_k6_c1.6219.npz exists: skipped
+[      0s] [N=4 k=6] data/followup/stage1/N4_k6_c2.4562.npz exists: skipped
+[      0s] [N=5 k=6] data/followup/stage1/N5_k6_c3.1696.npz exists: skipped
+[      0s] [untilted N=3 k=12] exists: skipped
+[      0s] [untilted N=3 k=12_C00] exists: skipped
+[      0s] [untilted N=4 k=12] exists: skipped
+[      0s] [untilted N=4 k=12_C00] exists: skipped
+[      0s] [untilted N=5 k=12] exists: skipped
+[      0s] [untilted N=5 k=12_C00] exists: skipped
+[      0s] [N=3 k=8] data/followup/stage1/N3_k8_c1.5931.npz exists: skipped
+[      0s] [N=4 k=8] data/followup/stage1/N4_k8_c2.4343.npz exists: skipped
+[      0s] [N=5 k=8] data/followup/stage1/N5_k8_c3.1686.npz exists: skipped
+[      0s] [N=5 k=8_krylov] exists: skipped
+[      0s] [N=6 k=6] data/followup/stage1/N6_k6_c3.8439.npz exists: skipped
+[      0s] [N=6 k=6_krylov] exists: skipped
+[      0s] [N=6 k=8] data/followup/stage1/N6_k8_c3.8628.npz exists: skipped
+[      0s] [N=6 k=8_krylov] exists: skipped
+[      0s] [N=7 k=6] data/followup/stage1/N7_k6_c4.0189.npz exists: skipped
+[      0s] [N=7 k=6_krylov] exists: skipped
+[    886s]    [tilt N=7 k=8] c=4.03000 <O>_gs=0.92615
+[   1663s]    [tilt N=7 k=8] c=4.13000 <O>_gs=0.90547
+[      0s] [N=3 k=6] data/followup/stage1/N3_k6_c1.6219.npz exists: skipped
+[      0s] [N=4 k=6] data/followup/stage1/N4_k6_c2.4562.npz exists: skipped
+[      0s] [N=5 k=6] data/followup/stage1/N5_k6_c3.1696.npz exists: skipped
+[      0s] [untilted N=3 k=12] exists: skipped
+[      0s] [untilted N=3 k=12_C00] exists: skipped
+[      0s] [untilted N=4 k=12] exists: skipped
+[      0s] [untilted N=4 k=12_C00] exists: skipped
+[      0s] [untilted N=5 k=12] exists: skipped
+[      0s] [untilted N=5 k=12_C00] exists: skipped
+[      0s] [N=3 k=8] data/followup/stage1/N3_k8_c1.5931.npz exists: skipped
+[      0s] [N=4 k=8] data/followup/stage1/N4_k8_c2.4343.npz exists: skipped
+[      0s] [N=5 k=8] data/followup/stage1/N5_k8_c3.1686.npz exists: skipped
+[      0s] [N=5 k=8_krylov] exists: skipped
+[      0s] [N=6 k=6] data/followup/stage1/N6_k6_c3.8439.npz exists: skipped
+[      0s] [N=6 k=6_krylov] exists: skipped
+[      0s] [N=6 k=8] data/followup/stage1/N6_k8_c3.8628.npz exists: skipped
+[      0s] [N=6 k=8_krylov] exists: skipped
+[      0s] [N=7 k=6] data/followup/stage1/N7_k6_c4.0189.npz exists: skipped
+[      0s] [N=7 k=6_krylov] exists: skipped
+[    672s]    [tilt N=8 k=6] c=4.05000 <O>_gs=0.42149
+[   1682s]    [tilt N=8 k=6] c=3.95000 <O>_gs=0.55771
+[   2843s]    [tilt N=8 k=6] c=3.99236 <O>_gs=0.49505
+[   3934s]    [tilt N=8 k=6] c=3.98902 <O>_gs=0.49922
+[   5577s]    [tilt N=8 k=6] c=3.98840 <O>_gs=0.49999
+[   6404s]    [tilt N=8 k=6] c=3.98835 <O>_gs=0.50005
+[   7636s] [N=8 k=6] c=3.9884: L=40 levels in 1144 s (3901 H v), coverage correlated 0.8542, product 0.0001
+[   9884s] [N=8 k=6] c=3.9884: L=80 levels in 2247 s (5086 H v), coverage correlated 0.8909, product 0.0002
+[  15334s] [N=8 k=6] c=3.9884: L=160 levels in 5450 s (7484 H v), coverage correlated 0.8912, product 0.0024
+[  15334s]       correlated: B2=0.876 pair=(0,48) omega*=0.6460 omega*/sqrtN=0.2284 D=0.005 n_between=47 n95=None -> unresolved
+[  15334s]       wrote data/followup/stage1/N8_k6_c3.9884.npz (8931 s)
+[  15684s] [N=8 k=6_krylov] interacting: 2000 Lanczos steps in 259 s
+[  15684s]       interacting: m=500: resolved coverage 0.8457 in 31 levels, B2=0.8457 pair=(0,20) omega*=146.34420 D=0.0000 n95=None -> unresolved
+[  15684s]       interacting: m=1000: resolved coverage 0.8457 in 69 levels, B2=0.8457 pair=(0,5) omega*=0.16547 D=0.0000 n95=None -> unresolved
+[  15684s]       interacting: m=2000: resolved coverage 0.8457 in 150 levels, B2=0.8457 pair=(0,5) omega*=0.16547 D=0.0000 n95=None -> unresolved
+[  15684s]       wrote data/followup/stage1/N8_k6_c3.9884_krylov.npz (350 s)
+[  15693s]    [tilt N=4 k=24] c=1.92000 <O>_gs=0.56487
+[  15701s]    [tilt N=4 k=24] c=2.02000 <O>_gs=0.32117
+[  15709s]    [tilt N=4 k=24] c=1.94662 <O>_gs=0.49100
+[  15717s]    [tilt N=4 k=24] c=1.94338 <O>_gs=0.49984
+[  15726s]    [tilt N=4 k=24] c=1.94332 <O>_gs=0.50000
+[  15759s] [N=4 k=24] c=1.9433: L=40 levels in 31 s (846 H v), coverage correlated 0.9654, product 0.4025
+[  15842s] [N=4 k=24] c=1.9433: L=80 levels in 83 s (1322 H v), coverage correlated 0.9654, product 0.4026
+[  16138s] [N=4 k=24] c=1.9433: L=160 levels in 296 s (2511 H v), coverage correlated 0.9753, product 0.5770
+[  16138s]       correlated: B2=0.921 pair=(0,3) omega*=0.2203 omega*/sqrtN=0.1102 D=0.000 n_between=2 n95=5 -> holds
+[  16138s]       wrote data/followup/stage1/N4_k24_c1.9433.npz (412 s)
+[  16161s] [N=4 k=24_krylov] interacting: 2000 Lanczos steps in 20 s
+[  16161s]       interacting: m=500: resolved coverage 0.9632 in 58 levels, B2=0.9206 pair=(0,3) omega*=0.22033 D=0.0000 n95=5 -> holds
+[  16161s]       interacting: m=1000: resolved coverage 0.9654 in 96 levels, B2=0.9206 pair=(0,3) omega*=0.22033 D=0.0000 n95=5 -> holds
+[  16181s] [N=4 k=24_krylov] product: 2000 Lanczos steps in 21 s
+[  16181s]       product: m=500: resolved coverage 0.4014 in 58 levels, B2=0.3816 pair=(0,3) omega*=0.22033 D=0.0000 n95=None -> unresolved
+[  16181s]       product: m=1000: resolved coverage 0.4026 in 98 levels, B2=0.3816 pair=(0,3) omega*=0.22033 D=0.0000 n95=None -> unresolved
+[  16181s]       wrote data/followup/stage1/N4_k24_c1.9433_krylov.npz (44 s)
+[  16210s]    [tilt N=4 k=28] c=1.80000 <O>_gs=0.71399
+[  16233s]    [tilt N=4 k=28] c=1.90000 <O>_gs=0.41784
+[  16257s]    [tilt N=4 k=28] c=1.87226 <O>_gs=0.49175
+[  16282s]    [tilt N=4 k=28] c=1.86928 <O>_gs=0.50009
+[  16303s]    [tilt N=4 k=28] c=1.86933 <O>_gs=0.49995
+[  16375s] [N=4 k=28] c=1.8693: L=40 levels in 65 s (871 H v), coverage correlated 0.9651, product 0.4270
+[  16547s] [N=4 k=28] c=1.8693: L=80 levels in 172 s (1369 H v), coverage correlated 0.9652, product 0.4270
+[  17133s] [N=4 k=28] c=1.8693: L=160 levels in 585 s (2527 H v), coverage correlated 0.9771, product 0.5999
+[  17133s]       correlated: B2=0.931 pair=(0,3) omega*=0.2202 omega*/sqrtN=0.1101 D=0.000 n_between=2 n95=4 -> holds
+[  17133s]       wrote data/followup/stage1/N4_k28_c1.8693.npz (830 s)
+[  17190s] [N=4 k=28_krylov] interacting: 2000 Lanczos steps in 50 s
+[  17190s]       interacting: m=500: resolved coverage 0.9497 in 57 levels, B2=0.9306 pair=(0,3) omega*=0.22016 D=0.0000 n95=None -> holds
+[  17190s]       interacting: m=1000: resolved coverage 0.9651 in 115 levels, B2=0.9306 pair=(0,3) omega*=0.22016 D=0.0000 n95=4 -> holds
+[  17243s] [N=4 k=28_krylov] product: 2000 Lanczos steps in 53 s
+[  17243s]       product: m=500: resolved coverage 0.4183 in 57 levels, B2=0.4092 pair=(0,3) omega*=0.22016 D=0.0000 n95=None -> unresolved
+[  17243s]       product: m=1000: resolved coverage 0.4270 in 109 levels, B2=0.4092 pair=(0,3) omega*=0.22016 D=0.0000 n95=None -> unresolved
+[  17243s]       wrote data/followup/stage1/N4_k28_c1.8693_krylov.npz (110 s)
+[  17332s]    [tilt N=4 k=32] c=1.68000 <O>_gs=0.82894
+[  17494s]    [tilt N=4 k=32] c=1.78000 <O>_gs=0.60414
+[  17566s]    [tilt N=4 k=32] c=1.88000 <O>_gs=0.34220
+[  17665s]    [tilt N=4 k=32] c=1.81976 <O>_gs=0.49080
+[  17743s]    [tilt N=4 k=32] c=1.81653 <O>_gs=0.49984
+[  17836s]    [tilt N=4 k=32] c=1.81647 <O>_gs=0.50000
+[  18034s] [N=4 k=32] c=1.8165: L=40 levels in 178 s (950 H v), coverage correlated 0.9650, product 0.4412
+[  18485s] [N=4 k=32] c=1.8165: L=80 levels in 451 s (1465 H v), coverage correlated 0.9651, product 0.4412
+[  19835s] [N=4 k=32] c=1.8165: L=160 levels in 1350 s (2559 H v), coverage correlated 0.9765, product 0.6112
+[  19835s]       correlated: B2=0.934 pair=(0,3) omega*=0.2212 omega*/sqrtN=0.1106 D=0.000 n_between=2 n95=3 -> holds
+[  19835s]       wrote data/followup/stage1/N4_k32_c1.8165.npz (1999 s)
+[  20009s] [N=4 k=32_krylov] interacting: 2000 Lanczos steps in 154 s
+[  20009s]       interacting: m=500: resolved coverage 0.9545 in 68 levels, B2=0.9343 pair=(0,3) omega*=0.22121 D=0.0000 n95=3 -> holds
+[  20009s]       interacting: m=1000: resolved coverage 0.9650 in 109 levels, B2=0.9343 pair=(0,3) omega*=0.22121 D=0.0000 n95=3 -> holds
+[  20178s] [N=4 k=32_krylov] product: 2000 Lanczos steps in 169 s
+[  20178s]       product: m=500: resolved coverage 0.4331 in 63 levels, B2=0.4248 pair=(0,3) omega*=0.22121 D=0.0000 n95=None -> unresolved
+[  20178s]       product: m=1000: resolved coverage 0.4412 in 109 levels, B2=0.4248 pair=(0,3) omega*=0.22121 D=0.0000 n95=None -> unresolved
+[  20178s]       wrote data/followup/stage1/N4_k32_c1.8165_krylov.npz (343 s)
+[  21554s]    [tilt N=5 k=24] c=2.52000 <O>_gs=0.61127
+[  23091s]    [tilt N=5 k=24] c=2.62000 <O>_gs=0.40797
+[  24292s]    [tilt N=5 k=24] c=2.57473 <O>_gs=0.49176
+[  25791s]    [tilt N=5 k=24] c=2.57059 <O>_gs=0.50010
+[  26961s]    [tilt N=5 k=24] c=2.57064 <O>_gs=0.50000
+[  28313s] [N=5 k=24_krylov] interacting: 2000 Lanczos steps in 1185 s
+[  28313s]       interacting: m=500: resolved coverage 0.8358 in 50 levels, B2=0.8356 pair=(0,5) omega*=0.25104 D=0.0001 n95=None -> holds
+[  28313s]       interacting: m=1000: resolved coverage 0.9184 in 63 levels, B2=0.8356 pair=(0,5) omega*=0.25104 D=0.0001 n95=None -> holds
+[  28313s]       wrote data/followup/stage1/N5_k24_c2.5706_krylov.npz (1352 s)

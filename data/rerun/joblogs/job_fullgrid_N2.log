@@ -1,0 +1,4 @@
+# job fullgrid_N2   threads 1   host vm   start 2026-10-06T20:56:41+00:00
+# call: run_fullgrid_N2()
+[    135s] [fullgrid N=2] c=0.4500  E0=8.515105  dE=0.189552  t0=pi/dE=16.5738  <O>_gs=0.5513  (134s)
+# exit 0   end 2026-10-06T20:58:56+00:00

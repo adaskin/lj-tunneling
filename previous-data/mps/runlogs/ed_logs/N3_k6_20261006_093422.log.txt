@@ -1,0 +1,11 @@
+[      7s] [dynamics N=3 k=6] protocol custom: T=60 dt=1 starts=['interacting'] cuts=bonds+pairs
+[      7s] [N=3 k=6] c*=1.600 dE=0.074888 <O>_gs=0.699 doublet=(0,4) start=21_1  overlap on doublet: product 0.5925, interacting 0.8974
+[      7s]       start energy above E0: product 2.263, interacting 0.065 (band of the lowest 8 levels: 0.268); weight on those levels: product 0.633, interacting 0.957; main levels of the interacting start: #0(E-E0=0.000, w=0.705) #3(E-E0=0.053, w=0.000) #4(E-E0=0.075, w=0.192) #7(E-E0=0.268, w=0.059)
+[      7s]       [interacting] spectrum [12.5,32.3], T=60, dt=1, 61 snapshots, ~3300 matvecs; 3 cuts (0 skipped: dimension)
+[      7s]       [interacting] t=  10.0  <O>=0.820  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  20.0  <O>=0.658  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  30.0  <O>=0.368  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  40.0  <O>=0.344  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  50.0  <O>=0.468  elapsed      0s  eta      0s
+[      7s]       [interacting] t=  60.0  <O>=0.528  elapsed      0s  eta      0s
+[      7s] [N=3 k=6] interacting: wrote data/mps/ed_ref/N3_k6_int_c1.600_T60_dt1.npz  <O> in [0.325, 0.983]  (0s)

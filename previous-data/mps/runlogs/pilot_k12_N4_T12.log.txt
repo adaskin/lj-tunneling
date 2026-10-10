@@ -1,0 +1,18 @@
+MPSProblem: R=68 channels, max pair error 2.1e-05  (0.3s)
+[    102s] [mps N=4 k=12] start: DMRG 14 sweeps, chi 64, <H> = 16.337093
+[    491s]       [mps] t=  10.0  <O>=0.334  chi_max=  60  trunc=1.4e-03  elapsed    388s  eta     78s
+[    630s]       [mps] t=  12.0  <O>=0.297  chi_max=  60  trunc=1.9e-03  elapsed    527s  eta      0s
+MPS wall 629s; chi reached 64, trunc err 1.9e-03, energy drift 8.1e-03
+ED wall 72s
+max |S_mps - S_ed| over all measured cuts & snapshots: 9.57e-03
+   cut (0,)       max diff 5.59e-03   (ED max S = 1.5049)
+   cut (3,)       max diff 4.34e-03   (ED max S = 1.4851)
+   cut (2,)       max diff 4.01e-03   (ED max S = 1.5550)
+   cut (1,)       max diff 4.45e-03   (ED max S = 1.5869)
+   cut (0, 1)     max diff 9.57e-03   (ED max S = 2.0224)
+max |O_mps - O_ed| = 1.13e-03
+   bond S2        : max |diff| = 0.00311   (ED max 1.298, MPS max 1.295)
+   bond chi(1e-2) : max |diff| = 1   (ED max 16, MPS max 15)
+   bond chi(1e-3) : max |diff| = 3   (ED max 33, MPS max 30)
+   bond chi(1e-6) : max |diff| = 53   (ED max 113, MPS max 60)
+{'S_nat': 2.0151, 'S_cen': 2.0151, 'chi_cen_kept': 64, 'trunc_err': 0.0019, 'chi3_cen': 30, 'chi6_cen': 60}

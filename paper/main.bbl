@@ -1,0 +1,336 @@
+\begin{thebibliography}{10}
+
+\bibitem{feynman1982}
+Richard~P. Feynman.
+\newblock Simulating physics with computers.
+\newblock {\em International Journal of Theoretical Physics}, 21:467--488,
+  1982.
+
+\bibitem{lee2021femoco}
+Joonho Lee, Dominic~W. Berry, Craig Gidney, William~J. Huggins, Jarrod~R.
+  McClean, Nathan Wiebe, and Ryan Babbush.
+\newblock Even more efficient quantum computations of chemistry through tensor
+  hypercontraction.
+\newblock {\em PRX Quantum}, 2:030305, 2021.
+
+\bibitem{vonburg2021}
+Vera von Burg, Guang~Hao Low, Thomas H{\"a}ner, Damian~S. Steiger, Markus
+  Reiher, Martin Roetteler, and Matthias Troyer.
+\newblock Quantum computing enhanced computational catalysis.
+\newblock {\em Physical Review Research}, 3:033055, 2021.
+
+\bibitem{richardson2016}
+Jeremy~O. Richardson, Crist{\'o}bal P{\'e}rez, Simon Lobsiger, Adam~A. Reid,
+  Berhane Temelso, George~C. Shields, Zbigniew Kisiel, David~J. Wales,
+  Brooks~H. Pate, and Stuart~C. Althorpe.
+\newblock Concerted hydrogen-bond breaking by quantum tunneling in the water
+  hexamer prism.
+\newblock {\em Science}, 351:1310--1313, 2016.
+
+\bibitem{kosloff1983}
+D.~Kosloff and R.~Kosloff.
+\newblock A {F}ourier method solution for the time dependent {S}chr{\"o}dinger
+  equation as a tool in molecular dynamics.
+\newblock {\em Journal of Computational Physics}, 52(1):35--53, 1983.
+
+\bibitem{light2000}
+John~C. Light and Tucker Carrington, Jr.
+\newblock Discrete-variable representations and their utilization.
+\newblock In Ilya Prigogine and Stuart~A. Rice, editors, {\em Advances in
+  Chemical Physics}, volume 114, pages 263--310. Wiley, 2000.
+
+\bibitem{lanczos1950}
+Cornelius Lanczos.
+\newblock An iteration method for the solution of the eigenvalue problem of
+  linear differential and integral operators.
+\newblock {\em Journal of Research of the National Bureau of Standards},
+  45:255--282, 1950.
+
+\bibitem{weisse2008}
+Alexander Wei{\ss}e and Holger Fehske.
+\newblock Exact diagonalization techniques.
+\newblock In Holger Fehske, Ralf Schneider, and Alexander Wei{\ss}e, editors,
+  {\em Computational Many-Particle Physics}, volume 739 of {\em Lecture Notes
+  in Physics}, pages 529--544. Springer Berlin Heidelberg, 2008.
+
+\bibitem{almohy2011}
+Awad~H. Al-Mohy and Nicholas~J. Higham.
+\newblock Computing the action of the matrix exponential, with an application
+  to exponential integrators.
+\newblock {\em SIAM Journal on Scientific Computing}, 33:488--511, 2011.
+
+\bibitem{white1992}
+Steven~R. White.
+\newblock Density matrix formulation for quantum renormalization groups.
+\newblock {\em Physical Review Letters}, 69(19):2863, 1992.
+
+\bibitem{vidal2004}
+Guifr{\'e} Vidal.
+\newblock Efficient simulation of one-dimensional quantum many-body systems.
+\newblock {\em Physical Review Letters}, 93(4):040502, 2004.
+
+\bibitem{schollwock2011}
+Ulrich Schollw{\"o}ck.
+\newblock The density-matrix renormalization group in the age of matrix product
+  states.
+\newblock {\em Annals of Physics}, 326(1):96--192, 2011.
+
+\bibitem{paeckel2019}
+Sebastian Paeckel, Thomas K{\"o}hler, Andreas Swoboda, Salvatore~R. Manmana,
+  Ulrich Schollw{\"o}ck, and Claudius Hubig.
+\newblock Time-evolution methods for matrix-product states.
+\newblock {\em Annals of Physics}, 411:167998, 2019.
+
+\bibitem{beck2000}
+Michael~H. Beck, Andreas J{\"a}ckle, Graham~A. Worth, and Hans-Dieter Meyer.
+\newblock The multiconfiguration time-dependent {Hartree} ({MCTDH}) method: a
+  highly efficient algorithm for propagating wavepackets.
+\newblock {\em Physics Reports}, 324:1--105, 2000.
+
+\bibitem{wang2003}
+Haobin Wang and Michael Thoss.
+\newblock Multilayer formulation of the multiconfiguration time-dependent
+  {H}artree theory.
+\newblock {\em Journal of Chemical Physics}, 119:1289--1299, 2003.
+
+\bibitem{anderson1975}
+James~B. Anderson.
+\newblock A random-walk simulation of the {Schr\"odinger} equation: {$H_3^+$}.
+\newblock {\em Journal of Chemical Physics}, 63:1499--1503, 1975.
+
+\bibitem{ceperley1980}
+David~M. Ceperley and Berni~J. Alder.
+\newblock Ground state of the electron gas by a stochastic method.
+\newblock {\em Physical Review Letters}, 45(7):566, 1980.
+
+\bibitem{sindzingre1989}
+Philippe Sindzingre, Michael~L. Klein, and David~M. Ceperley.
+\newblock Path-integral {Monte Carlo} study of low-temperature {$^4$He}
+  clusters.
+\newblock {\em Physical Review Letters}, 63:1601--1604, 1989.
+
+\bibitem{richardson2011}
+Jeremy~O. Richardson and Stuart~C. Althorpe.
+\newblock Ring-polymer instanton method for calculating tunneling splittings.
+\newblock {\em Journal of Chemical Physics}, 134:054109, 2011.
+
+\bibitem{troyer2005}
+Matthias Troyer and Uwe-Jens Wiese.
+\newblock Computational complexity and fundamental limitations to fermionic
+  quantum {Monte Carlo} simulations.
+\newblock {\em Physical Review Letters}, 94:170201, 2005.
+
+\bibitem{muhlbacher2008}
+Lothar M{\"u}hlbacher and Eran Rabani.
+\newblock Real-time path integral approach to nonequilibrium many-body quantum
+  systems.
+\newblock {\em Physical Review Letters}, 100:176403, 2008.
+
+\bibitem{zalka1998}
+Christof Zalka.
+\newblock Simulating quantum systems on a quantum computer.
+\newblock {\em Proceedings of the Royal Society of London. Series A:
+  Mathematical, Physical and Engineering Sciences}, 454(1969):313--322, 1998.
+
+\bibitem{lloyd1996}
+Seth Lloyd.
+\newblock Universal quantum simulators.
+\newblock {\em Science}, 273(5278):1073--1078, 1996.
+
+\bibitem{kassal2008}
+Ivan Kassal, Stephen~P. Jordan, Peter~J. Love, Masoud Mohseni, and Al{\'a}n
+  Aspuru-Guzik.
+\newblock Polynomial-time quantum algorithm for the simulation of chemical
+  dynamics.
+\newblock {\em Proceedings of the National Academy of Sciences USA},
+  105:18681--18686, 2008.
+
+\bibitem{childs2021trotter}
+Andrew~M. Childs, Yuan Su, Minh~C. Tran, Nathan Wiebe, and Shuchen Zhu.
+\newblock Theory of {Trotter} error with commutator scaling.
+\newblock {\em Physical Review X}, 11(1):011020, 2021.
+
+\bibitem{low2019qubitization}
+Guang~Hao Low and Isaac~L. Chuang.
+\newblock Hamiltonian simulation by qubitization.
+\newblock {\em Quantum}, 3:163, 2019.
+
+\bibitem{buluta2009}
+Iulia Buluta and Franco Nori.
+\newblock Quantum simulators.
+\newblock {\em Science}, 326(5949):108--111, 2009.
+
+\bibitem{georgescu2014}
+Iulia~M. Georgescu, Sahel Ashhab, and Franco Nori.
+\newblock Quantum simulation.
+\newblock {\em Reviews of Modern Physics}, 86(1):153--185, 2014.
+
+\bibitem{bornoppenheimer1927}
+Max Born and Robert Oppenheimer.
+\newblock Zur {Q}uantentheorie der {M}olekeln.
+\newblock {\em Annalen der Physik}, 389(20):457--484, 1927.
+
+\bibitem{schuch2008}
+Norbert Schuch, Michael~M. Wolf, Frank Verstraete, and J.~Ignacio Cirac.
+\newblock Entropy scaling and simulability by matrix product states.
+\newblock {\em Physical Review Letters}, 100:030504, 2008.
+
+\bibitem{calabrese2005}
+Pasquale Calabrese and John Cardy.
+\newblock Evolution of entanglement entropy in one-dimensional systems.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2005(04):P04010, 2005.
+
+\bibitem{helffer1984}
+Bernard Helffer and Johannes Sj{\"o}strand.
+\newblock Multiple wells in the semi-classical limit {I}.
+\newblock {\em Communications in Partial Differential Equations}, 9:337--408,
+  1984.
+
+\bibitem{garg2000}
+Anupam Garg.
+\newblock Tunnel splittings for one-dimensional potential wells revisited.
+\newblock {\em American Journal of Physics}, 68:430--437, 2000.
+
+\bibitem{trefethen2000}
+Lloyd~N. Trefethen.
+\newblock {\em Spectral Methods in {MATLAB}}.
+\newblock SIAM, Philadelphia, 2000.
+
+\bibitem{jarrell1996}
+M.~Jarrell and J.~E. Gubernatis.
+\newblock Bayesian inference and the analytic continuation of imaginary-time
+  quantum {Monte Carlo} data.
+\newblock {\em Physics Reports}, 269(3):133--195, 1996.
+
+\bibitem{hikihara2023}
+Toshiya Hikihara, Hiroshi Ueda, Kouichi Okunishi, Kenji Harada, and Tomotoshi
+  Nishino.
+\newblock Automatic structural optimization of tree tensor networks.
+\newblock {\em Physical Review Research}, 5:013031, 2023.
+
+\bibitem{rissler2006}
+Jorge Rissler, Reinhard~M. Noack, and Steven~R. White.
+\newblock Measuring orbital interaction using quantum information theory.
+\newblock {\em Chemical Physics}, 323:519--531, 2006.
+
+\bibitem{barcza2011}
+G{\'a}bor Barcza, {\"O}rs Legeza, Konrad~H. Marti, and Markus Reiher.
+\newblock Quantum-information analysis of electronic states of different
+  molecular structures.
+\newblock {\em Physical Review A}, 83:012508, 2011.
+
+\bibitem{szalay2015}
+Szil{\'a}rd Szalay, Max Pfeffer, Valentin Murg, G{\'a}bor Barcza, Frank
+  Verstraete, Reinhold Schneider, and {\"O}rs Legeza.
+\newblock Tensor product methods and entanglement optimization for \textit{ab
+  initio} quantum chemistry.
+\newblock {\em International Journal of Quantum Chemistry}, 115:1342--1391,
+  2015.
+
+\bibitem{dantzig2003max}
+George~B. Dantzig and Delbert~R. Fulkerson.
+\newblock On the max flow min cut theorem of networks.
+\newblock {\em Linear inequalities and related systems}, 38:225--231, 2003.
+\newblock First issued as RAND Paper P-826 (1955); Annals of Mathematics
+  Studies 38 (1956).
+
+\bibitem{headrick2018riemannian}
+Matthew Headrick and Veronika~E. Hubeny.
+\newblock Riemannian and lorentzian flow-cut theorems.
+\newblock {\em Classical and Quantum Gravity}, 35(10):105012, 2018.
+
+\bibitem{freedman2017}
+Michael Freedman and Matthew Headrick.
+\newblock Bit threads and holographic entanglement.
+\newblock {\em Communications in Mathematical Physics}, 352:407--438, 2017.
+
+\bibitem{hayden2016}
+Patrick Hayden, Sepehr Nezami, Xiao-Liang Qi, Nathaniel Thomas, Michael Walter,
+  and Zhao Yang.
+\newblock Holographic duality from random tensor networks.
+\newblock {\em Journal of High Energy Physics}, 2016(11):009, 2016.
+
+\bibitem{fitter2025}
+Khurshed Fitter, Faedi Loulidi, and Ion Nechita.
+\newblock A max-flow approach to random tensor networks.
+\newblock {\em Entropy}, 27(7):756, 2025.
+
+\bibitem{hein2004}
+Marc Hein, Jens Eisert, and Hans~J. Briegel.
+\newblock Multiparty entanglement in graph states.
+\newblock {\em Physical Review A}, 69:062311, 2004.
+
+\bibitem{yang2022strong}
+Xue Yang, Yan-Han Yang, and Ming-Xing Luo.
+\newblock Strong entanglement distribution of quantum networks.
+\newblock {\em Physical Review Research}, 4(1):013153, 2022.
+
+\bibitem{cui2016}
+Shawn~X. Cui, Michael~H. Freedman, Or~Sattath, Richard Stong, and Greg Minton.
+\newblock Quantum max-flow/min-cut.
+\newblock {\em Journal of Mathematical Physics}, 57(6):062206, 2016.
+
+\bibitem{gesmundo2018}
+Fulvio Gesmundo, Joseph~M. Landsberg, and Michael Walter.
+\newblock Matrix product states and the quantum max-flow/min-cut conjectures.
+\newblock {\em Journal of Mathematical Physics}, 59(10):102205, 2018.
+
+\bibitem{chowliu1968}
+C.~K. Chow and C.~N. Liu.
+\newblock Approximating discrete probability distributions with dependence
+  trees.
+\newblock {\em IEEE Transactions on Information Theory}, 14(3):462--467, 1968.
+
+\bibitem{hayden2013}
+Patrick Hayden, Matthew Headrick, and Alexander Maloney.
+\newblock Holographic mutual information is monogamous.
+\newblock {\em Physical Review D}, 87:046003, 2013.
+
+\bibitem{begusic2024}
+Tomislav Begu{\v{s}}i{\'c}, Johnnie Gray, and Garnet Kin-Lic Chan.
+\newblock Fast and converged classical simulations of evidence for the utility
+  of quantum computing before fault tolerance.
+\newblock {\em Science Advances}, 10:eadk4321, 2024.
+
+\bibitem{begusic2025}
+Tomislav Begu{\v{s}}i{\'c} and Garnet Kin-Lic Chan.
+\newblock Real-time operator evolution in two and three dimensions via sparse
+  {P}auli dynamics.
+\newblock {\em PRX Quantum}, 6:020302, 2025.
+
+\bibitem{rudolph2025}
+Manuel~S. Rudolph, Tyson Jones, Yanting Teng, Armando Angrisani, and Zo{\"e}
+  Holmes.
+\newblock Pauli propagation: A computational framework for simulating quantum
+  systems, 2025.
+\newblock arXiv:2505.21606.
+
+\bibitem{schuster2025}
+Thomas Schuster, Chao Yin, Xun Gao, and Norman~Y. Yao.
+\newblock A polynomial-time classical algorithm for noisy quantum circuits.
+\newblock {\em Physical Review X}, 15:041018, 2025.
+
+\bibitem{schuster2026reactivity}
+Thomas Schuster and Andreas Elben.
+\newblock Probing the classical complexity of quantum dynamics experiments,
+  2026.
+\newblock arXiv:2609.31830.
+
+\bibitem{nandkishore2015}
+Rahul Nandkishore and David~A. Huse.
+\newblock Many-body localization and thermalization in quantum statistical
+  mechanics.
+\newblock {\em Annual Review of Condensed Matter Physics}, 6:15--38, 2015.
+
+\bibitem{childs2009walk}
+Andrew~M. Childs.
+\newblock Universal computation by quantum walk.
+\newblock {\em Physical Review Letters}, 102:180501, May 2009.
+
+\bibitem{childs2013walk}
+Andrew~M. Childs, David Gosset, and Zak Webb.
+\newblock Universal computation by multiparticle quantum walk.
+\newblock {\em Science}, 339:791--794, 2013.
+
+\end{thebibliography}

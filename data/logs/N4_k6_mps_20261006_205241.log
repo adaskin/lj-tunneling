@@ -1,0 +1,7 @@
+[     31s] [mps N=4 k=6] start: DMRG 131 sweeps, chi 26, <H> = 16.183527, variance 1.5e-07
+[     42s]       [N4k6] t=  10.0  <O>=0.544  chi_max=  33  trunc=1.6e-07  elapsed     12s  eta     58s
+[     54s]       [N4k6] t=  20.0  <O>=0.777  chi_max=  33  trunc=3.8e-07  elapsed     23s  eta     46s
+[     65s]       [N4k6] t=  30.0  <O>=0.617  chi_max=  34  trunc=6.0e-07  elapsed     34s  eta     34s
+[     77s]       [N4k6] t=  40.0  <O>=0.614  chi_max=  34  trunc=7.8e-07  elapsed     46s  eta     23s
+[     88s]       [N4k6] t=  50.0  <O>=0.585  chi_max=  33  trunc=9.4e-07  elapsed     58s  eta     12s
+[    100s]       [N4k6] t=  60.0  <O>=0.505  chi_max=  33  trunc=1.1e-06  elapsed     69s  eta      0s

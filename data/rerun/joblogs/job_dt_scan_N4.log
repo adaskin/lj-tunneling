@@ -1,0 +1,102 @@
+# job dt_scan_N4   threads 1   host vm   start 2026-10-06T20:51:11+00:00
+# call: run_sampling_study(Ns=(4,), force=True)
+[      1s] [dynamics N=4 k=12] protocol custom: T=200 dt=0.5 starts=['interacting'] cuts=all
+[      2s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      3s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[      3s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[      3s]       [interacting] spectrum [16.1,69.9], T=200, dt=0.5, 401 snapshots, ~24400 matvecs; 7 cuts (0 skipped: dimension)
+[      5s]       [interacting] t=   5.0  <O>=0.673  elapsed      2s  eta     76s
+[      7s]       [interacting] t=  10.0  <O>=0.345  elapsed      4s  eta     73s
+[      9s]       [interacting] t=  15.0  <O>=0.324  elapsed      6s  eta     73s
+[     11s]       [interacting] t=  20.0  <O>=0.382  elapsed      8s  eta     72s
+[     13s]       [interacting] t=  25.0  <O>=0.421  elapsed     10s  eta     70s
+[     15s]       [interacting] t=  30.0  <O>=0.424  elapsed     12s  eta     68s
+[     17s]       [interacting] t=  35.0  <O>=0.591  elapsed     14s  eta     66s
+[     19s]       [interacting] t=  40.0  <O>=0.713  elapsed     16s  eta     64s
+[     21s]       [interacting] t=  45.0  <O>=0.493  elapsed     18s  eta     62s
+[     23s]       [interacting] t=  50.0  <O>=0.286  elapsed     20s  eta     60s
+[     25s]       [interacting] t=  55.0  <O>=0.513  elapsed     22s  eta     58s
+[     27s]       [interacting] t=  60.0  <O>=0.680  elapsed     24s  eta     56s
+[     29s]       [interacting] t=  65.0  <O>=0.536  elapsed     26s  eta     54s
+[     31s]       [interacting] t=  70.0  <O>=0.348  elapsed     28s  eta     52s
+[     33s]       [interacting] t=  75.0  <O>=0.411  elapsed     30s  eta     50s
+[     35s]       [interacting] t=  80.0  <O>=0.426  elapsed     32s  eta     48s
+[     37s]       [interacting] t=  85.0  <O>=0.322  elapsed     34s  eta     46s
+[     39s]       [interacting] t=  90.0  <O>=0.421  elapsed     36s  eta     45s
+[     41s]       [interacting] t=  95.0  <O>=0.664  elapsed     38s  eta     42s
+[     43s]       [interacting] t= 100.0  <O>=0.811  elapsed     41s  eta     41s
+[     45s]       [interacting] t= 105.0  <O>=0.574  elapsed     42s  eta     38s
+[     47s]       [interacting] t= 110.0  <O>=0.257  elapsed     44s  eta     36s
+[     49s]       [interacting] t= 115.0  <O>=0.381  elapsed     46s  eta     34s
+[     51s]       [interacting] t= 120.0  <O>=0.468  elapsed     48s  eta     32s
+[     53s]       [interacting] t= 125.0  <O>=0.306  elapsed     50s  eta     30s
+[     55s]       [interacting] t= 130.0  <O>=0.348  elapsed     52s  eta     28s
+[     57s]       [interacting] t= 135.0  <O>=0.613  elapsed     54s  eta     26s
+[     59s]       [interacting] t= 140.0  <O>=0.774  elapsed     56s  eta     24s
+[     61s]       [interacting] t= 145.0  <O>=0.534  elapsed     58s  eta     22s
+[     63s]       [interacting] t= 150.0  <O>=0.330  elapsed     60s  eta     20s
+[     65s]       [interacting] t= 155.0  <O>=0.398  elapsed     62s  eta     18s
+[     67s]       [interacting] t= 160.0  <O>=0.524  elapsed     64s  eta     16s
+[     69s]       [interacting] t= 165.0  <O>=0.372  elapsed     66s  eta     14s
+[     71s]       [interacting] t= 170.0  <O>=0.316  elapsed     68s  eta     12s
+[     73s]       [interacting] t= 175.0  <O>=0.554  elapsed     70s  eta     10s
+[     75s]       [interacting] t= 180.0  <O>=0.702  elapsed     72s  eta      8s
+[     77s]       [interacting] t= 185.0  <O>=0.454  elapsed     74s  eta      6s
+[     79s]       [interacting] t= 190.0  <O>=0.288  elapsed     76s  eta      4s
+[     81s]       [interacting] t= 195.0  <O>=0.570  elapsed     78s  eta      2s
+[     83s]       [interacting] t= 200.0  <O>=0.704  elapsed     80s  eta      0s
+[     83s] [N=4 k=12] interacting: wrote data/studies/dt_scan/N4_k12_int_c2.260_T200_dt0.5.npz  <O> in [0.245, 0.998]  (82s)
+[     83s] [dynamics N=4 k=12] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[     84s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[     84s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[     84s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[     85s]       [interacting] spectrum [16.1,69.9], T=200, dt=1, 201 snapshots, ~16400 matvecs; 7 cuts (0 skipped: dimension)
+[     87s]       [interacting] t=  10.0  <O>=0.345  elapsed      3s  eta     53s
+[     90s]       [interacting] t=  20.0  <O>=0.382  elapsed      5s  eta     49s
+[     93s]       [interacting] t=  30.0  <O>=0.424  elapsed      8s  eta     46s
+[     96s]       [interacting] t=  40.0  <O>=0.713  elapsed     11s  eta     44s
+[     98s]       [interacting] t=  50.0  <O>=0.286  elapsed     14s  eta     42s
+[    101s]       [interacting] t=  60.0  <O>=0.680  elapsed     17s  eta     39s
+[    104s]       [interacting] t=  70.0  <O>=0.348  elapsed     19s  eta     36s
+[    106s]       [interacting] t=  80.0  <O>=0.426  elapsed     22s  eta     33s
+[    109s]       [interacting] t=  90.0  <O>=0.421  elapsed     24s  eta     30s
+[    112s]       [interacting] t= 100.0  <O>=0.811  elapsed     27s  eta     27s
+[    114s]       [interacting] t= 110.0  <O>=0.257  elapsed     30s  eta     24s
+[    117s]       [interacting] t= 120.0  <O>=0.468  elapsed     32s  eta     21s
+[    119s]       [interacting] t= 130.0  <O>=0.348  elapsed     35s  eta     19s
+[    122s]       [interacting] t= 140.0  <O>=0.774  elapsed     38s  eta     16s
+[    125s]       [interacting] t= 150.0  <O>=0.330  elapsed     40s  eta     13s
+[    128s]       [interacting] t= 160.0  <O>=0.524  elapsed     43s  eta     11s
+[    130s]       [interacting] t= 170.0  <O>=0.316  elapsed     46s  eta      8s
+[    133s]       [interacting] t= 180.0  <O>=0.702  elapsed     49s  eta      5s
+[    136s]       [interacting] t= 190.0  <O>=0.288  elapsed     52s  eta      3s
+[    139s]       [interacting] t= 200.0  <O>=0.704  elapsed     54s  eta      0s
+[    139s] [N=4 k=12] interacting: wrote data/studies/dt_scan/N4_k12_int_c2.260_T200_dt1.npz  <O> in [0.245, 0.998]  (56s)
+[    139s] [dynamics N=4 k=12] protocol custom: T=200 dt=2 starts=['interacting'] cuts=all
+[    140s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[    140s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[    140s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[    141s]       [interacting] spectrum [16.1,69.9], T=200, dt=2, 101 snapshots, ~11900 matvecs; 7 cuts (0 skipped: dimension)
+[    144s]       [interacting] t=  20.0  <O>=0.382  elapsed      4s  eta     33s
+[    148s]       [interacting] t=  40.0  <O>=0.713  elapsed      7s  eta     30s
+[    152s]       [interacting] t=  60.0  <O>=0.680  elapsed     11s  eta     26s
+[    156s]       [interacting] t=  80.0  <O>=0.426  elapsed     15s  eta     22s
+[    159s]       [interacting] t= 100.0  <O>=0.811  elapsed     18s  eta     18s
+[    163s]       [interacting] t= 120.0  <O>=0.468  elapsed     22s  eta     15s
+[    166s]       [interacting] t= 140.0  <O>=0.774  elapsed     26s  eta     11s
+[    170s]       [interacting] t= 160.0  <O>=0.524  elapsed     29s  eta      7s
+[    174s]       [interacting] t= 180.0  <O>=0.702  elapsed     33s  eta      4s
+[    177s]       [interacting] t= 200.0  <O>=0.704  elapsed     37s  eta      0s
+[    177s] [N=4 k=12] interacting: wrote data/studies/dt_scan/N4_k12_int_c2.260_T200_dt2.npz  <O> in [0.257, 0.998]  (39s)
+[    177s] [dynamics N=4 k=12] protocol custom: T=200 dt=4 starts=['interacting'] cuts=all
+[    178s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[    179s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[    179s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[    179s]       [interacting] spectrum [16.1,69.9], T=200, dt=4, 51 snapshots, ~9200 matvecs; 7 cuts (0 skipped: dimension)
+[    185s]       [interacting] t=  40.0  <O>=0.713  elapsed      6s  eta     23s
+[    191s]       [interacting] t=  80.0  <O>=0.426  elapsed     11s  eta     17s
+[    196s]       [interacting] t= 120.0  <O>=0.468  elapsed     17s  eta     12s
+[    203s]       [interacting] t= 160.0  <O>=0.524  elapsed     23s  eta      6s
+[    208s]       [interacting] t= 200.0  <O>=0.704  elapsed     29s  eta      0s
+[    208s] [N=4 k=12] interacting: wrote data/studies/dt_scan/N4_k12_int_c2.260_T200_dt4.npz  <O> in [0.263, 0.998]  (31s)
+# exit 0   end 2026-10-06T20:54:39+00:00

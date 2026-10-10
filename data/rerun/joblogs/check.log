@@ -1,0 +1,3 @@
+data/runs: 19 expected files, 0 unexpected
+NOTE: full-grid t0 = 16.3741 at the exact <O>_gs = 1/2 resonance c* = 0.4633; [quantum] t_star_0 = 16.5212 (-0.89 %).  dE depends steeply on c, so t0 depends on the exact c.
+rerun check: all expected files present, current, in the config convention

@@ -1,0 +1,9 @@
+# job fullgrid_resonance   threads 1   host vm   start 2026-10-06T20:29:48+00:00
+# call: run_fullgrid_check()
+[    149s]    [fullgrid] c=0.20000  <O>_gs=0.9582  dE=0.252271  (148s)
+[    318s]    [fullgrid] c=0.90000  <O>_gs=0.0350  dE=0.576831  (317s)
+[    416s]    [fullgrid] c=0.54742  <O>_gs=0.2377  dE=0.249492  (415s)
+[    503s]    [fullgrid] c=0.48419  <O>_gs=0.4210  dE=0.199523  (503s)
+[    601s]    [fullgrid] c=0.46329  <O>_gs=0.4998  dE=0.191864  (600s)
+full grid, N = 2: c* = 0.4633 (<O>_gs = 0.4998)  dE = 0.191864  t0 = pi/dE = 16.3741  [quantum] t_star_0 = 16.5212  (-0.891 %)
+# exit 0   end 2026-10-06T20:39:50+00:00

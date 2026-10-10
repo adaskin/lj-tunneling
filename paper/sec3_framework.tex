@@ -1,0 +1,150 @@
+\section{Framework: one inequality per route}
+\label{sec:framework}
+
+Each of the four standard ways of simulating the dynamics is limited by one resource: memory for exact methods, entanglement for tensor networks, statistical noise for Monte Carlo and gate count for a quantum computer
+(Table~\ref{tab:routes}). For every route this section says in words what it stores or samples and what limits it, and then writes the limit as an inequality \emph{cost}$(N)\le$\emph{budget}. The first $N$ at which
+the inequality fails is the \emph{wall} of the route. Writing the inequalities before any measurement shows which statements are arithmetic, which depend on a model, and which depend on a quantity that must
+be measured (the entanglement, Section~\ref{sec:measured}). Let $d$ be the local dimension per particle ($d=M$ on the grid, $d=k$ in the mode basis), so that the full state has $d^N$ amplitudes. Budgets and values are in Table~\ref{tab:params};
+proofs are in Appendix~\ref{app:proofs}.
+
+\begin{table}[t]
+\centering
+\small
+\caption{The four routes: what each one stores or samples, which resource limits it, and what has to be known to evaluate the limit. The status marks are those of Section~\ref{sec:intro}.}
+\label{tab:routes}
+\begin{tabular}{@{}p{0.17\textwidth}p{0.24\textwidth}p{0.23\textwidth}p{0.27\textwidth}@{}}
+\toprule
+route & stores or samples & limited by & needs, to be evaluated \\
+\midrule
+1.\ exact diagonalization & all $d^N$ amplitudes of the state & memory & nothing: a count \stE{} \\
+2.\ tensor networks & a chain of small tensors joined by bonds & bond dimension, set by the entanglement across the cut of the chain & the cut entropy as a function of $N$: measured up to $N=\num{Nmax_measured}$, then a model \stM{}\,\stC{} \\
+3.\ Monte Carlo & random paths & statistical noise (cancellation of path weights, absent in imaginary time) & imaginary time (the right variant): the static spectrum, open \\
+4.\ quantum computer & $\lceil\log_2 d\rceil$ qubits per particle & qubits and T gates, set by the evolution time & the observation time $\Tobs$ and the norm of $\hat H_N$ \stM{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Route 1: exact diagonalization}
+
+Exact methods store the whole wave function, one complex number per configuration of the $N$ particles, and diagonalize $\hat H_N$ or propagate the vector. The memory is therefore a count.
+
+\begin{prop}[Memory of full-state methods]\label{prop:ed}\stE{}
+Storing $v$ complex vectors of $N$ particles with local dimension $d$ needs $16\,v\,d^N$ bytes. Full-state diagonalization or Krylov propagation therefore exceeds $\Bmem$ for
+$N>\NED(d):=\lfloor\ln(\Bmem/16v)/\ln d\rfloor$.
+\end{prop}
+The count is basis-dependent (on the grid it concerns the position basis; in a mode basis the same formula gives a later wall, Table~\ref{tab:walls}) and says nothing about methods that do not store the full state.
+
+\subsection{Route 2: tensor networks}
+\label{sec:fw-tn}
+
+\paragraph{The idea.}
+A tensor network writes the state of $N$ particles not as one array with $d^N$ entries but as a chain of small tensors, one per particle, each joined to its neighbours by a \emph{bond}~\cite{white1992,vidal2004,schollwock2011,paeckel2019}. In the chain form, a \emph{matrix-product state}, the number of
+values a bond carries is the \emph{bond dimension} $\chi$. The memory is then of order $N d\chi^2$ and one time step costs of order $N(d\chi)^3$ operations, linear in $N$ instead of exponential, provided $\chi$ stays small. Everything depends on how large $\chi$ must be.
+
+\paragraph{The cut.}
+A bond of the chain splits the particles into two groups: those to its left, $A=\{1,\dots,b\}$, and the rest. We call this split the \emph{MPS cut}. Whatever the left group has in common with the right group must pass through that one bond. The amount
+that has to pass is the entanglement between the two groups: writing the state as a sum of products of a left state and a right state (a Schmidt decomposition), the number of terms is the Schmidt rank, and a bond that carries fewer values cannot represent the state. The entanglement entropy $S_A$ of the cut, in bits, is the logarithm of the effective number of terms, so the bond must have dimension of at least $2^{S_A}$.
+The cost of the simulation is therefore set by the \emph{largest cut entropy} that the state reaches during the evolution: low where the two groups are nearly independent, high where they are strongly correlated. After a sudden change the entropy typically grows with time~\cite{calabrese2005}, and matrix-product simulations stop being possible when it becomes large~\cite{schuch2008}. The same state can be cheap or expensive depending on how the particles are ordered along the chain (a tree-shaped network is a different choice of cuts).
+
+\paragraph{How we measure it.}
+We compute the state exactly for $N=2$--$\num{Nmax_measured}$ (Section~\ref{sec:measured}), evaluate $S_A(t)$ for the cuts of interest at every time step, keep the largest value over the observation time, and take the largest of these over the bonds of the chain. This number, $\SN$ below, is the input of the cost.
+The measurements cannot reach the sizes where a wall would sit, so Section~\ref{sec:larger} extends them with a model, and this subsection supplies only the formulas that turn an entropy into a cost.
+
+\paragraph{Cuts and layouts.}
+For a subset $A$ of $a$ particles let $S_A(t)$ be the entropy in bits of $\psi(t)$ across $A\,|\,A^c$, and $\sigma(A)=\max_{0\le t\le\Tobs}S_A(t)$. A matrix-product state in the order $1,\dots,N$
+has the $N-1$ prefix cuts $A_b=\{1,\dots,b\}$; a tree has a different set. Three numbers summarize the task:
+\begin{equation}
+\Snat:=\max_{1\le b<N}\sigma(A_b),\qquad
+\Sperp:=\min_{\lceil N/3\rceil\le|A|\le\lfloor N/2\rfloor}\sigma(A),\qquad
+\Smax:=\max_{|A|=\lfloor N/2\rfloor}\sigma(A).
+\label{eq:threeS}
+\end{equation}
+$\Snat$ is what the natural-order matrix-product state pays; $\Sperp$ is what \emph{every} tree layout of node degree at most three pays, because every such tree has a bond with
+$\lceil N/3\rceil\le a\le\lfloor N/2\rfloor$ particles on its smaller side (Lemma~\ref{lem:pivot}); $\Smax$ is the worst balanced layout. Since $\Sperp\le\Snat\le\Smax$, the bracket
+$[\Sperp,\Smax]$ is the layout uncertainty, and we write $\SN:=\Snat$.
+
+\begin{prop}[Tensor networks]\label{prop:tn}
+\emph{(a)}\ \stE{} A tensor network that represents $\psi(t)$ exactly has bond dimension $\chi\ge2^{S_A(t)}$ on every bond that cuts off $A$; a matrix-product state needs
+$\chi\ge2^{\Snat}$ at some bond and any tree of degree $\le3$ needs $\chi\ge2^{\Sperp}$ at some bond.\\
+\emph{(b)}\ \stE{} $S_A\le\min(a,N-a)\log_2d$, and $S_A\le\sum_{i\in A}S_{\{i\}}$ (Lemma~\ref{lem:cap}).\\
+\emph{(c)}\ \stM{} With $\chi=2^{\SN}$ on every bond the memory is $16\,N\,d\,\chi^2$ bytes and a time evolution costs $A_{\rm sw}N(d\chi)^3$ operations.\\
+\emph{(d)}\ \stC{} For any non-decreasing law $\SN=S(N)$ the model of (c) exceeds a budget for $N>\NTN:=\lfloor\min(N^*_{\rm flop},N^*_{\rm mem})\rfloor$, with
+\begin{equation}
+3\,S(N^*_{\rm flop})+\log_2N^*_{\rm flop}=\log_2\frac{\Bflop}{A_{\rm sw}d^{3}},\qquad
+2\,S(N^*_{\rm mem})+\log_2N^*_{\rm mem}=\log_2\frac{\Bmem}{16\,d}.
+\label{eq:Nstar}
+\end{equation}
+\end{prop}
+In words: (a) is the statement above, that the bond must carry $2^{S}$ values; (b) says the entropy cannot exceed what the smaller side can hold or the sum of the single-particle entropies, so it cannot be arbitrarily large; (c) turns $\chi$ into memory and time; (d) asks at which $N$ these exceed the budgets, which needs the law $S(N)$.
+
+\paragraph{The growth law is an input, not a result.}
+To find the wall we need $\SN$ as a function of $N$, and the data reach only $N=\num{Nmax_measured}$. Nothing in $\hat H_N$ alone fixes this dependence: adding a particle changes the Hamiltonian, and a permutation-symmetric preparation of the same family has
+$\SN=O(\log N)$ at fixed $k$ (Remark~\ref{rem:symm}). Growth is a property of the task, Hamiltonian \emph{and} start, and must be measured. Two one-parameter laws, anchored at a measured
+$N_{\rm ref}$, are the usual candidates:
+\begin{align}
+H_S(s):&\quad S(N)=S_{\rm ref}+s\,(N-N_{\rm ref}), &&\text{constant growth per added particle,}\label{eq:HS}\\
+H_P(\beta):&\quad S(N)=S_0+\beta\,\pairs(N),\ \ \pairs(N)=\lfloor N/2\rfloor\lceil N/2\rceil, &&\text{constant weight per crossing pair.}\label{eq:HP}
+\end{align}
+(Here $s$ counts bits per added particle, not the optical-lattice depth, and $S_0$ is a fitted entropy offset, not the tunneling action; both are defined in Section~\ref{sec:model}.)
+Under $H_S(s)$ Eq.~\eqref{eq:Nstar} gives
+\begin{equation}
+N^*_{\rm flop}=N_{\rm ref}+\frac{\log_2\!\big(\Bflop/A_{\rm sw}d^{3}\big)-\log_2N^*_{\rm flop}-3S_{\rm ref}}{3s},
+\label{eq:Nflop}
+\end{equation}
+and the memory analogue. Three consequences hold for every measured input: the wall moves as $1/s$; it moves by $\log_2f/(3s)$ particles for a factor $f$ in the compute budget
+or in the sweep count; and it disappears if $\SN$ saturates ($s\to0$). Section~\ref{sec:graph} explains which of the two laws the data follow and why: the correlation-graph picture contains
+both as two normalizations of the same graph.
+
+\paragraph{What is and is not a bound.}
+(a)--(b) are identities for an \emph{exact} representation. A representation truncated at discarded weight $\epsilon$ (not the well depth) needs the numerical Schmidt rank $\chi(\epsilon)$, which is not ordered
+with $2^S$ in general~\cite{schuch2008}. For this task it lies above (Section~\ref{sec:seed}), so charging $2^{\SN}$ understates the cost. In the other direction the model charges the
+central $\chi$ on every bond although the bond profile is concave (Lemma~\ref{lem:chord}). $\NTN$ is therefore a resource estimate for exact-in-$\chi$ matrix-product states of the task, not an
+impossibility statement for tensor-network dynamics.
+
+\subsection{Route 3: Monte Carlo}
+\label{sec:mc}
+
+\paragraph{The idea.}
+Monte Carlo estimates a sum over very many terms by averaging a random sample of them; the statistical error falls as $1/\sqrt\nu$ for $\nu$ samples, whatever the dimension. For quantum dynamics the sum is over paths of the particles~\cite{ceperley1980}, and it works as long as the path weights do not cancel. In real time they are phases and do cancel (the sign problem~\cite{troyer2005,muhlbacher2008}): for the straightforward absolute-value path estimator the sample count satisfies $\ln\nu\ge2N\Gamma_\infty t/\hbar-N\ln M+2\ln(1/\varepsilon)$ with $\Gamma_\infty=\frac{\pi^2\hbar^2}{3m\,\Delta x^2}(1-M^{-2})$ per direction~\cite{trefethen2000}, so real-time sampling is simply not the right Monte Carlo for this task. The right one works in imaginary time.
+
+\paragraph{Imaginary-time Monte Carlo is the route that may work, and this report does not exclude it.} Replacing the real time $t$ by an imaginary time $-i\tau$ turns the phase $e^{-i\hat Ht}$ into the damping $e^{-\tau\hat H}$. The model has distinguishable particles and a local potential, so there are no exchange signs and every path weight is positive: path-integral and diffusion Monte Carlo~\cite{ceperley1980,anderson1975} sample it without cancellation, and the sign problem of the previous paragraph does not arise. What such a method returns is not the movie but \emph{static} quantities: energies, including tunneling splittings~\cite{sindzingre1989,richardson2011}, and correlation functions $C(\tau)=\langle\psi_0|\hat O\,e^{-\tau(\hat H-E_0)}\hat O|\psi_0\rangle=\sum_n|c_n|^2e^{-\tau(E_n-E_0)}$ whose decay carries the levels $E_n$ and their weights $|c_n|^2$ in the start.
+
+\paragraph{How the signal would follow.} If the start lies on two eigenstates, the signal is $\langle\Op\rangle(t)=a+b\cos(\Delta E\,t+\varphi)$: the splitting comes from imaginary-time data, the weights from the decay of a start-state correlator, and no real-time simulation is needed. This is the situation at $N=2,3$ and at $N=4$, $k=20$ (Table~\ref{tab:mc}), and it is the picture that Section~\ref{sec:static} supports for $N\le5$, in the sense that two levels carry most of the start. Where the gated pair is not the pair that carries the weight, a cosine at its splitting explains none of the signal, and the signal has several frequencies whose number grows with $N$ (Fig.~\ref{fig:cosines}); a prediction then needs a handful of gaps and weights, the sidebands of Proposition~\ref{prop:cond}, from imaginary-time data. Two things could make this work: the dressing may be close to Gaussian (a spin--boson problem), in which case the weights follow from a few harmonic quantities of the two isomers (the Huang--Rhys test of Section~\ref{sec:open}); and estimators built from correlation functions of several trial states could give the few low levels that matter without the whole spectrum. Neither is tested here.
+
+\paragraph{What could make it fail.} Recovering a sum of exponentials from imaginary-time data is an ill-conditioned inverse problem whose difficulty grows with the number of terms~\cite{jarrell1996}, and the number of cosines needed grows with $N$. Whether the few-level description survives in a converged basis for larger clusters is the open problem of Section~\ref{sec:openproblem}. Until it is measured, imaginary-time Monte Carlo is the nearest classical rival to a quantum computer here, and the window of Fig.~\ref{fig:regime} does not account for it.
+
+\subsection{Route 4: quantum simulation}
+
+A quantum computer stores the grid state of each particle in $n_p=\lceil\log_2 d\rceil$ qubits, so the register grows linearly in $N$, and applies $e^{-i\hat H_Nt}$ as a circuit. In the fault-tolerant setting the cost that matters is the number of T gates. Qubitization~\cite{low2019qubitization} makes a number of calls to a block-encoding of $\hat H_N$ that is proportional to the product of the evolution time $\Tobs$ and the one-norm $\lambda$ of the Hamiltonian (the sum of the sizes of its terms); product formulas~\cite{childs2021trotter} are the alternative (Appendix~\ref{app:quantum}). Because the tunneling time grows as $e^{2\mut/3}$ (Section~\ref{sec:model}), the question for this route is not whether an evolution fits at the simulated mass but up to which mass it still fits: the \emph{mass edge} $\mutq(N)$.
+
+\begin{prop}[Quantum resources]\label{prop:q}\stM{} (leading-order counts, not compiled circuits)\\
+\emph{(a)} Qubits: $Q(N)=N\,n_p+b_0$, with $b_0$ the arithmetic workspace and control qubits; the budget allows $N\le\NQ:=\lfloor(\BQ-b_0)/n_p\rfloor$.\\
+\emph{(b)} Qubitization: with one-norm $\lambda(N)=N\lambda_U+\binom N2\lambda_W$ the number of block-encoding queries is $\lceil\lambda(N)\Tobs+\ln(1/\varepsilon)\rceil$, each costing $C_{\rm sel}$
+T-gates, so $T_{\rm qub}\le\BT$ exactly when $\mut\le\mutq(N)$,
+\begin{equation}
+\mutq(N)=\mut_0+\tfrac32\ln\!\Big[\frac{X}{g_N\,\lambda(N)\,t_0}\Big]+\tfrac34\ln\frac{\mutq(N)}{\mut_0},\qquad X=\frac{\BT}{C_{\rm sel}}-\ln\frac1\varepsilon .
+\label{eq:muqub}
+\end{equation}
+\end{prop}
+Two properties carry the paper's quantum claims. The edge is \emph{logarithmic in the budget}: $\partial\mutq/\partial\ln\BT\simeq\tfrac32$, so a thousandfold larger gate budget moves it by
+about $\num{mu_budget_shift}$. And it is \emph{slow in $N$}: when the pair term dominates, $\lambda\simeq\tfrac12N^2\lambda_W$ and $\mutq(N)\simeq\mutq(N_0)-3\ln(N/N_0)$. The Trotter edge, and what the model omits,
+are in Appendix~\ref{app:quantum}.
+
+\subsection{The window}
+\label{sec:window}
+
+The window is the set of sizes and masses where every classical route has failed and the quantum route still fits. Its lower edge in $N$ comes from the classical walls, in practice the tensor-network wall, because the exact count is not binding on our grid; its upper edge in mass is the quantum edge. Whether the window exists therefore depends on how fast the entropy grows: if it grows slowly, the tensor-network wall lies beyond the quantum register and the window is empty.
+
+\begin{defn}[Window]\label{def:window}
+For a model instance $\mathcal M$, budgets $\mathcal B=(\Bmem,\Bflop,\BQ,\BT,\varepsilon)$ and a growth law $S(\cdot)$, the \emph{window} is
+\[
+\Win(\mathcal M,\mathcal B;S)=\big\{(N,\mut):\ N>\NED,\ N>\NTN[S],\ N\le\NQ,\ \mut\le\mutq(N)\big\}.
+\]
+Imaginary-time Monte Carlo is not part of the definition; it is a rival that the window does not price (Section~\ref{sec:mc}).
+\end{defn}
+The window is non-empty at a mass $\mut$ exactly when $\NTN<N_{\rm hi}(\mut):=\min\{\NQ,\max\{N:\mutq(N)\ge\mut\}\}$. In terms of a constant growth $s$ anchored at $(N_{\rm ref},S_{\rm ref})$, Eq.~\eqref{eq:Nflop} solved for $s$ gives
+\begin{equation}
+s>s_{\rm crit}(N_{\rm hi})=\frac{\log_2\!\big(\Bflop/A_{\rm sw}d^3\big)-\log_2N_{\rm hi}-3S_{\rm ref}}{3\,(N_{\rm hi}-N_{\rm ref})}.
+\label{eq:scrit}
+\end{equation}
+``Is there a window?'' is therefore answered by comparing the growth with $s_{\rm crit}$, and ``where does it begin?'' by Eq.~\eqref{eq:Nflop}; the first has a robust answer and the second a soft one.

@@ -1,0 +1,10 @@
+[     13s] [dynamics N=3 k=12] protocol custom: T=200 dt=4 starts=['interacting'] cuts=bonds
+[     14s] [N=3 k=12] c*=1.460 dE=0.188569 <O>_gs=0.512 doublet=(0,3) start=21_1  overlap on doublet: product 0.6725, interacting 0.9390
+[     14s]       start energy above E0: product 2.519, interacting 0.180 (band of the lowest 8 levels: 0.425); weight on those levels: product 0.708, interacting 0.984; main levels of the interacting start: #0(E-E0=0.000, w=0.455) #3(E-E0=0.189, w=0.484) #6(E-E0=0.360, w=0.032) #7(E-E0=0.425, w=0.007)
+[     14s]       [interacting] spectrum [12.5,42.7], T=200, dt=4, 51 snapshots, ~6350 matvecs; 3 cuts (0 skipped: dimension)
+[     14s]       [interacting] t=  40.0  <O>=0.686  elapsed      0s  eta      2s
+[     14s]       [interacting] t=  80.0  <O>=0.183  elapsed      1s  eta      1s
+[     15s]       [interacting] t= 120.0  <O>=0.301  elapsed      1s  eta      1s
+[     15s]       [interacting] t= 160.0  <O>=0.640  elapsed      2s  eta      0s
+[     16s]       [interacting] t= 200.0  <O>=0.856  elapsed      2s  eta      0s
+[     16s] [N=3 k=12] interacting: wrote ../../testruns/dtscan/N3_k12_int_c1.460_T200_dt4.npz  <O> in [0.152, 0.997]  (2s)

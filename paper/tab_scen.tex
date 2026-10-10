@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{The three scenarios for the one-particle entropy $\bar S_1(N)$ beyond the simulated sizes, the growth laws fitted to smaller $N$, and what they predicted for the central bond (bits). The sharing-law rows were fitted to $N\le5$ and give the central cut they predicted at $N=6$ before that run, and its excess over the measured $S_6=\num{S6_cen}$; the pair-counting and linear laws were fitted to $N\le4$. \emph{Slope}: asymptotic growth per added particle (the sharing law with saturating $\bar S_1$ is linear in $N$; with growing $\bar S_1$ it grows as $N^2$). The last three columns are the extrapolated central bond. None of these is a measurement beyond $N=\num{Nmax_measured}$.}
+\label{tab:scen}
+\begin{tabular}{llcccccc}
+\toprule
+scenario & parameters & slope & $N=6$ & excess & $N=8$ & $N=12$ & $N=16$ \\
+\midrule
+sharing, $\bar S_1$ saturating (fit) & $S_\infty=\num{fit_Sinf}$, $\tau=\num{fit_tau}$ & 0.53 & 3.71 & 0.46 & 4.72 & 6.92 & 9.05 \\
+sharing, $\bar S_1$ saturated at $N=6$ & $\bar S_1=\num{S1_last}$ & 0.48 & 3.39 & 0.13 & 4.41 & 6.31 & 8.22 \\
+sharing, $\bar S_1$ keeps growing & $+\num{inc_pess}$ per particle & $\propto N^2$ & 3.90 & 0.64 & 4.82 & 8.08 & 12.07 \\
+pair-counting law & fit to $N\le4$ & $\propto N^2$ & 4.73 & 1.47 & 8.11 & 17.76 & 31.27 \\
+linear law & fit to $N\le4$ & 0.71 & 3.66 & 0.40 & 5.09 & 7.95 & 10.81 \\
+\bottomrule
+\end{tabular}
+\end{table}

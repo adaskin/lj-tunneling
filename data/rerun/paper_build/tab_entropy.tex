@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Cut entropies of the correlated start at $k=12$ modes per particle, in bits (maximum over the window $[0,T]$). $\bar S_1$: mean one-particle entropy. $\Sperp$, $\Snat$, $\Smax$: best balanced, natural-order and worst balanced cut (Eq.~\eqref{eq:threeS}); $\Snat$ is the central bond. $\chi$: numerical Schmidt rank of the central bond at discarded weight $10^{-3}$. One protocol applies to every row ($T=\num{Tprot}$, snapshot spacing $\num{dtsnap}$); a row marked $\dagger$ is a result of the earlier code (window and spacing in the column $T$, 45 snapshots) and is replaced when that $N$ is rerun.}
+\label{tab:entropy}
+\begin{tabular}{rrrrrrrrr}
+\toprule
+$N$ & $c^*$ & $T$ & $\bar S_1$ & $\Sperp$ & $\Snat$ & $\Smax$ & $\chi$ & $2^{\Snat}$ \\
+\midrule
+2 & 0.70 & 200 & 0.90 & 0.90 & 0.90 & 0.90 & 7 & 1.9 \\
+3 & 1.46 & 200 & 1.32 & 1.29 & 1.30 & 1.37 & 10 & 2.5 \\
+4 & 2.26 & 200 & 1.75 & 2.33 & 2.33 & 2.54 & 38 & 5.0 \\
+5 & 2.92 & 200 & 1.88 & 2.62 & 2.72 & 2.93 & 74 & 6.6 \\
+6 & 3.66 & 200 & 1.93 & 2.88 & 3.26 & 3.70 & 325 & 9.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

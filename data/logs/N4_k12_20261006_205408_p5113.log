@@ -1,0 +1,11 @@
+[    177s] [dynamics N=4 k=12] protocol custom: T=200 dt=4 starts=['interacting'] cuts=all
+[    178s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[    179s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[    179s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[    179s]       [interacting] spectrum [16.1,69.9], T=200, dt=4, 51 snapshots, ~9200 matvecs; 7 cuts (0 skipped: dimension)
+[    185s]       [interacting] t=  40.0  <O>=0.713  elapsed      6s  eta     23s
+[    191s]       [interacting] t=  80.0  <O>=0.426  elapsed     11s  eta     17s
+[    196s]       [interacting] t= 120.0  <O>=0.468  elapsed     17s  eta     12s
+[    203s]       [interacting] t= 160.0  <O>=0.524  elapsed     23s  eta      6s
+[    208s]       [interacting] t= 200.0  <O>=0.704  elapsed     29s  eta      0s
+[    208s] [N=4 k=12] interacting: wrote data/studies/dt_scan/N4_k12_int_c2.260_T200_dt4.npz  <O> in [0.263, 0.998]  (31s)

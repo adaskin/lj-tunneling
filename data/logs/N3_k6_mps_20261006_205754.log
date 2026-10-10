@@ -1,0 +1,7 @@
+[      3s] [mps N=3 k=6] start: DMRG 10 sweeps, chi 6, <H> = 12.567847, variance 1.7e-13
+[      6s]       [N3k6] t=  10.0  <O>=0.809  chi_max=   6  trunc=0.0e+00  elapsed      3s  eta     14s
+[      8s]       [N3k6] t=  20.0  <O>=0.645  chi_max=   6  trunc=0.0e+00  elapsed      5s  eta     11s
+[     11s]       [N3k6] t=  30.0  <O>=0.311  chi_max=   6  trunc=0.0e+00  elapsed      8s  eta      8s
+[     14s]       [N3k6] t=  40.0  <O>=0.203  chi_max=   6  trunc=0.0e+00  elapsed     11s  eta      5s
+[     16s]       [N3k6] t=  50.0  <O>=0.144  chi_max=   6  trunc=0.0e+00  elapsed     13s  eta      3s
+[     19s]       [N3k6] t=  60.0  <O>=0.179  chi_max=   6  trunc=0.0e+00  elapsed     16s  eta      0s

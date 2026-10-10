@@ -1,0 +1,45 @@
+[      1s] [dynamics N=3 k=12] protocol custom: T=200 dt=0.5 starts=['interacting'] cuts=all
+[      1s] [N=3 k=12] c*=1.460 dE=0.188569 <O>_gs=0.520 doublet=(0,3) start=21_1  overlap on doublet: product 0.6725, interacting 0.9384
+[      1s]       start energy above E0: product 2.519, interacting 0.188 (band of the lowest 8 levels: 0.425); weight on those levels: product 0.708, interacting 0.983; main levels of the interacting start: #0(E-E0=0.000, w=0.456) #3(E-E0=0.189, w=0.482) #6(E-E0=0.360, w=0.032) #7(E-E0=0.425, w=0.007)
+[      1s]       [interacting] spectrum [12.5,42.7], T=200, dt=0.5, 401 snapshots, ~20400 matvecs; 3 cuts (0 skipped: dimension)
+[      1s]       [interacting] t=   5.0  <O>=0.767  elapsed      0s  eta      5s
+[      1s]       [interacting] t=  10.0  <O>=0.424  elapsed      0s  eta      5s
+[      2s]       [interacting] t=  15.0  <O>=0.263  elapsed      0s  eta      5s
+[      2s]       [interacting] t=  20.0  <O>=0.277  elapsed      1s  eta      5s
+[      2s]       [interacting] t=  25.0  <O>=0.480  elapsed      1s  eta      5s
+[      2s]       [interacting] t=  30.0  <O>=0.872  elapsed      1s  eta      5s
+[      2s]       [interacting] t=  35.0  <O>=0.965  elapsed      1s  eta      5s
+[      2s]       [interacting] t=  40.0  <O>=0.695  elapsed      1s  eta      4s
+[      2s]       [interacting] t=  45.0  <O>=0.337  elapsed      1s  eta      4s
+[      2s]       [interacting] t=  50.0  <O>=0.166  elapsed      1s  eta      4s
+[      3s]       [interacting] t=  55.0  <O>=0.328  elapsed      1s  eta      4s
+[      3s]       [interacting] t=  60.0  <O>=0.668  elapsed      2s  eta      4s
+[      3s]       [interacting] t=  65.0  <O>=0.914  elapsed      2s  eta      4s
+[      3s]       [interacting] t=  70.0  <O>=0.923  elapsed      2s  eta      3s
+[      3s]       [interacting] t=  75.0  <O>=0.605  elapsed      2s  eta      3s
+[      3s]       [interacting] t=  80.0  <O>=0.192  elapsed      2s  eta      3s
+[      3s]       [interacting] t=  85.0  <O>=0.227  elapsed      2s  eta      3s
+[      3s]       [interacting] t=  90.0  <O>=0.494  elapsed      2s  eta      3s
+[      4s]       [interacting] t=  95.0  <O>=0.739  elapsed      2s  eta      3s
+[      4s]       [interacting] t= 100.0  <O>=0.908  elapsed      3s  eta      3s
+[      4s]       [interacting] t= 105.0  <O>=0.810  elapsed      3s  eta      2s
+[      4s]       [interacting] t= 110.0  <O>=0.428  elapsed      3s  eta      2s
+[      4s]       [interacting] t= 115.0  <O>=0.236  elapsed      3s  eta      2s
+[      4s]       [interacting] t= 120.0  <O>=0.309  elapsed      3s  eta      2s
+[      4s]       [interacting] t= 125.0  <O>=0.558  elapsed      3s  eta      2s
+[      4s]       [interacting] t= 130.0  <O>=0.789  elapsed      3s  eta      2s
+[      5s]       [interacting] t= 135.0  <O>=0.877  elapsed      3s  eta      2s
+[      5s]       [interacting] t= 140.0  <O>=0.688  elapsed      4s  eta      2s
+[      5s]       [interacting] t= 145.0  <O>=0.408  elapsed      4s  eta      1s
+[      5s]       [interacting] t= 150.0  <O>=0.242  elapsed      4s  eta      1s
+[      5s]       [interacting] t= 155.0  <O>=0.349  elapsed      4s  eta      1s
+[      5s]       [interacting] t= 160.0  <O>=0.649  elapsed      4s  eta      1s
+[      5s]       [interacting] t= 165.0  <O>=0.854  elapsed      4s  eta      1s
+[      5s]       [interacting] t= 170.0  <O>=0.834  elapsed      4s  eta      1s
+[      6s]       [interacting] t= 175.0  <O>=0.610  elapsed      4s  eta      1s
+[      6s]       [interacting] t= 180.0  <O>=0.297  elapsed      5s  eta      1s
+[      6s]       [interacting] t= 185.0  <O>=0.181  elapsed      5s  eta      0s
+[      6s]       [interacting] t= 190.0  <O>=0.499  elapsed      5s  eta      0s
+[      6s]       [interacting] t= 195.0  <O>=0.789  elapsed      5s  eta      0s
+[      6s]       [interacting] t= 200.0  <O>=0.865  elapsed      5s  eta      0s
+[      6s] [N=3 k=12] interacting: wrote data/studies/dt_scan/N3_k12_int_c1.460_T200_dt0.5.npz  <O> in [0.144, 0.999]  (5s)

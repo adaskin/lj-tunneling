@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{A matrix-product state (density-matrix-renormalization-group start, two-site time-dependent variational evolution) against the exact propagation of the same case, correlated start, resonant tilt, window $T$ (shorter than $T=\num{Tprot}$ so that the exact run is cheap). $S_{\rm cen}$: central-bond entropy (bits); $\max\Delta S$: largest difference over every cut both methods measured and every snapshot; $\chi_{10^{-3}}$: numerical Schmidt rank of the central bond (at odd $N$, of the two central bonds the one with the larger entropy); $\chi_{\max}$: cap on the bond dimension (binding where $\chi_{10^{-6}}$ of the MPS equals it). Last column: wall time of the MPS over that of the exact code (a shared four-core machine; an order of magnitude only). The $k=6$ rows validate the method in a saturated basis; the $k=12$ row is capped at $\chi_{\max}$ and its $S_{\rm cen}$ is $\num{tn_k12_dSc}$ bit below the exact value.}
+\label{tab:mps}
+\begin{tabular}{rrrrrrrrr}
+\toprule
+$N$ & $k$ & $T$ & $\chi_{\max}$ & $S_{\rm cen}$ MPS & $S_{\rm cen}$ exact & $\max\Delta S$ & $\chi_{10^{-3}}$ MPS / exact & slower by \\
+\midrule
+3 & 6 & 60 & 120 & 1.7332 & 1.7332 & \ensuremath{1.8\times10^{-5}} & 5 / 5 & 43$\times$ \\
+4 & 6 & 60 & 120 & 2.4444 & 2.4449 & \ensuremath{5.9\times10^{-4}} & 18 / 18 & 76$\times$ \\
+5 & 6 & 40 & 100 & 3.9603 & 3.9602 & \ensuremath{1.8\times10^{-3}} & 32 / 32 & 74$\times$ \\
+4 & 12 & 40 & 64 & 2.2431 & 2.2640 & \ensuremath{2.8\times10^{-2}} & 32 / 35 & 146$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

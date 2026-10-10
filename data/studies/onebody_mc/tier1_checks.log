@@ -1,0 +1,51 @@
+box L=8.0, M=1024, dx=0.01562, qubits=10, steps=20000
+[anchors] instanton(WKB) dE(A=1)=1.628880  (S0=1.89: asymptotic formula NOT valid here)  sigma_H=2.318405  tau0=0.4313
+
+[box lemma]  L   measured    model     continuum
+            3.0  12.144692  12.439394   2.318405
+            4.0   2.319849   2.319913   2.318405
+            5.0   2.318414   2.318405   2.318405
+            6.0   2.318414   2.318405   2.318405
+            8.0   2.318414   2.318405   2.318405
+[exact diag] A=1.0: c=0 dE=0.791776  (instanton 1.628880)
+[exact diag] A=8.0: c=0 dE=0.191347  (instanton 0.200954)
+[evolve] 20000 steps ...
+[spectrum] dE_fft=0.791910 vs exact 0.791776  rel err 1.70e-04
+
+[MC lemma] C9 V-independence of colZ: |d colZ| = 0.00e+00  PASS
+[MC lemma] plateau identity at M=128: Gamma_inf = 210.5387
+     dtau       colZ       rate  rate/Gamma
+   0.0400    4.84482      39.45      0.1874
+   0.0200    3.57818      63.74      0.3028
+   0.0100    2.65435      97.62      0.4637
+   0.0050    1.94244     132.79      0.6307
+   0.0025    1.49876     161.85      0.7688
+   0.0010    1.20611     187.40      0.8901
+   0.0005    1.10416     198.17      0.9413
+   0.0002    1.04193     205.38      0.9755
+  interpolation-window fit (dtau in [0.005,0.04] ONLY): ln colZ = 2.99 + 0.44 ln dtau
+  -> (a+b ln dtau)/dtau is NOT an asymptotic law (goes negative below dtau~1e-3); dtau->0 limit is the plateau above
+[MC lemma] M-direction: rate at fixed dtau=0.01 and plateau Gamma_inf(M):
+   M=  64  rate(dtau=0.01)=   40.45  Gamma_inf(M)=     52.63
+   M= 128  rate(dtau=0.01)=   97.62  Gamma_inf(M)=    210.54
+   M= 256  rate(dtau=0.01)=  157.94  Gamma_inf(M)=    842.19
+   M= 512  rate(dtau=0.01)=  220.42  Gamma_inf(M)=   3368.81
+   plateau log-log slope M=64..2048: p_UV = 2.0001   (full 2^6..2^16 sweep: measure_gamma_inf.py, p_UV = 2.0000)
+[MC lemma] corrected exclusion: rate(dtau->0)=Gamma_inf(M) finite; Gamma_inf ~ M^2 (UV divergence); Gamma_inf(N)=N*Gamma_inf(1);
+   => nu >= eps^-2 exp(2 t N Gamma_inf(M(eps))), M(eps)=Theta(eps^-1/2) => ln nu = Omega(t N / eps): position-basis MC excluded.
+   L-MC1: basis-dependent; basis-optimized reweighting = open loophole, stated.
+
+[costs] quantum gates=5.196e+06  classical Lanczos flops=2.458e+06  -> classical wins 2.1x : NO advantage at Tier 1
+[qiskit] not installed; skipping structural check
+
+================================================================
+TIER 1 SCORECARD (validation only)
+================================================================
+  dE exact            0.791776
+  dE real-time FFT    0.791910   rel err 1.70e-04
+  dE instanton (WKB+Garg, A=8) 0.200954   vs exact 0.191347   rel err 5.02e-02
+  sigma_H grid(L=8)   2.318414   vs analytic 2.318405
+  MC lemma (experiment E1c: the Monte Carlo exclusion)      plateau Gamma_inf(128)=210.5387; rate->Gamma as dtau->0;
+                      p_UV=2.00 here (2.0000 full sweep); N-extensive -> MC excluded
+  costs               classical wins 2.1x -> no advantage claimed
+================================================================

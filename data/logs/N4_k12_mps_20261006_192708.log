@@ -1,0 +1,5 @@
+[    564s] [mps N=4 k=12] start: DMRG 85 sweeps, chi 64, <H> = 16.348687, variance 3.4e-07
+[    974s]       [N4k12] t=  10.0  <O>=0.344  chi_max=  64  trunc=1.2e-03  elapsed    410s  eta   1231s
+[   1374s]       [N4k12] t=  20.0  <O>=0.381  chi_max=  64  trunc=3.4e-03  elapsed    810s  eta    810s
+[   1774s]       [N4k12] t=  30.0  <O>=0.421  chi_max=  64  trunc=5.1e-03  elapsed   1210s  eta    403s
+[   2173s]       [N4k12] t=  40.0  <O>=0.711  chi_max=  64  trunc=6.5e-03  elapsed   1609s  eta      0s

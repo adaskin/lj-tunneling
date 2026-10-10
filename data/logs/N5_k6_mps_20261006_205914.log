@@ -1,0 +1,5 @@
+[    215s] [mps N=5 k=6] start: DMRG 212 sweeps, chi 35, <H> = 21.015708, variance 2.1e-07
+[    286s]       [N5k6] t=  10.0  <O>=0.396  chi_max=  36  trunc=0.0e+00  elapsed     71s  eta    212s
+[    353s]       [N5k6] t=  20.0  <O>=0.304  chi_max=  36  trunc=0.0e+00  elapsed    137s  eta    137s
+[    421s]       [N5k6] t=  30.0  <O>=0.358  chi_max=  36  trunc=0.0e+00  elapsed    205s  eta     68s
+[    493s]       [N5k6] t=  40.0  <O>=0.547  chi_max=  36  trunc=0.0e+00  elapsed    277s  eta      0s

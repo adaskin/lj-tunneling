@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Barrier strength: one particle in $U=A(x^2-1)^2$ ($m=\hbar=1$). $S_0=\frac43\sqrt{2A}$ is the barrier action, $\mut=\sqrt{8A}$ the trap mass (the level spacing $\hbar\omega$ of one valley), $\Delta E$ the splitting of the two lowest levels (finite differences, converged in the grid spacing; the value on the coarse grid $\Delta x=0.125$ is up to $\num{ch_grid_gap}\%$ away), $t^*=\pi/\Delta E$ the time of one complete transfer. $A=\num{A}$ (bold) is the value used in the paper; its $N=2$ value, with the other valley and the pair interaction, is $t_0=\num{tstar0}$ (Table~\ref{tab:params}).}
+\label{tab:Asweep}
+\begin{tabular}{rccccc}
+\toprule
+$A$ & barrier action $S_0$ & trap mass $\mut$ & splitting $\Delta E$ & transfer time $t^*=\pi/\Delta E$ & $\Delta E\,/\,\hbar\omega$ \\
+\midrule
+2 & 2.67 & 4.0 & 0.692 & 4.5 & 0.17 \\
+4 & 3.77 & 5.7 & 0.462 & 6.8 & 0.082 \\
+6 & 4.62 & 6.9 & 0.297 & 10.6 & 0.043 \\
+\textbf{8} & \textbf{5.33} & \textbf{8.0} & \textbf{0.191} & \textbf{16.4} & \textbf{0.024} \\
+10 & 5.96 & 8.9 & 0.125 & 25.1 & 0.014 \\
+12 & 6.53 & 9.8 & 0.0833 & 37.7 & 0.0085 \\
+16 & 7.54 & 11.3 & 0.0389 & 80.8 & 0.0034 \\
+\bottomrule
+\end{tabular}
+\end{table}

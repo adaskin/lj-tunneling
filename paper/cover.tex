@@ -1,0 +1,50 @@
+% One-page cover: title block, summary, status at a glance.  Every number is a macro from numbers.tex.
+\begin{center}
+{\small Research report. Archived with its code and data at {\texttt{github.com/adaskin/lj-tunneling}}; not submitted to a journal.}
+\end{center}
+\vspace{-0.4em}
+
+\begin{abstract}\small
+\noindent Small clusters of light atoms rearrange by quantum tunneling, and following this in real time looks like a natural job for a quantum computer. We asked for which cluster sizes $N$ and masses one would be needed and affordable, in a minimal model: $N$ distinguishable particles in a two-valley trap with a Lennard-Jones interaction. We state the classical costs as inequalities against explicit budgets. Exact storage of the state fails early by a count. Tensor networks need a bond dimension $\chi\ge2^{S}$ for the cut entropy $S$; we measured $S$ for $N=2$--\num{Nmax_measured} and describe it by a correlation graph. Priced on a quantum computer, a leading-order count for one evolution gives a mass edge. Read at face value, these bounds open a window between a tensor-network wall and the quantum edge.
+
+An analysis of the prepared state \emph{does not support that window} as a statement about the dynamics. For $N\le5$ the start state lies on essentially two eigenstates (the cluster before and after one particle has moved) plus a dressing by nearby internal levels; an exact reflection symmetry removes the other levels; and most of the cut entropy is present without any tunneling. If this persists, the signal is a sum of a few cosines of static quantities, and the cost of the task is the cost of a static spectrum. Whether that cost grows exponentially with $N$ is open. We give no hardness proof (impossible for a fixed family) and no classical method for large $N$, and we state what would settle the question. Imaginary-time Monte Carlo, which this report only discusses, is the nearest classical rival.
+\end{abstract}
+
+\vspace{-0.3em}
+\noindent{\small\textbf{At a glance.}}\\[-0.2em]
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.32\textwidth}p{0.32\textwidth}p{0.32\textwidth}@{}}
+\toprule
+\textbf{Established} (count, identity or measurement) & \textbf{Not supported} & \textbf{Open} \\
+\midrule
+\begin{itemize}[leftmargin=1.0em,itemsep=0.05em,topsep=0pt,parsep=0pt]
+\item Full-state storage fails early by a count (Sec.~\ref{sec:framework}).
+\item Cut entropies $S_N$ for $N=2$--\num{Nmax_measured}; a pair-counting law fails at $N=5,6$ (Sec.~\ref{sec:measured}).
+\item For $N\le5$ the start is two levels plus a dressing, and most of the cut entropy is static: at $N=5$ it is \num{off_Snat} bit off resonance and \num{Snat_N5} bit on resonance (Sec.~\ref{sec:static}).
+\end{itemize}
+&
+\begin{itemize}[leftmargin=1.0em,itemsep=0.05em,topsep=0pt,parsep=0pt]
+\item A classical--quantum window between a tensor-network wall and the quantum edge, as a statement about the \emph{dynamics}; the quantum edge prices one evolution, not the task.
+\item Tensor-network walls at $N\approx\num{wall_sat_grid}$ and the $1/(N-1)$ sharing law: the walls price the static entanglement of the isomers, and the extrapolation and the law are models of $N\le6$, not derivations.
+\end{itemize}
+&
+\begin{itemize}[leftmargin=1.0em,itemsep=0.05em,topsep=0pt,parsep=0pt]
+\item The cost of the static dressed-transfer spectrum: how many sidebands $M(N)$ the signal needs, and whether the dressing is Gaussian.
+\item Imaginary-time Monte Carlo is not excluded (Sec.~\ref{sec:mc}).
+\item Everything for $N\ge6$, and where the regime ends at fixed trap depth ($N\approx\num{fu_Ntop_lo}$--\num{fu_Ntop_hi}).
+\end{itemize}
+\\
+\bottomrule
+\end{tabular}
+\normalsize
+
+\vspace{0.5em}
+\noindent{\small\textbf{Reading guide.} Sections~\ref{sec:intro}--\ref{sec:framework}: question, model, cost models. Section~\ref{sec:measured}: measured entropies and the correlation graph. \textbf{Section~\ref{sec:static}: the spectrum of the start, which changes the reading of everything else.} Section~\ref{sec:discussion}: classical walls, the quantum edge as the bounds give them, and what the report does and does not establish. Appendix~\ref{app:static}: the spectrum of the start in full.}
+
+\vspace{0.4em}
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\footnotesize\noindent\textbf{AI usage statement.} We used Claude Sonnet~5.5, Kimi~3, Qwen~Max~3.8, DeepSeek and an OpenAI model in the preparation of this manuscript and of the analyses behind it. The simulation code and the main simulations were run by the author. The spectral calculations of Section~\ref{sec:static} and Appendix~\ref{app:static} were run by a Claude Code agent started and supervised by the author, who also stopped them. The code, the mathematical statements and the text were verified by the author and cross-examined with AI agents; the numbers in the text are generated from the stored data by the scripts of the repository.
+\end{minipage}
+\end{center}

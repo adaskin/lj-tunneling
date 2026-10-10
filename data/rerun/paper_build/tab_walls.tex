@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Where each classical route first fails (first failing $N$) for the budgets of Table~\ref{tab:params}. Exact diagonalization is an exact count; the tensor-network rows evaluate the cost model of Prop.~\ref{prop:tn} on the graph law of Section~\ref{sec:larger} under three assumptions about the one-particle entropy beyond the largest simulated $N$. In parentheses: the same with the numerical Schmidt rank $\chi(10^{-3})$ charged instead of $2^{S}$, at the ratio measured at $N=6$ ($+\num{chi_shift}$ bits).}
+\label{tab:walls}
+\begin{tabular}{L{4.0cm}L{5.3cm}cc}
+\toprule
+Route & Assumption & grid, $d=\num{d_grid}$ & modes, $d=\num{d_mode}$ \\
+\midrule
+Exact diagonalization, distinguishable & exact count & 4 & 8 \\
+Exact diagonalization, bosonic & exact count & 4 & 17 \\
+\midrule
+Tensor networks & entropy keeps growing at the $N=4\to6$ rate & 13 (7) & 18 (13) \\
+Tensor networks & one-particle entropy saturates (fit) & 15 (7) & 25 (16) \\
+Tensor networks & one-particle entropy saturated at $N=6$ & 16 (7) & 27 (17) \\
+\midrule
+Real-time Monte Carlo & absolute-value path estimator & \multicolumn{2}{c}{no budget suffices (Section~\ref{sec:mc})} \\
+\bottomrule
+\end{tabular}
+\end{table}

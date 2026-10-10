@@ -1,0 +1,72 @@
+% DRAFT section for the research-report version (not for paper/ as it stands).  Written 2026-10-09 from the project notes
+% NOTE_difficulty_analyses_check, NOTE_data_check_scaling_arguments and the Stage 1 / static-check outputs.
+%   * Every number below is typed from data/followup/static_checks/static_checks.log, data/followup/stage1/ or the paper's own macros
+%     (control run: off_Snat, Snat_N5, off_diff).  The repository convention is that paper numbers are make_numbers.py macros: convert them
+%     before this text goes into paper/.
+%   * No citations or \ref targets: the labels of the report version are not fixed yet.  Environments `honesty' and `plainwords' are those of paper/main.tex.
+%   * Stage 1 is not finished (N = 6 and k-convergence at N = 4, 5 are open), so every statement is for N <= 5 unless said otherwise.
+
+\section{From the tunneling task to a static spectrum, and what remains open}
+
+\begin{plainwords}
+For $N\le5$ the signal is not a many-body object. The start overlaps essentially two eigenstates (all particles in the crowded valley, and one particular particle moved), plus a dressing by soft internal levels. If that stays true, the signal is a sum of a few cosines fixed by static quantities, and the cost of the task is the cost of obtaining those quantities. Whether it stays true as $N$ grows is the open question; the data so far neither close nor open the window.
+\end{plainwords}
+
+\paragraph{What the spectra of the correlated start show ($N\le5$).}
+All numbers are for the mode bases $k=16,20$ unless stated; $J=\omega^\ast/2$ is half the Bohr frequency of the two heaviest levels.
+\begin{enumerate}[itemsep=0.2em]
+\item \emph{One transfer channel.} The start (particle $0$ in the right valley, the others left) has weight $0.98,\,0.95,\,0.91,\,0.81$ on its two heaviest eigenstates for $N=2,\dots,5$ ($k=20$). These two are the symmetric and antisymmetric combinations of the all-left state and of the state with particle $0$ moved. $J$ is $0.096,\,0.097,\,0.109,\,0.117$.
+\item \emph{An exact symmetry.} Reflection $y_i\mapsto-y_i$ of all particles commutes with the Hamiltonian and the observable. The start has $\langle R\rangle=+0.9999$ ($N=3$) and $+0.9997$ ($N=4$); every level of non-negligible weight is even, and odd levels carry at most $10^{-4}$ (the truncated modes close under $R$ only to $0.05$, so this is leakage, not physics). The levels that earlier looked like a ``dark star'' between the pair are odd under $R$.
+\item \emph{Sector exclusion.} The lowest even level with two particles on the right lies $2.7$--$3.0$ above the ground state at $N=3$ ($k=12,16$), about $17$--$18$ times $J\sqrt N$; at $N=4$ ($k=12$) there is none in the lowest $90$ levels (up to $2.14$).
+\item \emph{Label fragmentation.} The states with particle $1$ or $2$ moved lie at $0.40$--$0.43$ and $0.65$ above the ground state at $N=3$, against the label offset $2C_0=0.30$ and $J=0.095$. The margin is $2$--$6$ times $J$, not larger, and at $N=4$ ($k=12$) particles $1$ and $2$ already hybridize near $0.67$--$0.71$. The start has at most $1$--$2\%$ weight on these states.
+\item \emph{Dressing.} The weight outside the two heaviest levels grows with $N$, and the growing part sits at $1$--$3J$ from the pair (Table~\ref{tab:dress-draft}), not in a far tail.
+\end{enumerate}
+
+\begin{table}[ht]
+\centering\small
+\caption{Weight of the correlated start outside its two heaviest eigenstates, $k=20$, split by the distance to the nearest of the two in units of $J$. ``coverage'' is the weight on the computed levels (the first $160$ at $N\ge4$); at $N=4,5$ the unresolved remainder $1-\text{coverage}$ is part of $1-B_2$.}
+\label{tab:dress-draft}
+\begin{tabular}{rcccccc}
+\toprule
+$N$ & $J$ & $1-B_2$ & $<J$ (near) & $1$--$3J$ (mid) & $\ge3J$ (far) & coverage \\
+\midrule
+2 & 0.096 & 0.022 & 0.000 & 0.010 & 0.013 & 1.000 \\
+3 & 0.097 & 0.045 & 0.000 & 0.017 & 0.028 & 1.000 \\
+4 & 0.109 & 0.094 & 0.000 & 0.056 & 0.024 & 0.986 \\
+5 & 0.117 & 0.188 & 0.007 & 0.114 & 0.010 & 0.943 \\
+\bottomrule
+\end{tabular}
+\end{table}
+The ``near'' column is the weight within $J$ of the pair. At $k=12$ it is large ($0.085$ at $N=4$, $0.268$ at $N=5$): a basis artefact that shrinks with $k$.
+
+\paragraph{A conditional reduction.}
+\begin{proposition}[conditional]
+Let $|F\rangle$ be the correlated all-left state, $|I_0\rangle$ the correlated state with particle $0$ on the right, and suppose that on $0\le t\le T_{\rm obs}$ the start stays, up to an error $\delta$ in the amplitude, in the span $\mathcal S$ of $|F\rangle$, $|I_0\rangle$ and $M$ further eigenstates $|s_1\rangle,\dots,|s_M\rangle$ of $\hat H$ (the sidebands). Then
+\[
+f(t)=\sum_{m,n}c_m^\ast c_n\,O_{mn}\,e^{i(E_m-E_n)t}+O(N\delta),\qquad m,n\in\{1,\dots,M+2\},
+\]
+is a sum of at most $(M+2)(M+3)/2$ cosines whose frequencies, weights and amplitudes are static quantities of $\hat H$. In the ideal case $M=0$ with product states of left/right orbitals and any number of labelled states with at most one particle on the right, every particle cut has Schmidt rank $\le2$ and entropy $\le1$ bit for any $N$; for correlated states of bond dimension at most $\chi_0$ in a common ordering, the bond dimension of the state is at most $(M+2)\chi_0$ at all times.
+\end{proposition}
+The first statement is elementary (a finite-dimensional superposition), as is the Schmidt-rank bound (a state $a|F\rangle+\sum_ib_i|i\rangle$ is a sum of two product vectors across any cut). What is not elementary is whether $M$ stays small and whether the static inputs are cheap. Items 1--4 above are the measured support at $N\le5$ for a small $M$; item 5 is the measurement that decides it.
+
+\paragraph{Consequence for the entropy.}
+Most of the entanglement a simulator must carry is already present without any tunneling (at $N=5$ the control run off resonance has $2.20$ bit against $2.72$ on resonance, a difference of $0.52$ bit). Together with the Schmidt-rank bound for the ideal manifold this says that the entropy growth measured in the measured-entropy section is dominated by the static entanglement of the correlated isomers, not by the transfer. Matrix-product-state cost curves built on it price the isomers; they do not by themselves show that the dynamics is hard.
+
+\paragraph{What cannot be established, and the regime boundary.}
+\begin{itemize}[itemsep=0.2em]
+\item \emph{Hardness is unprovable for this fixed family.} The observable is a function of positions, so $|f'(t)|\le N\,\|K_x\|$ with $\|K_x\|=\pi^2/(2\Delta x^2)=316$ on the paper's grid; $f$ can be tabulated to the allowed error on a grid of about $10^{7}$ points per $N$, independent of $N$. The table exists but is not an algorithm (a non-uniform statement), so no reduction-based hardness result is possible for the task as defined; statements can only concern the scaling of the best known methods, or a different family with free instance parameters.
+\item \emph{The tunneling regime has an end at fixed trap depth.} The resonant tilt rises by $0.6$--$0.8$ per particle ($c^\ast=0.70,1.46,2.26,2.92,3.66$ for $N=2,\dots,6$ at $k=12$) and shows no bending. In a one-particle picture of the tilted well the upper-valley level reaches the barrier top near $c\approx6.3$, i.e.\ near $N\approx9$--$10$ if the rise continues. Extrapolating the entropy law to $N=24$--$88$ crosses that point. Whether the transfer continues as a many-body peeling process there is open. A trap depth that grows with $N$ is a different family: the rule must be fixed in advance, and both classical and quantum costs recomputed.
+\item \emph{A dense manifold exists elsewhere in the family.} With symmetric wells and no tilt ($c=0$, $C_0=0$) the lowest band has $12$ levels at $N=3$ and $24$ at $N=4$ (width $0.41$ and $0.29$, gap $1.05$ and $1.04$) with permutation multiplets: the many-occupation manifold. It is a different task from the paper's tilted transfer.
+\end{itemize}
+
+\paragraph{The open problem.}
+The cost of the task is the cost of the static \emph{dressed-transfer spectrum}: the number $M(N)$ of sidebands needed for error $\varepsilon N$, and the cost of their energies, weights and matrix elements. If the dressing is harmonic (a displaced, Duschinsky-mixed oscillator bath) the problem is a spin-boson problem, heuristically classically easy. If it is strongly anharmonic with soft modes comparable to $J$, no classical method with a known polynomial cost applies; sign-free structure (distinguishable particles) makes imaginary-time and instanton methods applicable, but neither a polynomial bound nor a hardness proof is known. The measured weights say only that the growth is faster than linear at $N\le5$ ($1-B_2=0.022,0.045,0.094,0.188$ at $k=20$), which a density-dependent harmonic displacement can also produce, and that the growing part is at $1$--$3J$, so the condition ``$J$ small compared with the soft frequencies'' is not met with margin at $N=4,5$.
+
+\begin{honesty}
+\begin{itemize}[itemsep=0.15em]
+\item The dressing series is four points at one basis size that is still moving (between $k=16$ and $20$, $B_2$ changes by $7\%$ at $N=4$ and $4\%$ at $N=5$). Extrapolating it to $N=6,7$ is not a measurement; at $k=12$ the series does not double.
+\item Gaussianity of the dressing is undecided. The test is the harmonic (Huang--Rhys) prediction of $B$ from the two constrained isomers against the measured $B$ at $k\ge16$.
+\item $N=6$ and the $k$-convergence at $N=4,5$ are unfinished; everything above is for $N\le5$.
+\item No claim is made that a classical method reproduces the signal at large $N$, nor that none does.
+\end{itemize}
+\end{honesty}

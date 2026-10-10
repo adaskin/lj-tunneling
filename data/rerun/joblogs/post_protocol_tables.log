@@ -1,0 +1,13 @@
+N=2: T<=60: S_cen 0.8685 S_max 0.8685  T<=120: S_cen 0.8794 S_max 0.8794  T<=200: S_cen 0.9049 S_max 0.9049
+N=3: T<=60: S_cen 1.2969 S_max 1.3674  T<=120: S_cen 1.2977 S_max 1.3674  T<=200: S_cen 1.2977 S_max 1.3674
+N=4: T<=60: S_cen 2.2640 S_max 2.3595  T<=120: S_cen 2.3346 S_max 2.5418  T<=200: S_cen 2.3346 S_max 2.5418
+N=5: T<=60: S_cen 2.6423 S_max 2.9341  T<=120: S_cen 2.6917 S_max 2.9341  T<=200: S_cen 2.7152 S_max 2.9341
+N=6: T<=60: S_cen 3.0928 S_max 3.5171  T<=120: S_cen 3.2535 S_max 3.6984  T<=200: S_cen 3.2578 S_max 3.6984
+N=3 dt=0.5  S_cen 1.2977 S_one 1.3818
+N=3 dt=1    S_cen 1.2977 S_one 1.3674
+N=3 dt=2    S_cen 1.2969 S_one 1.3674
+N=3 dt=4    S_cen 1.2969 S_one 1.3674
+N=4 dt=0.5  S_cen 2.3346 S_one 1.8102
+N=4 dt=1    S_cen 2.3346 S_one 1.8102
+N=4 dt=2    S_cen 2.3346 S_one 1.8102
+N=4 dt=4    S_cen 2.3265 S_one 1.8102

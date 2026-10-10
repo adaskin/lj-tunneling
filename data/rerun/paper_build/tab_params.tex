@@ -1,0 +1,26 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Parameters of the model, of the numerical representations and of the budgets. All values are read from the single configuration file of the simulations. The trap, the interaction and the budgets are choices, not fits; Appendix~\ref{app:choice} says why these values were chosen and Appendix~\ref{app:numerics} what each numerical setting controls.}
+\label{tab:params}
+\begin{tabular}{L{2.4cm}L{7.4cm}L{4.4cm}}
+\toprule
+Group & Quantity & Value \\
+\midrule
+Trap & barrier strength $A$, $U=A(x^2-1)^2+\tfrac12\omega_y^2y^2$ & $8$ \\
+ & transverse $\omega_y^2$ & $2$ \\
+Pair potential & Lennard-Jones $\epsilon$, $\sigma$, cap $V_{\rm cap}$ & $2$, $0.18$, $100$ \\
+Particles & tilt $c+c_i$, offsets $c_i=(i-1)C_0$, $C_0$ & $0.15$; $c$ at resonance \\
+ & mass, $\hbar$ (simulation units) & $1$, $1$ \\
+Grid (basis 1) & cells $n_x\times n_y$, $M$; $\Delta x$, $\Delta y$ & $40\times30$, $1200$; $0.125$, $0.200$ \\
+Modes (basis 2) & modes per particle $k$ (local dimension $d$) & $12$, $16$, $20$ \\
+Qubits (basis 3) & qubits per particle $n_p$; auxiliary & $11$; $30$ \\
+Starts & correlated: penalty $W$ on the wrong side & $30$ \\
+Dynamics & Chebyshev propagation; window $T$; snapshot spacing $\Delta t$ (one protocol for all $N$) & $200$; $1.0$ ($201$ snapshots) \\
+Working point & trap-units mass $\mut_0$; action $S_0$; switching time $t_0$ & $8$; $5.33$; $16.5$ \\
+Budgets & memory $\Bmem$; compute $\Bflop$ & $\ensuremath{10^{12}}$ B; $\ensuremath{10^{20}}$ operations \\
+ & logical qubits $\BQ$; T-gates $\BT$; precision $\varepsilon$ & $1000$; $\ensuremath{10^{12}}$; $\ensuremath{10^{-3}}$ \\
+Cost models & Krylov vectors $v$; sweeps (compute prefactor $A_{\rm sw}$) & $10$; $100$ ($200$) \\
+\bottomrule
+\end{tabular}
+\end{table}

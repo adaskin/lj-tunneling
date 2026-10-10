@@ -1,0 +1,25 @@
+[    304s] [dynamics N=2 k=12] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[    304s] [N=2 k=12] c*=0.717 dE=0.181795 <O>_gs=0.500 doublet=(0,1) start=11_1  overlap on doublet: product 0.9792, interacting 0.9781
+[    304s]       start energy above E0: product 0.143, interacting 0.150 (band of the lowest 4 levels: 0.399); weight on those levels: product 0.991, interacting 0.990; main levels of the interacting start: #0(E-E0=0.000, w=0.456) #1(E-E0=0.182, w=0.522) #2(E-E0=0.227, w=0.000) #3(E-E0=0.399, w=0.012)
+[    304s]       [interacting] spectrum [8.5,23.9], T=200, dt=1, 201 snapshots, ~10200 matvecs; 1 cuts (0 skipped: dimension)
+[    304s]       [interacting] t=  10.0  <O>=0.473  elapsed      0s  eta      3s
+[    304s]       [interacting] t=  20.0  <O>=0.218  elapsed      0s  eta      2s
+[    304s]       [interacting] t=  30.0  <O>=0.861  elapsed      0s  eta      1s
+[    304s]       [interacting] t=  40.0  <O>=0.801  elapsed      0s  eta      1s
+[    304s]       [interacting] t=  50.0  <O>=0.207  elapsed      0s  eta      1s
+[    304s]       [interacting] t=  60.0  <O>=0.528  elapsed      0s  eta      1s
+[    304s]       [interacting] t=  70.0  <O>=0.987  elapsed      0s  eta      1s
+[    304s]       [interacting] t=  80.0  <O>=0.441  elapsed      0s  eta      1s
+[    305s]       [interacting] t=  90.0  <O>=0.214  elapsed      0s  eta      1s
+[    305s]       [interacting] t= 100.0  <O>=0.911  elapsed      0s  eta      0s
+[    305s]       [interacting] t= 110.0  <O>=0.773  elapsed      0s  eta      0s
+[    305s]       [interacting] t= 120.0  <O>=0.124  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 130.0  <O>=0.635  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 140.0  <O>=0.982  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 150.0  <O>=0.304  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 160.0  <O>=0.337  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 170.0  <O>=0.921  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 180.0  <O>=0.644  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 190.0  <O>=0.218  elapsed      1s  eta      0s
+[    305s]       [interacting] t= 200.0  <O>=0.626  elapsed      1s  eta      0s
+[    305s] [N=2 k=12] interacting: wrote ../../../tmp/claude-0/-home-user-lj-tunneling/2726bd60-70ad-5a1e-a087-829d28a60558/scratchpad/theta_half_relocated/N2_k12_int_c0.717_T200_dt1.npz  <O> in [0.094, 1.001]  (1s)

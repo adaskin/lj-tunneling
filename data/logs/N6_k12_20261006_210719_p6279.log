@@ -1,0 +1,6 @@
+[      1s] [dynamics N=6 k=12] protocol uniform: T=200 dt=1 starts=['interacting'] cuts=all
+[   1281s] [N=6 k=12] c=3.66: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[   1282s] [N=6 k=12] WARNING: the gate-passing doublet is empty for every start (spurious levels); using the most populated pair (0,7): dE=0.173094, ov=0.0114.  Check <O>_gs ~ 0.5.
+[   2666s] [N=6 k=12] c*=3.660 dE=0.173094 <O>_gs=0.487 doublet=(0,7) start=51_1  overlap on doublet: product 0.0114, interacting 0.3066
+[   2666s]       start energy above E0: product 24.707, interacting 0.468 (band of the lowest 16 levels: 0.222); weight on those levels: product 0.012, interacting 0.319; main levels of the interacting start: #0(E-E0=0.000, w=0.304) #6(E-E0=0.169, w=0.001) #7(E-E0=0.173, w=0.002) #8(E-E0=0.183, w=0.011)
+[   2824s]       [interacting] spectrum [22.7,159.1], T=200, dt=1, 201 snapshots, ~27400 matvecs; 31 cuts (0 skipped: dimension)

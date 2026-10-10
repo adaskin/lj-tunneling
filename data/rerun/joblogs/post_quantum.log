@@ -1,0 +1,6 @@
+N=  4 Q=  74 T_qub=1.26e+08 edge 22.24 (complete 20.52)
+N=  8 Q= 118 T_qub=3.84e+08 edge 20.50 (complete 18.96)
+N= 16 Q= 206 T_qub=1.30e+09 edge 18.60 (complete 17.25)
+N= 24 Q= 294 T_qub=2.75e+09 edge 17.43 (complete 16.21)
+N= 40 Q= 470 T_qub=7.23e+09 edge 15.91 (complete 14.85)
+N= 88 Q= 998 T_qub=3.34e+10 edge 13.49 (complete 12.70)

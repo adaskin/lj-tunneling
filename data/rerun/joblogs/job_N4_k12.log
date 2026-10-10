@@ -1,0 +1,51 @@
+# job N4_k12   threads 1   host vm   start 2026-10-06T20:50:46+00:00
+# call: run_production(4, 12, starts=('product', 'interacting'))
+[      1s] [dynamics N=4 k=12] protocol uniform: T=200 dt=1 starts=['product', 'interacting'] cuts=all
+[      2s] [N=4 k=12] c=2.26: NO clean doublet among the lowest levels; using levels (0,1) for dE
+[      3s] [N=4 k=12] c*=2.260 dE=0.051736 <O>_gs=0.548 doublet=(0,1) start=31_1  overlap on doublet: product 0.1542, interacting 0.4642
+[      3s]       start energy above E0: product 7.317, interacting 0.233 (band of the lowest 8 levels: 0.246); weight on those levels: product 0.252, interacting 0.749; main levels of the interacting start: #0(E-E0=0.000, w=0.464) #4(E-E0=0.184, w=0.203) #5(E-E0=0.203, w=0.007) #6(E-E0=0.210, w=0.068)
+[      3s]       [product] spectrum [16.1,69.9], T=200, dt=1, 201 snapshots, ~16400 matvecs; 7 cuts (0 skipped: dimension)
+[      6s]       [product] t=  10.0  <O>=0.898  elapsed      3s  eta     51s
+[      8s]       [product] t=  20.0  <O>=0.891  elapsed      5s  eta     47s
+[     11s]       [product] t=  30.0  <O>=0.914  elapsed      8s  eta     45s
+[     14s]       [product] t=  40.0  <O>=1.053  elapsed     10s  eta     42s
+[     16s]       [product] t=  50.0  <O>=0.903  elapsed     13s  eta     39s
+[     19s]       [product] t=  60.0  <O>=0.967  elapsed     16s  eta     37s
+[     21s]       [product] t=  70.0  <O>=0.808  elapsed     18s  eta     34s
+[     24s]       [product] t=  80.0  <O>=0.854  elapsed     21s  eta     31s
+[     26s]       [product] t=  90.0  <O>=0.892  elapsed     23s  eta     29s
+[     29s]       [product] t= 100.0  <O>=0.979  elapsed     26s  eta     26s
+[     32s]       [product] t= 110.0  <O>=0.769  elapsed     29s  eta     23s
+[     35s]       [product] t= 120.0  <O>=0.899  elapsed     31s  eta     21s
+[     37s]       [product] t= 130.0  <O>=0.884  elapsed     34s  eta     18s
+[     40s]       [product] t= 140.0  <O>=1.023  elapsed     37s  eta     16s
+[     43s]       [product] t= 150.0  <O>=0.822  elapsed     40s  eta     13s
+[     45s]       [product] t= 160.0  <O>=0.831  elapsed     42s  eta     11s
+[     48s]       [product] t= 170.0  <O>=0.799  elapsed     45s  eta      8s
+[     51s]       [product] t= 180.0  <O>=0.988  elapsed     48s  eta      5s
+[     53s]       [product] t= 190.0  <O>=0.794  elapsed     50s  eta      3s
+[     56s]       [product] t= 200.0  <O>=0.895  elapsed     53s  eta      0s
+[     56s] [N=4 k=12] product: wrote data/runs/N4_k12_prod_c2.260_T200_dt1.npz  <O> in [0.769, 1.053]  (55s)
+[     56s]       [interacting] spectrum [16.1,69.9], T=200, dt=1, 201 snapshots, ~16400 matvecs; 7 cuts (0 skipped: dimension)
+[     59s]       [interacting] t=  10.0  <O>=0.345  elapsed      3s  eta     51s
+[     61s]       [interacting] t=  20.0  <O>=0.382  elapsed      5s  eta     48s
+[     64s]       [interacting] t=  30.0  <O>=0.424  elapsed      8s  eta     46s
+[     67s]       [interacting] t=  40.0  <O>=0.713  elapsed     11s  eta     42s
+[     69s]       [interacting] t=  50.0  <O>=0.286  elapsed     13s  eta     39s
+[     72s]       [interacting] t=  60.0  <O>=0.680  elapsed     16s  eta     37s
+[     75s]       [interacting] t=  70.0  <O>=0.348  elapsed     18s  eta     34s
+[     77s]       [interacting] t=  80.0  <O>=0.426  elapsed     21s  eta     31s
+[     80s]       [interacting] t=  90.0  <O>=0.421  elapsed     24s  eta     29s
+[     82s]       [interacting] t= 100.0  <O>=0.811  elapsed     26s  eta     26s
+[     85s]       [interacting] t= 110.0  <O>=0.257  elapsed     29s  eta     23s
+[     87s]       [interacting] t= 120.0  <O>=0.468  elapsed     31s  eta     21s
+[     90s]       [interacting] t= 130.0  <O>=0.348  elapsed     34s  eta     18s
+[     93s]       [interacting] t= 140.0  <O>=0.774  elapsed     37s  eta     16s
+[     96s]       [interacting] t= 150.0  <O>=0.330  elapsed     39s  eta     13s
+[     98s]       [interacting] t= 160.0  <O>=0.524  elapsed     42s  eta     10s
+[    101s]       [interacting] t= 170.0  <O>=0.316  elapsed     45s  eta      8s
+[    103s]       [interacting] t= 180.0  <O>=0.702  elapsed     47s  eta      5s
+[    106s]       [interacting] t= 190.0  <O>=0.288  elapsed     50s  eta      3s
+[    108s]       [interacting] t= 200.0  <O>=0.704  elapsed     52s  eta      0s
+[    108s] [N=4 k=12] interacting: wrote data/runs/N4_k12_int_c2.260_T200_dt1.npz  <O> in [0.245, 0.998]  (107s)
+# exit 0   end 2026-10-06T20:52:34+00:00

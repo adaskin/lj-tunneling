@@ -1,0 +1,112 @@
+\documentclass[10pt]{article}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage[most]{tcolorbox}
+\usepackage{caption}
+\usepackage{xurl}
+\captionsetup{font=small,labelfont=bf}
+\captionsetup[figure]{name=Fig.}
+\geometry{a4paper, top=2.4cm, bottom=2.6cm, left=2.6cm, right=2.6cm}
+\setlist[itemize]{itemsep=0.25em, leftmargin=1.6em}
+
+
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=darkgray, urlcolor=blue,
+  bookmarks=true, bookmarksnumbered=true, unicode=true]{hyperref}
+\hypersetup{
+  pdftitle={Real-time tunneling in light Lennard-Jones clusters: resource bounds, and why the classical-quantum window is not established},
+  pdfauthor={Ammar Daskin},
+  pdfkeywords={quantum simulation, tunneling, Lennard-Jones clusters, tensor networks, qubitization, resource bounds, negative result}}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% ---- numbers: every value that comes from a computation is a macro written by the data pipeline
+\newcommand{\defnum}[2]{\expandafter\gdef\csname num@#1\endcsname{#2}}
+\newcommand{\num}[1]{\ifcsname num@#1\endcsname\csname num@#1\endcsname\else{\bfseries\color{red}??#1}\fi}
+\newcommand{\pending}[1]{{\color{red}\fbox{\footnotesize pending: #1}}}
+\input{numbers}
+
+% ---- theorem-like environments
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+\newtheorem{cprop}[prop]{Proposition}
+\newtheorem{lem}{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% ---- status of a statement
+\newcommand{\stE}{\textup{\textsc{[exact]}}}
+\newcommand{\stM}{\textup{\textsc{[model]}}}
+\newcommand{\stC}{\textup{\textsc{[conditional]}}}
+
+% ---- notation
+\newcommand{\dE}{\Delta E}
+\newcommand{\Op}{\hat O}
+\newcommand{\muq}{\mu}
+\newcommand{\mut}{\tilde{\mu}}
+\newcommand{\Bmem}{B_{\mathrm{mem}}}
+\newcommand{\Bflop}{B_{\mathrm{flop}}}
+\newcommand{\BQ}{B_{Q}}
+\newcommand{\BT}{B_{T}}
+\newcommand{\Tobs}{T_{\mathrm{obs}}}
+\newcommand{\SN}{S_N}
+\newcommand{\Snat}{S^{\mathrm{nat}}_N}
+\newcommand{\Sperp}{S^{\perp}_N}
+\newcommand{\Smax}{S^{\max}_N}
+\newcommand{\NED}{N_{\mathrm{ED}}}
+\newcommand{\NTN}{N_{\mathrm{TN}}}
+\newcommand{\NQ}{N_{Q}}
+\newcommand{\mutq}{\tilde\mu_{\mathrm{qub}}}
+\newcommand{\Win}{\mathcal W}
+\newcommand{\pairs}{\mathrm{pairs}}
+\newcommand{\cw}{\mathrm{cw}}
+\newcommand{\MI}{I}
+
+\title{\textbf{Real-time tunneling in light Lennard-Jones clusters:\\
+resource bounds, and why the classical--quantum window is not established}}
+\author{Ammar Daskin}
+\date{Research report, October 2026}
+
+\emergencystretch=3em
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\input{cover}
+\clearpage
+\setcounter{page}{1}
+
+\input{sec1_intro}
+\input{sec2_model}
+\input{sec3_framework}
+\input{sec4_measured}
+\input{sec4b_static}
+\section{Discussion}
+\label{sec:discussion}
+
+This section sets the measurements against the costs. Subsection~\ref{sec:walls} says where the classical routes stop, Subsection~\ref{sec:quantum} what a quantum computer would pay and what window the two bounds draw, and Subsection~\ref{sec:open} what the report does and does not establish and what is open.
+
+\input{sec5_walls}
+\input{sec6_quantum}
+\input{sec7_open}
+
+\FloatBarrier
+\clearpage
+\appendix
+\input{appendix}
+
+\bibliographystyle{unsrt}
+\bibliography{main}
+
+\end{document}
