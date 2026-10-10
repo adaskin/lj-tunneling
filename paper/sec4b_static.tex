@@ -16,18 +16,18 @@ Section~\ref{sec:measured} measured how much entanglement the evolved state carr
 \subsection{Two levels plus a dressing}
 \label{sec:twolevel}
 
-\begin{figure}[t]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_spectrum.pdf}
+\includegraphics[width=0.8\textwidth]{figures/fig_spectrum.pdf}
 \caption{\textbf{The correlated start in the eigenbasis of $\hat H$} at the resonance tilt, $k=20$ modes per particle. Each line is one eigenlevel; its height is the weight of the start on it, on a logarithmic axis; the horizontal axis is the distance from the lower level of the pair in units of $J$. Colour: the pair. Shading: within $J$ of either level of the pair (grey) and $1$--$3J$ from it (orange). The title of each panel gives the weight of the pair and of the rest; at $N=4,5$ part of the rest sits on levels not computed (Fig.~\ref{fig:dressing}b).}
 \label{fig:spectrum}
 \end{figure}
 
 Table~\ref{tab:static} and Fig.~\ref{fig:spectrum} show that for $N=2,\dots,5$ the start lies on two eigenstates and a thin cloud of others: the symmetric and antisymmetric combinations of the all-left cluster (all particles in the crowded valley) and of the cluster with particle $0$ moved to the other valley. Their splitting $2J$ is the frequency of the main oscillation. The weight of the pair falls with $N$ at fixed basis size and rises with $k$ (Fig.~\ref{fig:dressing}a); it converges at $N=4$ but not at $N=5$, and no $N=6$ spectrum is converged. The small-basis values at $N=4$ ($k=12$) are a basis artefact.
 
-\begin{figure}[t]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_dressing.pdf}
+\includegraphics[width=0.8\textwidth]{figures/fig_dressing.pdf}
 \caption{\textbf{The pair and the dressing.} (a) Weight of the start on the pair against the number of modes per particle $k$ (lines, $N=2$--$5$). The open symbol is a Lanczos list that resolves only part of the weight (Table~\ref{tab:start}). The $N=4$ curve converges; the $N=5$ curve has not. (b) The weight outside the pair, split by the distance to the nearer level of the pair: within $J$ (grey), $1$--$3J$ (orange), beyond $3J$ (blue), and weight not on any computed level (hatched). Upper axis label: $N$; lower: $k$. At $k=12$ a large part of the rest sits within $J$ of the pair at $N=4,5$; that part is a basis artefact (it vanishes for $k\ge16$) and is not shown.}
 \label{fig:dressing}
 \end{figure}
@@ -42,9 +42,9 @@ The pair is a closed two-state system at $N\le4$ for three structural reasons (F
 \subsection{Most of the entropy is static}
 \label{sec:static-entropy}
 
-\begin{figure}[t]
+\begin{figure}[htpb]
 \centering
-\includegraphics[width=0.62\textwidth]{figures/fig_control.pdf}
+\includegraphics[width=0.5\textwidth]{figures/fig_control.pdf}
 \caption{\textbf{How much of the central-bond entropy is already there before anything moves.} Left and middle: the product start (a quench that ignores the correlation hole of particles sharing a valley) against the correlated start. Right, $N=5$: the same start off resonance, where the cluster stays in one isomer, against the resonant run. The off-resonance entropy is $\num{off_diff}$ bit below the resonant one.}
 \label{fig:control}
 \end{figure}
@@ -66,9 +66,9 @@ is a sum of at most $(M+2)(M+3)/2$ cosines whose frequencies, weights and amplit
 
 The first statement is a finite-dimensional superposition, and the rank bounds follow because $a|F\rangle+\sum_ib_i|I_i\rangle$ is a sum of two product vectors across any cut (proof in Appendix~\ref{app:proofs}). What is not elementary is whether $M$ stays small and whether the static inputs are cheap.
 
-\begin{figure}[t]
+\begin{figure}[htpb]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_cosines.pdf}
+\includegraphics[width=0.8\textwidth]{figures/fig_cosines.pdf}
 \caption{\textbf{How many cosines the signal needs.} (a) Residual of a free fit of $M$ cosines to $\langle\Op\rangle(t)$ on the stored time series ($T=\num{Tprot}$), in units of the standard deviation of the signal, for the largest basis size available at each $N$. (b) The number of cosines for a residual of $5\%$; the open symbol at $N=6$ marks that no fit with up to eight cosines reached it (one run, $k=12$, not converged). The fit chooses its frequencies freely; it is a measure of the structure of the signal, not a prediction from static energies.}
 \label{fig:cosines}
 \end{figure}
@@ -78,9 +78,9 @@ A few cosines do explain the signal at $N=2,3$, but the number needed for a give
 \subsection{Where the regime ends}
 \label{sec:regimeend}
 
-\begin{figure}[t]
+\begin{figure}[htpb]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_tilt.pdf}
+\includegraphics[width=0.8\textwidth]{figures/fig_tilt.pdf}
 \caption{\textbf{The resonance tilt and the end of the regime.} (a) The tilt $c^\ast$ at which the all-left and one-moved clusters are degenerate, against $N$, for three basis sizes; it rises by about $\num{fu_cstep_lo_k12}$--$\num{fu_cstep_hi_k12}$ per particle at $k=12$, nearly linearly. Dashed lines extend the straight lines through the measured points. The horizontal line is the tilt at which the lowest level localized in the raised valley of the one-particle tilted well reaches the top of the barrier ($c=\num{fu_ctop}$; finite differences, a rough one-body picture). (b) With a symmetric trap and no tilt or offsets ($c=0$, $C_0=0$) the lowest levels form a dense band with a gap above it: a different task from the tilted transfer.}
 \label{fig:tilt}
 \end{figure}

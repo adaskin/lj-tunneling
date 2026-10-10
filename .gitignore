@@ -62,3 +62,4 @@ data/rerun/state/
 paper/*.fls
 paper/*.fdb_latexmk
 paper/*.log
+.DS_Store
