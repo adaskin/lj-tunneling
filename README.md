@@ -1,9 +1,11 @@
 # ljtunnel
 
+DASKIN, A. (2026). Quantum simulation window for real-time tunneling in light Lennard-Jones clusters: resource bounds, and why the classical–quantum window is not established. Zenodo. [https://doi.org/10.5281/zenodo.23281107](https://doi.org/10.5281/zenodo.23281107)  
+
 Real-time tunneling of N distinguishable particles in a 2D double well with a capped Lennard-Jones interaction, and what it costs to simulate it classically
 (exact diagonalization, tensor networks, Monte Carlo) or on a quantum computer.  The code, the data and the research report built from them live here.
 
-**Status and open items:** [STATUS.md](STATUS.md) (one page).  **Code review and findings:** [REVIEW.md](REVIEW.md).  **The report:** [paper/main.pdf](paper/main.pdf) (37 pages; the first page is a cover with the summary).
+**Status and open items:** [STATUS.md](STATUS.md) (one page).  **Code review and findings:** [REVIEW.md](REVIEW.md).  **The report:** [paper/main.pdf](paper/main.pdf) (~34 pages; the first page is a cover with the summary).
 
 ## What this repository shows, in five lines
 
